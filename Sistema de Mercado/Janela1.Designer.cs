@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bt_Deletar = new System.Windows.Forms.Button();
             this.bt_Atualizar = new System.Windows.Forms.Button();
             this.bt_Novo = new System.Windows.Forms.Button();
             this.bt_Cancelar1 = new System.Windows.Forms.Button();
             this.bt_OK = new System.Windows.Forms.Button();
             this.dgv_Produto = new System.Windows.Forms.DataGridView();
-            this.dgv_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_DataCadastro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_DataVencimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgv_CodBarras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigoBarrasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataCadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Produto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_Deletar
@@ -92,64 +97,79 @@
             // 
             // dgv_Produto
             // 
+            this.dgv_Produto.AutoGenerateColumns = false;
             this.dgv_Produto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Produto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_ID,
-            this.dgv_Nome,
-            this.dgv_Marca,
-            this.dgv_DataCadastro,
-            this.dgv_DataVencimento,
-            this.dgv_CodBarras});
-            this.dgv_Produto.Location = new System.Drawing.Point(0, 2);
+            this.idDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.marcaDataGridViewTextBoxColumn,
+            this.codigoBarrasDataGridViewTextBoxColumn,
+            this.dataVencimentoDataGridViewTextBoxColumn,
+            this.dataCadastroDataGridViewTextBoxColumn});
+            this.dgv_Produto.DataSource = this.produtoBindingSource1;
+            this.dgv_Produto.Location = new System.Drawing.Point(1, 2);
             this.dgv_Produto.Name = "dgv_Produto";
             this.dgv_Produto.RowHeadersWidth = 51;
             this.dgv_Produto.RowTemplate.Height = 29;
-            this.dgv_Produto.Size = new System.Drawing.Size(803, 458);
+            this.dgv_Produto.Size = new System.Drawing.Size(803, 470);
             this.dgv_Produto.TabIndex = 6;
-            this.dgv_Produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_Produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Produto_CellContentClick);
             // 
-            // dgv_ID
+            // produtoBindingSource1
             // 
-            this.dgv_ID.HeaderText = "ID";
-            this.dgv_ID.MinimumWidth = 6;
-            this.dgv_ID.Name = "dgv_ID";
-            this.dgv_ID.Width = 125;
+            this.produtoBindingSource1.DataSource = typeof(Produto);
             // 
-            // dgv_Nome
+            // produtoBindingSource
             // 
-            this.dgv_Nome.HeaderText = "Nome";
-            this.dgv_Nome.MinimumWidth = 6;
-            this.dgv_Nome.Name = "dgv_Nome";
-            this.dgv_Nome.Width = 125;
+            this.produtoBindingSource.DataSource = typeof(Produto);
             // 
-            // dgv_Marca
+            // idDataGridViewTextBoxColumn
             // 
-            this.dgv_Marca.HeaderText = "Marca";
-            this.dgv_Marca.MinimumWidth = 6;
-            this.dgv_Marca.Name = "dgv_Marca";
-            this.dgv_Marca.Width = 125;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dgv_DataCadastro
+            // nomeDataGridViewTextBoxColumn
             // 
-            this.dgv_DataCadastro.HeaderText = "Data de Cadastro";
-            this.dgv_DataCadastro.MinimumWidth = 6;
-            this.dgv_DataCadastro.Name = "dgv_DataCadastro";
-            this.dgv_DataCadastro.Width = 125;
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dgv_DataVencimento
+            // marcaDataGridViewTextBoxColumn
             // 
-            this.dgv_DataVencimento.HeaderText = "Data de Vencimento";
-            this.dgv_DataVencimento.MinimumWidth = 6;
-            this.dgv_DataVencimento.Name = "dgv_DataVencimento";
-            this.dgv_DataVencimento.Width = 125;
+            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "Marca";
+            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
+            this.marcaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
+            this.marcaDataGridViewTextBoxColumn.Width = 125;
             // 
-            // dgv_CodBarras
+            // codigoBarrasDataGridViewTextBoxColumn
             // 
-            this.dgv_CodBarras.HeaderText = "Código de Barras";
-            this.dgv_CodBarras.MaxInputLength = 7;
-            this.dgv_CodBarras.MinimumWidth = 6;
-            this.dgv_CodBarras.Name = "dgv_CodBarras";
-            this.dgv_CodBarras.Width = 125;
+            this.codigoBarrasDataGridViewTextBoxColumn.DataPropertyName = "CodigoBarras";
+            this.codigoBarrasDataGridViewTextBoxColumn.HeaderText = "Codigo de Barras";
+            this.codigoBarrasDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.codigoBarrasDataGridViewTextBoxColumn.Name = "codigoBarrasDataGridViewTextBoxColumn";
+            this.codigoBarrasDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataVencimentoDataGridViewTextBoxColumn
+            // 
+            this.dataVencimentoDataGridViewTextBoxColumn.DataPropertyName = "DataVencimento";
+            this.dataVencimentoDataGridViewTextBoxColumn.HeaderText = "Data de Vencimento";
+            this.dataVencimentoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dataVencimentoDataGridViewTextBoxColumn.Name = "dataVencimentoDataGridViewTextBoxColumn";
+            this.dataVencimentoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataCadastroDataGridViewTextBoxColumn
+            // 
+            this.dataCadastroDataGridViewTextBoxColumn.DataPropertyName = "DataCadastro";
+            this.dataCadastroDataGridViewTextBoxColumn.HeaderText = "Data de Cadastro";
+            this.dataCadastroDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dataCadastroDataGridViewTextBoxColumn.Name = "dataCadastroDataGridViewTextBoxColumn";
+            this.dataCadastroDataGridViewTextBoxColumn.Width = 125;
             // 
             // Janela1
             // 
@@ -167,6 +187,8 @@
             this.Name = "Janela1";
             this.Text = "Tela Inicial";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Produto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,12 +200,14 @@
         private Button bt_Novo;
         private Button bt_Cancelar1;
         private Button bt_OK;
-        private DataGridView dgv_Produto;
-        private DataGridViewTextBoxColumn dgv_ID;
-        private DataGridViewTextBoxColumn dgv_Nome;
-        private DataGridViewTextBoxColumn dgv_Marca;
-        private DataGridViewTextBoxColumn dgv_DataCadastro;
-        private DataGridViewTextBoxColumn dgv_DataVencimento;
-        private DataGridViewTextBoxColumn dgv_CodBarras;
+        private BindingSource produtoBindingSource;
+        public DataGridView dgv_Produto;
+        private BindingSource produtoBindingSource1;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn codigoBarrasDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dataVencimentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dataCadastroDataGridViewTextBoxColumn;
     }
 }

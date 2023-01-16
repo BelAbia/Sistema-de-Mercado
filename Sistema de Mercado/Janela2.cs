@@ -1,7 +1,10 @@
+using System.Windows.Forms;
+
 namespace Sistema_de_Mercado
 {
     public partial class Janela2 : Form
     {
+
         public Janela2()
         {
             InitializeComponent();
@@ -10,7 +13,8 @@ namespace Sistema_de_Mercado
         private void bt_Salvar_Click(object sender, EventArgs e)
         {
 
-            Produto produto = new Produto();        
+            Produto produto = new Produto();
+            Janela1 janela1 = new Janela1();
 
             produto.Nome = tb_NomeProduto.Text;
             produto.Marca = tb_Marca.Text;
@@ -18,15 +22,15 @@ namespace Sistema_de_Mercado
             produto.DataVencimento = DateTime.Parse(dt_Vencimento.Text);
             produto.DataCadastro = DateTime.Parse(dt_Cadastro.Text);
 
+            List<Produto> listaProdutos = new List<Produto>();
+            listaProdutos.Add(produto);
 
+            janela1.dgv_Produto.DataSource = listaProdutos;
 
+            janela1.dgv_Produto.Refresh();
 
-
-        }
-
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
+            janela1.Show();
+            Hide();
 
         }
 
@@ -46,7 +50,7 @@ namespace Sistema_de_Mercado
 
         private void dt_Vencimento_ValueChanged(object sender, EventArgs e)
         {
-            dt_Vencimento.Value = DateTime.Now.Date;
+            dt_Vencimento.MinDate = DateTime.Now.Date;
         }
     }
 }

@@ -176,23 +176,25 @@
             this.dt_Cadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dt_Cadastro.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.dt_Cadastro.Location = new System.Drawing.Point(249, 249);
-            this.dt_Cadastro.MaxDate = DateTime.Now.Date;
-            this.dt_Cadastro.MinDate = DateTime.Now.Date;
+            this.dt_Cadastro.MaxDate = new System.DateTime(2023, 1, 16, 0, 0, 0, 0);
+            this.dt_Cadastro.MinDate = new System.DateTime(2023, 1, 16, 0, 0, 0, 0);
             this.dt_Cadastro.Name = "dt_Cadastro";
             this.dt_Cadastro.Size = new System.Drawing.Size(125, 27);
             this.dt_Cadastro.TabIndex = 18;
-            this.dt_Cadastro.Value = DateTime.Now.Date;
+            this.dt_Cadastro.Value = new System.DateTime(2023, 1, 16, 0, 0, 0, 0);
             this.dt_Cadastro.ValueChanged += new System.EventHandler(this.dt_Cadastro_ValueChanged);
             // 
             // dt_Vencimento
             // 
             this.dt_Vencimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_Vencimento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dt_Vencimento.Location = new System.Drawing.Point(249, 319);
             this.dt_Vencimento.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
-            this.dt_Vencimento.MinDate = DateTime.Now.Date;
+            this.dt_Vencimento.MinDate = new System.DateTime(2023, 1, 16, 0, 0, 0, 0);
             this.dt_Vencimento.Name = "dt_Vencimento";
             this.dt_Vencimento.Size = new System.Drawing.Size(125, 27);
             this.dt_Vencimento.TabIndex = 19;
+            this.dt_Vencimento.Value = new System.DateTime(2023, 1, 16, 13, 5, 33, 0);
             this.dt_Vencimento.ValueChanged += new System.EventHandler(this.dt_Vencimento_ValueChanged);
             // 
             // label2
