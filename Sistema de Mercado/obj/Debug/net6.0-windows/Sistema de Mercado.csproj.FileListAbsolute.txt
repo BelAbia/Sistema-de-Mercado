@@ -15,5 +15,5 @@ C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\ne
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.pdb
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\ref\Sistema de Mercado.dll
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.Janela2.resources
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.Janela1.resources
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeLista.resources
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources

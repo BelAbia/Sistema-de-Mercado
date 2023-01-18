@@ -11,7 +11,7 @@ namespace Sistema_de_Mercado
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Janela1());
+            Application.Run(new JanelaDeLista());
         }
     }
 }
