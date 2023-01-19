@@ -16,7 +16,7 @@ namespace Sistema_de_Mercado
     {
 
         public static List<Produto> listaProdutos = new List<Produto>();
-        Produto produto = new Produto();
+        int selectedRow;
 
         public JanelaDeLista()
         {
@@ -45,14 +45,31 @@ namespace Sistema_de_Mercado
         private void JanelaDeLista_Load(object sender, EventArgs e)
         {
             
-            AtualizarDataGridView();
-            
             
         }
 
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void bt_Deletar_Click(object sender, EventArgs e)
+        {
+            var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Excluir.", MessageBoxButtons.YesNo, 
+                MessageBoxIcon.Question);
+            if (decisaoExcluir== DialogResult.Yes)
+            {
+                listaProdutos.RemoveAt(selectedRow);
+                AtualizarDataGridView();
+            } 
+            
+        }
+
+
+        private void dgv_Produto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedRow = e.RowIndex;
+
         }
     }
 }

@@ -54,6 +54,7 @@
             this.bt_Deletar.TabIndex = 0;
             this.bt_Deletar.Text = "Deletar";
             this.bt_Deletar.UseVisualStyleBackColor = true;
+            this.bt_Deletar.Click += new System.EventHandler(this.bt_Deletar_Click);
             // 
             // bt_Atualizar
             // 
@@ -113,6 +114,7 @@
             this.dgv_Produto.RowTemplate.Height = 29;
             this.dgv_Produto.Size = new System.Drawing.Size(803, 470);
             this.dgv_Produto.TabIndex = 6;
+            this.dgv_Produto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Produto_CellClick);
             // 
             // idDataGridViewTextBoxColumn
             // 

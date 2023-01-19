@@ -94,9 +94,13 @@
             // 
             this.tb_CodBarras.BackColor = System.Drawing.SystemColors.Control;
             this.tb_CodBarras.Location = new System.Drawing.Point(239, 244);
+            this.tb_CodBarras.MaxLength = 13;
+           
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
             this.tb_CodBarras.TabIndex = 10;
+            this.tb_CodBarras.TextChanged += new System.EventHandler(this.tb_CodBarras_TextChanged);
+            this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
             // 
             // tb_Marca
             // 
