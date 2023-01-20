@@ -54,7 +54,7 @@
             this.bt_Deletar.TabIndex = 0;
             this.bt_Deletar.Text = "Deletar";
             this.bt_Deletar.UseVisualStyleBackColor = true;
-            this.bt_Deletar.Click += new System.EventHandler(this.bt_Deletar_Click);
+            this.bt_Deletar.Click += new System.EventHandler(this.AoClicarDeletar);
             // 
             // bt_Atualizar
             // 
@@ -183,7 +183,6 @@
             this.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "JanelaDeLista";
             this.Text = "Tela Inicial";
-            this.Load += new System.EventHandler(this.JanelaDeLista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Produto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             this.ResumeLayout(false);

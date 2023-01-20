@@ -54,10 +54,10 @@
             // 
             this.lbl_NomeProduto.AutoSize = true;
             this.lbl_NomeProduto.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_NomeProduto.Location = new System.Drawing.Point(28, 41);
+            this.lbl_NomeProduto.Location = new System.Drawing.Point(23, 41);
             this.lbl_NomeProduto.Name = "lbl_NomeProduto";
             this.lbl_NomeProduto.Size = new System.Drawing.Size(150, 22);
-            this.lbl_NomeProduto.TabIndex = 2;
+            this.lbl_NomeProduto.TabIndex = 7;
             this.lbl_NomeProduto.Text = "Nome do produto";
             // 
             // lbl_Marca
@@ -67,7 +67,7 @@
             this.lbl_Marca.Location = new System.Drawing.Point(28, 110);
             this.lbl_Marca.Name = "lbl_Marca";
             this.lbl_Marca.Size = new System.Drawing.Size(56, 22);
-            this.lbl_Marca.TabIndex = 4;
+            this.lbl_Marca.TabIndex = 8;
             this.lbl_Marca.Text = "Marca";
             // 
             // lbl_Vencimento
@@ -77,7 +77,7 @@
             this.lbl_Vencimento.Location = new System.Drawing.Point(28, 175);
             this.lbl_Vencimento.Name = "lbl_Vencimento";
             this.lbl_Vencimento.Size = new System.Drawing.Size(167, 22);
-            this.lbl_Vencimento.TabIndex = 6;
+            this.lbl_Vencimento.TabIndex = 9;
             this.lbl_Vencimento.Text = "Data de vencimento";
             // 
             // lbl_CodBarras
@@ -87,7 +87,7 @@
             this.lbl_CodBarras.Location = new System.Drawing.Point(28, 246);
             this.lbl_CodBarras.Name = "lbl_CodBarras";
             this.lbl_CodBarras.Size = new System.Drawing.Size(145, 22);
-            this.lbl_CodBarras.TabIndex = 7;
+            this.lbl_CodBarras.TabIndex = 10;
             this.lbl_CodBarras.Text = "Codigo de Barras";
             // 
             // tb_CodBarras
@@ -95,10 +95,9 @@
             this.tb_CodBarras.BackColor = System.Drawing.SystemColors.Control;
             this.tb_CodBarras.Location = new System.Drawing.Point(239, 244);
             this.tb_CodBarras.MaxLength = 13;
-           
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
-            this.tb_CodBarras.TabIndex = 10;
+            this.tb_CodBarras.TabIndex = 4;
             this.tb_CodBarras.TextChanged += new System.EventHandler(this.tb_CodBarras_TextChanged);
             this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
             // 
@@ -108,7 +107,7 @@
             this.tb_Marca.Location = new System.Drawing.Point(239, 105);
             this.tb_Marca.Name = "tb_Marca";
             this.tb_Marca.Size = new System.Drawing.Size(284, 27);
-            this.tb_Marca.TabIndex = 12;
+            this.tb_Marca.TabIndex = 2;
             // 
             // tb_NomeProduto
             // 
@@ -116,7 +115,7 @@
             this.tb_NomeProduto.Location = new System.Drawing.Point(239, 36);
             this.tb_NomeProduto.Name = "tb_NomeProduto";
             this.tb_NomeProduto.Size = new System.Drawing.Size(284, 27);
-            this.tb_NomeProduto.TabIndex = 13;
+            this.tb_NomeProduto.TabIndex = 1;
             // 
             // bt_Salvar
             // 
@@ -124,7 +123,7 @@
             this.bt_Salvar.Location = new System.Drawing.Point(31, 321);
             this.bt_Salvar.Name = "bt_Salvar";
             this.bt_Salvar.Size = new System.Drawing.Size(114, 36);
-            this.bt_Salvar.TabIndex = 14;
+            this.bt_Salvar.TabIndex = 5;
             this.bt_Salvar.Text = "Salvar";
             this.bt_Salvar.UseVisualStyleBackColor = true;
             this.bt_Salvar.Click += new System.EventHandler(this.AoClicarBotaoSalvar);
@@ -135,7 +134,7 @@
             this.bt_Cancelar.Location = new System.Drawing.Point(181, 321);
             this.bt_Cancelar.Name = "bt_Cancelar";
             this.bt_Cancelar.Size = new System.Drawing.Size(125, 36);
-            this.bt_Cancelar.TabIndex = 15;
+            this.bt_Cancelar.TabIndex = 6;
             this.bt_Cancelar.Text = "Cancelar";
             this.bt_Cancelar.UseVisualStyleBackColor = true;
             this.bt_Cancelar.Click += new System.EventHandler(this.AoClicarBotaoCancelar);
@@ -149,7 +148,7 @@
             this.dt_Vencimento.MinDate = new System.DateTime(2023, 1, 16, 0, 0, 0, 0);
             this.dt_Vencimento.Name = "dt_Vencimento";
             this.dt_Vencimento.Size = new System.Drawing.Size(125, 27);
-            this.dt_Vencimento.TabIndex = 19;
+            this.dt_Vencimento.TabIndex = 3;
             this.dt_Vencimento.Value = new System.DateTime(2023, 1, 16, 13, 5, 33, 0);
             // 
             // label2

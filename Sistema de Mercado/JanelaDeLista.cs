@@ -16,7 +16,7 @@ namespace Sistema_de_Mercado
     {
 
         public static List<Produto> listaProdutos = new List<Produto>();
-        int selectedRow;
+       public int selectedRow;
 
         public JanelaDeLista()
         {
@@ -42,34 +42,33 @@ namespace Sistema_de_Mercado
             dgv_Produto.Update();
         }
 
-        private void JanelaDeLista_Load(object sender, EventArgs e)
-        {
-            
-            
-        }
 
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void bt_Deletar_Click(object sender, EventArgs e)
+        private void AoClicarDeletar(object sender, EventArgs e)
         {
-            var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Excluir.", MessageBoxButtons.YesNo, 
-                MessageBoxIcon.Question);
-            if (decisaoExcluir== DialogResult.Yes)
+            try
             {
-                listaProdutos.RemoveAt(selectedRow);
-                AtualizarDataGridView();
-            } 
-            
+
+                var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+                if (decisaoExcluir == DialogResult.Yes)
+                {
+                    listaProdutos.RemoveAt(selectedRow);
+                    AtualizarDataGridView();
+                }
+            } catch (System.ArgumentOutOfRangeException ex)
+            {
+                MessageBox.Show("Não há produtos para deletar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
-
-        private void dgv_Produto_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void dgv_Produto_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedRow = e.RowIndex;
-
         }
+
     }
 }
