@@ -16,7 +16,8 @@ namespace Sistema_de_Mercado
     {
 
         public static List<Produto> listaProdutos = new List<Produto>();
-       public int selectedRow;
+        public int selectedRow;
+        JanelaDeCadastro novaJanelaDeCadastro = new JanelaDeCadastro();
 
         public JanelaDeLista()
         {
@@ -25,6 +26,7 @@ namespace Sistema_de_Mercado
 
         private void AoClicarBotaoNovo(object sender, EventArgs e)
         {
+            
             JanelaDeCadastro novaJanela = new JanelaDeCadastro();
             novaJanela.ShowDialog();
             AtualizarDataGridView();
@@ -70,5 +72,15 @@ namespace Sistema_de_Mercado
             selectedRow = e.RowIndex;
         }
 
+        private void AoClicarAtualizar(object sender, EventArgs e)
+        {
+            var indexSelecionado = dgv_Produto.CurrentRow.Index;
+            var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+
+            var dataGrid = dgv_Produto.SelectedRows;
+
+
+            
+        }
     }
 }

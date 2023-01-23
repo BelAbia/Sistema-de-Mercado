@@ -64,6 +64,7 @@
             this.bt_Atualizar.TabIndex = 2;
             this.bt_Atualizar.Text = "Atualizar";
             this.bt_Atualizar.UseVisualStyleBackColor = true;
+            this.bt_Atualizar.Click += new System.EventHandler(this.AoClicarAtualizar);
             // 
             // bt_Novo
             // 
@@ -197,7 +198,7 @@
         private Button bt_Cancelar1;
         private Button bt_OK;
         public DataGridView dgv_Produto;
-        private DataGridViewTextBoxColumn dataCadastroDataGridViewTextBoxColumn;
+      //  private DataGridViewTextBoxColumn dataCadastroDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;

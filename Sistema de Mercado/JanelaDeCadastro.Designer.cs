@@ -26,7 +26,7 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_NomeProduto = new System.Windows.Forms.Label();
@@ -98,7 +98,6 @@
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
             this.tb_CodBarras.TabIndex = 4;
-            this.tb_CodBarras.TextChanged += new System.EventHandler(this.tb_CodBarras_TextChanged);
             this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
             // 
             // tb_Marca
@@ -116,6 +115,7 @@
             this.tb_NomeProduto.Name = "tb_NomeProduto";
             this.tb_NomeProduto.Size = new System.Drawing.Size(284, 27);
             this.tb_NomeProduto.TabIndex = 1;
+            //this.tb_NomeProduto.TextChanged += new System.EventHandler(this.tb_NomeProduto_TextChanged);
             // 
             // bt_Salvar
             // 
@@ -190,14 +190,14 @@
         private Label label1;
         private Label lbl_NomeProduto;
         private Label lbl_Marca;
-        private Label lbl_DataCadastro;
+        //private Label lbl_DataCadastro;
         private Label lbl_Vencimento;
         private Label lbl_CodBarras;
         private Button bt_Salvar;
         private Button bt_Cancelar;
-        private Label lbl_ID;
-        private TextBox tb_ID;
-        private DateTimePicker dt_Cadastro;
+      //  private Label lbl_ID;
+     //   private TextBox tb_ID;
+     //   private DateTimePicker dt_Cadastro;
         private Label label2;
         public TextBox tb_CodBarras;
         public TextBox tb_Marca;
