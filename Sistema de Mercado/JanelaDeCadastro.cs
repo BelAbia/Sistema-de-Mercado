@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace Sistema_de_Mercado
@@ -7,7 +8,9 @@ namespace Sistema_de_Mercado
     {
         Produto produto = new Produto();
         static int nextId = 1;
+        Produto ProdutoASerAtualizado;
 
+        
         //OBRIGAR o usuário a digitar 789, caso nao, da um erro. Tirar do padrão.
     
     public void AtribuindoValores()
@@ -15,6 +18,7 @@ namespace Sistema_de_Mercado
 
             try
             {
+                produto.Id = JanelaDeLista.IdEditar;
                 produto.Nome = tb_NomeProduto.Text;
                 produto.Marca = tb_Marca.Text;
                 produto.CodigoBarras = long.Parse(tb_CodBarras.Text);
@@ -36,6 +40,27 @@ namespace Sistema_de_Mercado
                     MessageBox.Show("O codigo do produto deve começar, por padrão, com 789", "Tela de exclusão", MessageBoxButtons.OK,
                         MessageBoxIcon.Question);
                 }
+                else if (produto.Id != 0)
+                {
+                    for (int i = 0; i <= JanelaDeLista.listaProdutos.Count; i++)
+                    {
+                        if (produto.Id == JanelaDeLista.IdEditar)
+                        {
+                            JanelaDeLista.listaProdutos[i].Marca = produto.Marca;
+                            JanelaDeLista.listaProdutos[i].Nome = produto.Nome;
+                            JanelaDeLista.listaProdutos[i].CodigoBarras = produto.CodigoBarras;
+                            JanelaDeLista.listaProdutos[i].DataVencimento = produto.DataVencimento;
+
+                        }
+                        else
+                        {
+                            produto.Id = nextId;
+                            nextId++;
+                            JanelaDeLista.listaProdutos.Add(produto);
+                            this.DialogResult = DialogResult.OK;
+                        }
+                    }
+                }
                 else
                 {
                     produto.Id = nextId;
@@ -44,12 +69,13 @@ namespace Sistema_de_Mercado
                     this.DialogResult = DialogResult.OK;
                 }
             }
-            catch (System.FormatException e)
+            catch (System.FormatException)
             {
-                MessageBox.Show("O campo 'Codigo de barras' só aceita valores numéricos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } 
+                MessageBox.Show("O campo 'Codigo de barras' só aceita valores numéricos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
+        
         public JanelaDeCadastro()
         {
             InitializeComponent();
@@ -57,7 +83,6 @@ namespace Sistema_de_Mercado
          
         private void AoClicarBotaoSalvar(object sender, EventArgs e)
          {
-            
             
             if ( JanelaDeLista.listaProdutos.Count == 0)
             {
@@ -69,6 +94,16 @@ namespace Sistema_de_Mercado
                 AtribuindoValores();
             }
            
+        }
+        public void ValoresASerAtualiados(Produto produto)
+        {
+            ProdutoASerAtualizado = produto;
+            tb_Marca.Text = ProdutoASerAtualizado.Marca;
+            tb_CodBarras.Text = produto.CodigoBarras.ToString();
+            produto.DataCadastro = ProdutoASerAtualizado.DataCadastro;
+            dt_Vencimento.Text = ProdutoASerAtualizado.DataVencimento.ToString();
+            tb_NomeProduto.Text = ProdutoASerAtualizado.Nome;
+            produto.Id = ProdutoASerAtualizado.Id;
         }
 
         private void AoClicarBotaoCancelar(object sender, EventArgs e)
@@ -99,6 +134,5 @@ namespace Sistema_de_Mercado
             }
         }
 
-        
     }
 }

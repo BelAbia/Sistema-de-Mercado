@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Mercado
 {
-
-
     public partial class JanelaDeLista : Form
     {
 
         public static List<Produto> listaProdutos = new List<Produto>();
+        Produto produto = new Produto();
+        public static int IdEditar;
         public int selectedRow;
-        JanelaDeCadastro novaJanelaDeCadastro = new JanelaDeCadastro();
 
         public JanelaDeLista()
         {
@@ -44,7 +43,6 @@ namespace Sistema_de_Mercado
             dgv_Produto.Update();
         }
 
-
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
@@ -54,7 +52,6 @@ namespace Sistema_de_Mercado
         {
             try
             {
-
                 var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
                 if (decisaoExcluir == DialogResult.Yes)
@@ -62,25 +59,43 @@ namespace Sistema_de_Mercado
                     listaProdutos.RemoveAt(selectedRow);
                     AtualizarDataGridView();
                 }
-            } catch (System.ArgumentOutOfRangeException ex)
+            } catch (System.ArgumentOutOfRangeException)
             {
-                MessageBox.Show("Não há produtos para deletar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void dgv_Produto_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedRow = e.RowIndex;
         }
-
+        //public void EditarValores(Produto produtoEditado)
+        //{
+        //    for (int i = 0; i < listaProdutos.Count; i++)
+        //    {
+        //        if (listaProdutos[i].Id == produtoEditado.Id)
+        //        {
+        //            listaProdutos[i] = produtoEditado;
+        //            break;
+        //        }
+        //        AtualizarDataGridView();
+        //    }
+        //}
         private void AoClicarAtualizar(object sender, EventArgs e)
         {
             var indexSelecionado = dgv_Produto.CurrentRow.Index;
             var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+            if (produtoASerAtualizado != null)
+            {
+                var dataGrid = dgv_Produto.SelectedRows;
+                JanelaDeCadastro novaJanelaDeCadastro = new JanelaDeCadastro();
+                novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
+                IdEditar = produtoASerAtualizado.Id;
+                novaJanelaDeCadastro.ShowDialog();
 
-            var dataGrid = dgv_Produto.SelectedRows;
+            }
 
-
-            
+            AtualizarDataGridView();
         }
+
     }
 }

@@ -54,7 +54,7 @@
             // 
             this.lbl_NomeProduto.AutoSize = true;
             this.lbl_NomeProduto.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_NomeProduto.Location = new System.Drawing.Point(23, 41);
+            this.lbl_NomeProduto.Location = new System.Drawing.Point(23, 37);
             this.lbl_NomeProduto.Name = "lbl_NomeProduto";
             this.lbl_NomeProduto.Size = new System.Drawing.Size(150, 22);
             this.lbl_NomeProduto.TabIndex = 7;
@@ -89,6 +89,7 @@
             this.lbl_CodBarras.Size = new System.Drawing.Size(145, 22);
             this.lbl_CodBarras.TabIndex = 10;
             this.lbl_CodBarras.Text = "Codigo de Barras";
+            //this.lbl_CodBarras.Click += new System.EventHandler(this.lbl_CodBarras_Click);
             // 
             // tb_CodBarras
             // 
@@ -115,7 +116,6 @@
             this.tb_NomeProduto.Name = "tb_NomeProduto";
             this.tb_NomeProduto.Size = new System.Drawing.Size(284, 27);
             this.tb_NomeProduto.TabIndex = 1;
-            //this.tb_NomeProduto.TextChanged += new System.EventHandler(this.tb_NomeProduto_TextChanged);
             // 
             // bt_Salvar
             // 
