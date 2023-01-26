@@ -13,8 +13,7 @@ namespace Sistema_de_Mercado
     public partial class JanelaDeLista : Form
     {
 
-        public static List<Produto> listaProdutos = new List<Produto>();
-        Produto produto = new Produto();
+        public static List<Produto> listaProdutos = new();
         public static int IdEditar;
         public int selectedRow;
 
@@ -25,7 +24,7 @@ namespace Sistema_de_Mercado
 
         private void AoClicarBotaoNovo(object sender, EventArgs e)
         {
-            
+            IdEditar = 0;
             JanelaDeCadastro novaJanela = new JanelaDeCadastro();
             novaJanela.ShowDialog();
             AtualizarDataGridView();
@@ -50,52 +49,59 @@ namespace Sistema_de_Mercado
 
         private void AoClicarDeletar(object sender, EventArgs e)
         {
-            try
-            {
-                var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question);
-                if (decisaoExcluir == DialogResult.Yes)
+                if (dgv_Produto.CurrentCell != null)
                 {
-                    listaProdutos.RemoveAt(selectedRow);
-                    AtualizarDataGridView();
+                   var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
+                   MessageBoxIcon.Question);
+                     if (decisaoExcluir == DialogResult.Yes)
+                     {
+                        listaProdutos.RemoveAt(selectedRow);
+                        AtualizarDataGridView();
+                     }
+                } 
+                else
+                {
+                     MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            } catch (System.ArgumentOutOfRangeException)
-            {
-                MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
         public void dgv_Produto_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedRow = e.RowIndex;
         }
-        //public void EditarValores(Produto produtoEditado)
-        //{
-        //    for (int i = 0; i < listaProdutos.Count; i++)
-        //    {
-        //        if (listaProdutos[i].Id == produtoEditado.Id)
-        //        {
-        //            listaProdutos[i] = produtoEditado;
-        //            break;
-        //        }
-        //        AtualizarDataGridView();
-        //    }
-        //}
+
         private void AoClicarAtualizar(object sender, EventArgs e)
         {
-            var indexSelecionado = dgv_Produto.CurrentRow.Index;
-            var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
-            if (produtoASerAtualizado != null)
+            if (dgv_Produto.CurrentCell != null)
             {
-                var dataGrid = dgv_Produto.SelectedRows;
-                JanelaDeCadastro novaJanelaDeCadastro = new JanelaDeCadastro();
-                novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
-                IdEditar = produtoASerAtualizado.Id;
-                novaJanelaDeCadastro.ShowDialog();
+
+                try
+                {
+                    var indexSelecionado = dgv_Produto.CurrentRow.Index;
+                    var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+                    if (produtoASerAtualizado != null)
+                    {
+                        var dataGrid = dgv_Produto.SelectedRows;
+                        JanelaDeCadastro novaJanelaDeCadastro = new JanelaDeCadastro();
+                        novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
+                        IdEditar = produtoASerAtualizado.Id;
+                        novaJanelaDeCadastro.ShowDialog();
+
+                    }
+
+                    AtualizarDataGridView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+
+                }
 
             }
+            else
+            {
+                MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            AtualizarDataGridView();
+            }
         }
-
     }
 }
