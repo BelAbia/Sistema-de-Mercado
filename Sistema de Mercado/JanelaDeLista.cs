@@ -49,22 +49,29 @@ namespace Sistema_de_Mercado
 
         private void AoClicarDeletar(object sender, EventArgs e)
         {
+            try
+            {
                 if (dgv_Produto.CurrentCell != null)
                 {
-                   var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
-                   MessageBoxIcon.Question);
-                     if (decisaoExcluir == DialogResult.Yes)
-                     {
+                    var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+                    if (decisaoExcluir == DialogResult.Yes)
+                    {
                         listaProdutos.RemoveAt(selectedRow);
                         AtualizarDataGridView();
-                     }
-                } 
+                    }
+                }
                 else
                 {
-                     MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-        public void dgv_Produto_CellClick(object sender, DataGridViewCellEventArgs e)
+        public void AoClicarDataGridView(object sender, DataGridViewCellEventArgs e)
         {
             selectedRow = e.RowIndex;
         }
@@ -81,11 +88,10 @@ namespace Sistema_de_Mercado
                     if (produtoASerAtualizado != null)
                     {
                         var dataGrid = dgv_Produto.SelectedRows;
-                        JanelaDeCadastro novaJanelaDeCadastro = new JanelaDeCadastro();
+                        JanelaDeCadastro novaJanelaDeCadastro = new();
                         novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
                         IdEditar = produtoASerAtualizado.Id;
                         novaJanelaDeCadastro.ShowDialog();
-
                     }
 
                     AtualizarDataGridView();
@@ -95,13 +101,12 @@ namespace Sistema_de_Mercado
                     MessageBox.Show(ex.Message);
 
                 }
-
             }
             else
             {
                 MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
+
         }
     }
 }
