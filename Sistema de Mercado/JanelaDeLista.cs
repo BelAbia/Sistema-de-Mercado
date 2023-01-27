@@ -12,7 +12,7 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
-
+        //aaaaaaaaa
         public static List<Produto> listaProdutos = new();
         public static int IdEditar;
         public int selectedRow;
