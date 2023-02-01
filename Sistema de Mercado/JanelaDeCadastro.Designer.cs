@@ -89,7 +89,6 @@
             this.lbl_CodBarras.Size = new System.Drawing.Size(145, 22);
             this.lbl_CodBarras.TabIndex = 10;
             this.lbl_CodBarras.Text = "Codigo de Barras";
-            //this.lbl_CodBarras.Click += new System.EventHandler(this.lbl_CodBarras_Click);
             // 
             // tb_CodBarras
             // 

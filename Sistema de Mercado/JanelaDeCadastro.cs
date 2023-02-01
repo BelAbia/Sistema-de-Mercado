@@ -6,11 +6,13 @@ namespace Sistema_de_Mercado
     
     public partial class JanelaDeCadastro : Form
     {
-        Produto produto = new Produto();
+        Repositorio repositorio= new ();
+        ListaSingleton ListaSingleton = ListaSingleton.GetInstance();
+        Produto produto = new();
         static int nextId = 1;
-        Produto ProdutoASerAtualizado;
+        Produto produtoASerAtualizado;
         string? mensagem;
-        List<string> avisos = new List<string>();
+        List<string> avisos = new();
         public void AtribuindoValores()
         {
 
@@ -26,15 +28,15 @@ namespace Sistema_de_Mercado
                 
                 if (string.IsNullOrEmpty(produto.Nome))
                 {
-                    avisos.Add("O campo 'Nome do Produto' não aceita valor nulo.");
+                    avisos.Add("O campo 'Nome do Produto' não pode ser vazio.");
                 }
                 if (string.IsNullOrEmpty(produto.Marca))
                 {
-                    avisos.Add("O campo 'Marca' não aceita valor nulo.");
+                    avisos.Add("O campo 'Marca' não pode ser vazio.");
                 }
                 if (string.IsNullOrEmpty(tb_CodBarras.Text))
                 {
-                    avisos.Add("O campo 'Codigo de barras' não aceita valor nulo");
+                    avisos.Add("O campo 'Codigo de barras' não pode ser vazio");
                 }
                 if (!tb_CodBarras.Text.StartsWith("789"))
                 {
@@ -53,24 +55,23 @@ namespace Sistema_de_Mercado
 
                 else if (produto.Id != 0)
                 {
-                    for (int i = 0; i < JanelaDeLista.listaProdutos.Count; i++)
-                    {
-                        if (produto.Id == JanelaDeLista.listaProdutos[i].Id) 
-                        {
-                            JanelaDeLista.listaProdutos[i].Marca = produto.Marca;
-                            JanelaDeLista.listaProdutos[i].Nome = produto.Nome;
-                            JanelaDeLista.listaProdutos[i].CodigoBarras = produto.CodigoBarras;
-                            JanelaDeLista.listaProdutos[i].DataVencimento = produto.DataVencimento;
-                            this.DialogResult = DialogResult.OK;
-                            break;
-                        }
-                    }
+                    repositorio.ObterPorId(produto.Id);
+
+                    //for (int i = 0; i < ListaSingleton.ListaProdutos.Count; i++)
+                    //{
+                    //    if (produto.Id == ListaSingleton.ListaProdutos[i].Id) 
+                    //    {
+                    //        repositorio.AtualizarProduto(i, produto);
+                    //        this.DialogResult = DialogResult.OK;
+                    //        break;
+                    //    }
+                    //}
                 }
                 else
                 {
                     produto.Id = nextId;
                     nextId++;
-                    JanelaDeLista.listaProdutos.Add(produto);
+                    repositorio.NovoProduto(produto);
                     this.DialogResult = DialogResult.OK;
                 }
             }
@@ -91,13 +92,13 @@ namespace Sistema_de_Mercado
         }
         public void ValoresASerAtualiados(Produto produto)
         {
-            ProdutoASerAtualizado = produto;
-            tb_Marca.Text = ProdutoASerAtualizado.Marca;
+            produtoASerAtualizado = produto;
+            tb_Marca.Text = produtoASerAtualizado.Marca;
             tb_CodBarras.Text = produto.CodigoBarras;
-            produto.DataCadastro = ProdutoASerAtualizado.DataCadastro;
-            dt_Vencimento.Text = ProdutoASerAtualizado.DataVencimento.ToString();
-            tb_NomeProduto.Text = ProdutoASerAtualizado.Nome;
-            produto.Id = ProdutoASerAtualizado.Id;
+            produto.DataCadastro = produtoASerAtualizado.DataCadastro;
+            dt_Vencimento.Text = produtoASerAtualizado.DataVencimento.ToString();
+            tb_NomeProduto.Text = produtoASerAtualizado.Nome;
+            produto.Id = produtoASerAtualizado.Id;
         }
         private void AoClicarBotaoCancelar(object sender, EventArgs e)
         {
@@ -114,5 +115,6 @@ namespace Sistema_de_Mercado
                 e.Handled = true;
             }
         }
+
     }
 }

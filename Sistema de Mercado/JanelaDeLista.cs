@@ -12,8 +12,7 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
-        //aaaaaaaaa
-        public static List<Produto> listaProdutos = new();
+        Repositorio repositorio = new();
         public static int IdEditar;
         public int selectedRow;
 
@@ -37,11 +36,10 @@ namespace Sistema_de_Mercado
 
         public void AtualizarDataGridView()
         {
-            dgv_Produto.DataSource = listaProdutos.ToList();
+            dgv_Produto.DataSource = repositorio.ObterTodos().ToList();
             dgv_Produto.Refresh();
             dgv_Produto.Update();
         }
-
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
@@ -57,7 +55,7 @@ namespace Sistema_de_Mercado
                     MessageBoxIcon.Question);
                     if (decisaoExcluir == DialogResult.Yes)
                     {
-                        listaProdutos.RemoveAt(selectedRow);
+                        repositorio.DeletarProduto(selectedRow);
                         AtualizarDataGridView();
                     }
                 }
