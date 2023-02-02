@@ -10,13 +10,12 @@ namespace Sistema_de_Mercado
 {
     public class Repositorio : IRepositorio
     {
-        Produto produto = new();
         ListaSingleton listaSingleton = ListaSingleton.GetInstance();
+        Produto? produtoEncontrado;
 
         public void NovoProduto(Produto produto)
         {
            listaSingleton.ListaProdutos.Add(produto);
-
         }
 
         public void DeletarProduto(int linhaSelecionada)
@@ -25,17 +24,21 @@ namespace Sistema_de_Mercado
 
         }
 
-        public void AtualizarProduto(int i, Produto produto)
+        public void AtualizarProduto(Produto produto)
         {
-            listaSingleton.ListaProdutos[i].Marca = produto.Marca;
-            listaSingleton.ListaProdutos[i].Nome = produto.Nome;
-            listaSingleton.ListaProdutos[i].CodigoBarras = produto.CodigoBarras;
-            listaSingleton.ListaProdutos[i].DataVencimento = produto.DataVencimento;
+            produtoEncontrado = ObterPorId(produto.Id);
+            produtoEncontrado.Nome = produto.Nome;
+            produtoEncontrado.Marca = produto.Marca;
+            produtoEncontrado.CodigoBarras = produto.CodigoBarras;
+            produtoEncontrado.DataVencimento = produto.DataVencimento;
+
         }
-        public void ObterPorId(int id)
+        public Produto ObterPorId(int id)
         {
-            //listaSingleton.ListaProdutos.Find(x );
-           // parts.Find(x => x.PartName.Contains("seat")));
+            produtoEncontrado = listaSingleton.ListaProdutos.FirstOrDefault(x => x.Id == id) ?? 
+                throw new Exception($"Produto não encontrado com id: {id}");
+
+            return produtoEncontrado;
         }
 
         public List<Produto> ObterTodos()

@@ -12,11 +12,11 @@ namespace Sistema_de_Mercado
 
         public void DeletarProduto(int LinhaSelecionada);
 
-        public void AtualizarProduto(int i, Produto produto);
+        public void AtualizarProduto(Produto produto);
 
         public List<Produto> ObterTodos();
 
-        public void ObterPorId(int Id);
+        public Produto ObterPorId(int Id);
 
 
 
