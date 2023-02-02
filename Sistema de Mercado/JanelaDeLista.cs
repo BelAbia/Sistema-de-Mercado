@@ -12,6 +12,8 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
+        //TESTE
+
         Repositorio repositorio = new();
         public static int IdEditar;
         public int selectedRow;
