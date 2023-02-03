@@ -1,19 +1,19 @@
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.exe
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.deps.json
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.runtimeconfig.json
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.dll
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.pdb
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources
+C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeLista.resources
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.Properties.Resources.resources
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.GenerateResource.cache
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.AssemblyInfoInputs.cache
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.AssemblyInfo.cs
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.exe
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.deps.json
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.runtimeconfig.json
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.dll
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.pdb
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.dll
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\refint\Sistema de Mercado.dll
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.pdb
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\ref\Sistema de Mercado.dll
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeLista.resources
-C:\Users\Usuario\source\repos\Sistema de Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources

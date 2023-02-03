@@ -6,8 +6,7 @@ namespace Sistema_de_Mercado
     
     public partial class JanelaDeCadastro : Form
     {
-        Repositorio repositorio= new ();
-        Produto produto = new();
+        Produto produto = new Produto();
         static int nextId = 1;
         Produto produtoASerAtualizado;
         string? mensagem;
@@ -34,7 +33,7 @@ namespace Sistema_de_Mercado
                 }
                 if (string.IsNullOrEmpty(tb_CodBarras.Text))
                 {
-                    avisos.Add("O campo 'Codigo de barras' não pode ser vazio.");
+                    avisos.Add("O campo 'Codigo de barras' não aceita valor nulo");
                 }
                 if (!tb_CodBarras.Text.StartsWith("789"))
                 {
@@ -53,14 +52,24 @@ namespace Sistema_de_Mercado
                 
                 else if (produto.Id != 0)
                 {
-                    repositorio.AtualizarProduto(produto);
-                    this.DialogResult = DialogResult.OK;
+                    for (int i = 0; i < JanelaDeLista.listaProdutos.Count; i++)
+                    {
+                        if (produto.Id == JanelaDeLista.listaProdutos[i].Id) 
+                        {
+                            JanelaDeLista.listaProdutos[i].Marca = produto.Marca;
+                            JanelaDeLista.listaProdutos[i].Nome = produto.Nome;
+                            JanelaDeLista.listaProdutos[i].CodigoBarras = produto.CodigoBarras;
+                            JanelaDeLista.listaProdutos[i].DataVencimento = produto.DataVencimento;
+                            this.DialogResult = DialogResult.OK;
+                            break;
+                        }
+                    }
                 }
                 else
                 {
                     produto.Id = nextId;
                     nextId++;
-                    repositorio.NovoProduto(produto);
+                    JanelaDeLista.listaProdutos.Add(produto);
                     this.DialogResult = DialogResult.OK;
                 }
             }
@@ -103,6 +112,11 @@ namespace Sistema_de_Mercado
             {
                 e.Handled = true;
             }
+        }
+
+        private void dt_Vencimento_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
      
