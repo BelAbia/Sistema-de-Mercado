@@ -16,7 +16,6 @@ namespace Sistema_de_Mercado
         Repositorio repositorio = new();
         public static int IdEditar;
         public int selectedRow;
-
         public JanelaDeLista()
         {
             InitializeComponent();
