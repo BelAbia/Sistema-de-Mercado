@@ -104,5 +104,7 @@ namespace Sistema_de_Mercado
                 e.Handled = true;
             }
         }
+
+     
     }
 }
