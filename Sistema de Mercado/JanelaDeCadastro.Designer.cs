@@ -98,6 +98,7 @@
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
             this.tb_CodBarras.TabIndex = 4;
+            //this.tb_CodBarras.TextChanged += new System.EventHandler(this.tb_CodBarras_TextChanged);
             this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
             // 
             // tb_Marca

@@ -6,16 +6,13 @@ namespace Sistema_de_Mercado
     
     public partial class JanelaDeCadastro : Form
     {
-
-        ListaSingleton ListaSingleton = ListaSingleton.GetInstance();
-        Produto produto = new();
+        Produto produto = new Produto();
         static int nextId = 1;
         Produto produtoASerAtualizado;
         string? mensagem;
         List<string> avisos = new();
         public void AtribuindoValores()
         {
-
             try
             {   
                 produto.Id = JanelaDeLista.IdEditar;
@@ -36,15 +33,15 @@ namespace Sistema_de_Mercado
                 }
                 if (string.IsNullOrEmpty(tb_CodBarras.Text))
                 {
-                    avisos.Add("O campo 'Codigo de barras' não pode ser vazio");
+                    avisos.Add("O campo 'Codigo de barras' não aceita valor nulo");
                 }
                 if (!tb_CodBarras.Text.StartsWith("789"))
                 {
-                    avisos.Add("O campo 'codigo do produto' deve começar, por padrão, com 789");
+                    avisos.Add("O campo 'codigo do produto' deve começar, por padrão, com 789.");
                 }
                 if (tb_CodBarras.Text.Length < 13)
                 {
-                    avisos.Add("O campo 'Codigo de barras' deve conter 13 números inteiros");
+                    avisos.Add("O campo 'Codigo de barras' deve conter 13 números inteiros.");
                 }         
                 if (avisos.Count > 0)
                 {
@@ -52,17 +49,17 @@ namespace Sistema_de_Mercado
                     MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     avisos.Clear();
                 }
-
+                
                 else if (produto.Id != 0)
                 {
-                    for (int i = 0; i < ListaSingleton.ListaProdutos.Count; i++)
+                    for (int i = 0; i < JanelaDeLista.listaProdutos.Count; i++)
                     {
-                        if (produto.Id == ListaSingleton.ListaProdutos[i].Id) 
+                        if (produto.Id == JanelaDeLista.listaProdutos[i].Id) 
                         {
-                            ListaSingleton.ListaProdutos[i].Marca = produto.Marca;
-                            ListaSingleton.ListaProdutos[i].Nome = produto.Nome;
-                            ListaSingleton.ListaProdutos[i].CodigoBarras = produto.CodigoBarras;
-                            ListaSingleton.ListaProdutos[i].DataVencimento = produto.DataVencimento;
+                            JanelaDeLista.listaProdutos[i].Marca = produto.Marca;
+                            JanelaDeLista.listaProdutos[i].Nome = produto.Nome;
+                            JanelaDeLista.listaProdutos[i].CodigoBarras = produto.CodigoBarras;
+                            JanelaDeLista.listaProdutos[i].DataVencimento = produto.DataVencimento;
                             this.DialogResult = DialogResult.OK;
                             break;
                         }
@@ -72,7 +69,7 @@ namespace Sistema_de_Mercado
                 {
                     produto.Id = nextId;
                     nextId++;
-                    ListaSingleton.ListaProdutos.Add(produto);
+                    JanelaDeLista.listaProdutos.Add(produto);
                     this.DialogResult = DialogResult.OK;
                 }
             }
@@ -121,5 +118,7 @@ namespace Sistema_de_Mercado
         {
 
         }
+
+     
     }
 }
