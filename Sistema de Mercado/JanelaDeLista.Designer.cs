@@ -124,6 +124,7 @@
             this.dgv_Produto.Size = new System.Drawing.Size(805, 472);
             this.dgv_Produto.TabIndex = 6;
             this.dgv_Produto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AoClicarDataGridView);
+            //this.dgv_Produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Produto_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -192,6 +193,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "JanelaDeLista";
             this.Text = "Tela Inicial";
+            this.Load += new System.EventHandler(this.JanelaDeLista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Produto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             this.ResumeLayout(false);

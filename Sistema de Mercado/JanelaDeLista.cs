@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,7 +14,9 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
-        public static List<Produto> listaProdutos = new();
+        Repositorio repositorio = new();
+        RepositorioBancoDeDados repositorioBD = new();
+
         public static int IdEditar;
         public int selectedRow;
         public JanelaDeLista()
@@ -35,7 +39,7 @@ namespace Sistema_de_Mercado
 
         public void AtualizarDataGridView()
         {
-            dgv_Produto.DataSource = listaProdutos.ToList();
+            dgv_Produto.DataSource = repositorioBD.ObterTodos().ToList();
             dgv_Produto.Refresh();
             dgv_Produto.Update();
         }
@@ -54,7 +58,7 @@ namespace Sistema_de_Mercado
                     MessageBoxIcon.Question);
                     if (decisaoExcluir == DialogResult.Yes)
                     {
-                        listaProdutos.RemoveAt(selectedRow);
+                        repositorio.DeletarProduto(selectedRow);
                         AtualizarDataGridView();
                     }
                 }
@@ -106,5 +110,9 @@ namespace Sistema_de_Mercado
 
         }
 
+        private void JanelaDeLista_Load(object sender, EventArgs e)
+        {
+            AtualizarDataGridView();
+        }
     }
 }

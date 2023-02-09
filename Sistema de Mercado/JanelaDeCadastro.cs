@@ -6,6 +6,9 @@ namespace Sistema_de_Mercado
     
     public partial class JanelaDeCadastro : Form
     {
+        Repositorio repositorio = new();
+        RepositorioBancoDeDados repositoriobd = new();
+        RepositorioBancoDeDados BD = new();
         Produto produto = new Produto();
         static int nextId = 1;
         Produto produtoASerAtualizado;
@@ -33,7 +36,7 @@ namespace Sistema_de_Mercado
                 }
                 if (string.IsNullOrEmpty(tb_CodBarras.Text))
                 {
-                    avisos.Add("O campo 'Codigo de barras' não aceita valor nulo");
+                    avisos.Add("O campo 'Codigo de barras' não pode ser vazio");
                 }
                 if (!tb_CodBarras.Text.StartsWith("789"))
                 {
@@ -52,24 +55,17 @@ namespace Sistema_de_Mercado
                 
                 else if (produto.Id != 0)
                 {
-                    for (int i = 0; i < JanelaDeLista.listaProdutos.Count; i++)
-                    {
-                        if (produto.Id == JanelaDeLista.listaProdutos[i].Id) 
-                        {
-                            JanelaDeLista.listaProdutos[i].Marca = produto.Marca;
-                            JanelaDeLista.listaProdutos[i].Nome = produto.Nome;
-                            JanelaDeLista.listaProdutos[i].CodigoBarras = produto.CodigoBarras;
-                            JanelaDeLista.listaProdutos[i].DataVencimento = produto.DataVencimento;
-                            this.DialogResult = DialogResult.OK;
-                            break;
-                        }
-                    }
+                    repositoriobd.ObterPorId(produto.Id);
+                    repositorio.AtualizarProduto(produto);
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
                     produto.Id = nextId;
                     nextId++;
-                    JanelaDeLista.listaProdutos.Add(produto);
+                    repositorio.NovoProduto(produto);
+                    BD.NovoProduto(produto);
+
                     this.DialogResult = DialogResult.OK;
                 }
             }
