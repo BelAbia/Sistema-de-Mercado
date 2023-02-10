@@ -13,23 +13,29 @@ namespace Sistema_de_Mercado
         private List<Produto> listaProdutos = new();
 
     private ListaSingleton()
-        {
+    {
 
-        }
+    }
 
-        public static ListaSingleton GetInstance()
-        {
-                if (instance == null)
-                {
-                    instance = new ListaSingleton();
-                }
-            return instance;
+    public static ListaSingleton GetInstance()
+    {
+            if (instance == null)
+            {
+                instance = new ListaSingleton();
+            }
+        return instance;
               
-        }
-        public List<Produto> ListaProdutos
+    }
+    public List<Produto> ListaProdutos
+    {
+        get { return listaProdutos; }
+        set { listaProdutos = value; }
+    }
+        public int proximoId()
         {
-            get { return listaProdutos; }
-            set { listaProdutos = value; }
+            var idAtual = 1;
+            
+            return ++idAtual;
         }
 
     }

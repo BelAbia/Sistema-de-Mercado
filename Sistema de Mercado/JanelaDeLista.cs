@@ -14,8 +14,8 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
-        Repositorio repositorio = new();
-        RepositorioBancoDeDados repositorioBD = new();
+        //Repositorio repositorio = new();
+        RepositorioBancoDeDados repositorio = new();
 
         public static int IdEditar;
         public int selectedRow;
@@ -39,7 +39,8 @@ namespace Sistema_de_Mercado
 
         public void AtualizarDataGridView()
         {
-            dgv_Produto.DataSource = repositorioBD.ObterTodos().ToList();
+            dgv_Produto.DataSource = null;
+            dgv_Produto.DataSource = repositorio.ObterTodos().ToList();
             dgv_Produto.Refresh();
             dgv_Produto.Update();
         }
@@ -88,6 +89,8 @@ namespace Sistema_de_Mercado
                     var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
                     if (produtoASerAtualizado != null)
                     {
+                        var produtoDoBanco = repositorio.ObterPorId(produtoASerAtualizado.Id);
+
                         var dataGrid = dgv_Produto.SelectedRows;
                         JanelaDeCadastro novaJanelaDeCadastro = new();
                         novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
@@ -113,6 +116,9 @@ namespace Sistema_de_Mercado
         private void JanelaDeLista_Load(object sender, EventArgs e)
         {
             AtualizarDataGridView();
+            
+            
+
         }
     }
 }

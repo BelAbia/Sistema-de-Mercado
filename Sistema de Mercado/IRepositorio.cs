@@ -18,8 +18,5 @@ namespace Sistema_de_Mercado
 
         public Produto ObterPorId(int Id);
 
-
-
-
     }
 }

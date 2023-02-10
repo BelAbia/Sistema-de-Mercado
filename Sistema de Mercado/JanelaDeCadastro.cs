@@ -6,14 +6,15 @@ namespace Sistema_de_Mercado
     
     public partial class JanelaDeCadastro : Form
     {
-        Repositorio repositorio = new();
-        RepositorioBancoDeDados repositoriobd = new();
-        RepositorioBancoDeDados BD = new();
+        //Repositorio repositorio = new();
+        RepositorioBancoDeDados repositorio = new();
+
         Produto produto = new Produto();
         static int nextId = 1;
         Produto produtoASerAtualizado;
         string? mensagem;
         List<string> avisos = new();
+
         public void AtribuindoValores()
         {
             try
@@ -55,17 +56,14 @@ namespace Sistema_de_Mercado
                 
                 else if (produto.Id != 0)
                 {
-                    repositoriobd.ObterPorId(produto.Id);
-                    repositorio.AtualizarProduto(produto);
+                    Produto produtoParaAtualizar= repositorio.ObterPorId(produto.Id);
+                    repositorio.AtualizarProduto(produtoParaAtualizar);
                     this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
-                    produto.Id = nextId;
-                    nextId++;
+                    
                     repositorio.NovoProduto(produto);
-                    BD.NovoProduto(produto);
-
                     this.DialogResult = DialogResult.OK;
                 }
             }
@@ -75,15 +73,17 @@ namespace Sistema_de_Mercado
 
             }
         }
+
         public JanelaDeCadastro()
         {
             InitializeComponent();
         }
          
         private void AoClicarBotaoSalvar(object sender, EventArgs e)
-         {
+        {
                 AtribuindoValores();
         }
+
         public void ValoresASerAtualiados(Produto produto)
         {
             produtoASerAtualizado = produto;
@@ -94,14 +94,17 @@ namespace Sistema_de_Mercado
             tb_NomeProduto.Text = produtoASerAtualizado.Nome;
             produto.Id = produtoASerAtualizado.Id;
         }
+
         private void AoClicarBotaoCancelar(object sender, EventArgs e)
         {
             this.Hide();
         }
+
         private void Janela2_Load(object sender, EventArgs e)
         {
             dt_Vencimento.MinDate = DateTime.Now;
         }
+
         private void tb_CodBarras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
@@ -114,7 +117,5 @@ namespace Sistema_de_Mercado
         {
 
         }
-
-     
     }
 }

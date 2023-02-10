@@ -20,7 +20,34 @@ namespace Sistema_de_Mercado
 
         public void AtualizarProduto(Produto produto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                querySQL = "UPDATE tb_produto SET nome = @nome, marca = @marca, codigo_barras = @codigo_barras, data_vencimento = @data_vencimento, data_cadastro = @data_cadastro WHERE Id = @Id;";
+
+                conexao = new(strConexao);
+                comando = new SqlCommand(querySQL, conexao);
+
+                comando.Parameters.AddWithValue("@Id", produto.Id);
+                comando.Parameters.AddWithValue("@nome", produto.Nome);
+                comando.Parameters.AddWithValue("@marca", produto.Marca);
+                comando.Parameters.AddWithValue("@codigo_barras", produto.CodigoBarras);
+                comando.Parameters.AddWithValue("@data_vencimento", produto.DataVencimento);
+                comando.Parameters.AddWithValue("@data_cadastro", produto.DataCadastro);
+
+                conexao.Open();
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                conexao.Close();
+                comando.Clone();
+
+            }
         }
 
         public void DeletarProduto(int LinhaSelecionada)
@@ -41,11 +68,12 @@ namespace Sistema_de_Mercado
                 comando.Parameters.AddWithValue("@nome", produto.Nome);
                 comando.Parameters.AddWithValue("@marca", produto.Marca);
                 comando.Parameters.AddWithValue("@codigo_barras", produto.CodigoBarras);
-                comando.Parameters.AddWithValue("@data_cadastro", produto.DataCadastro);
                 comando.Parameters.AddWithValue("@data_vencimento", produto.DataVencimento);
+                comando.Parameters.AddWithValue("@data_cadastro", produto.DataCadastro);
 
                 conexao.Open();
                 comando.ExecuteNonQuery();
+
             } catch(Exception)
             {
                 MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -61,38 +89,47 @@ namespace Sistema_de_Mercado
 
         public Produto ObterPorId(int Id)
         {
-
+            Produto produto = null;
             querySQL = "SELECT * FROM tb_produto WHERE Id = @Id;";
 
-            conexao = new(strConexao);
-            comando = new SqlCommand(querySQL, conexao);
-
-            comando.Parameters.AddWithValue("@Id", Id);
-
-            conexao.Open();
-
-            reader = comando.ExecuteReader();
+            try
             {
+                conexao = new SqlConnection(strConexao);
+                comando = new SqlCommand(querySQL, conexao);
+                comando.Parameters.AddWithValue("@Id", Id);
+
+                conexao.Open();
+
+                reader = comando.ExecuteReader();
                 if (reader.Read())
                 {
-                    Produto produto = new Produto();
+                    produto = new Produto();
                     produto.Id = (int)reader.GetInt64(0);
                     produto.Nome = reader.GetString(1);
                     produto.Marca = reader.GetString(2);
                     produto.CodigoBarras = reader.GetString(3);
                     produto.DataCadastro = reader.GetDateTime(4);
                     produto.DataVencimento = reader.GetDateTime(5);
-
-                    return produto;
-                }
-                else
-                {
-                    return null;
                 }
             }
-
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erro ao obter produto pelo ID: " + ex.Message);
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+                if (conexao != null && conexao.State == ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+            return produto;
         }
-           
+
 
         public List<Produto> ObterTodos()
         {
@@ -121,12 +158,14 @@ namespace Sistema_de_Mercado
             }
             catch (Exception)
             {
-                MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao obter produtos." , "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             finally
             {
                 conexao.Close();
+                reader.Close();
+
             }
 
             return listaSingleton.ListaProdutos;
