@@ -4,6 +4,7 @@
     {
         ListaSingleton listaSingleton = ListaSingleton.GetInstance();
         Produto? produtoEncontrado;
+        
 
         public void NovoProduto(Produto produto)
         {
@@ -29,6 +30,7 @@
         {
             produtoEncontrado = listaSingleton.ListaProdutos.FirstOrDefault(x => x.Id == id) ?? 
                 throw new Exception($"Produto não encontrado com id: {id}");
+            
 
             return produtoEncontrado;
         }

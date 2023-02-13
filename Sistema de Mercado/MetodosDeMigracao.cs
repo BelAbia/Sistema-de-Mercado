@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 using FluentMigrator;
 namespace Sistema_de_Mercado
 {
-    [Migration(20230207105500)]
+    [Migration(20230213101300)]
     public class MetodosDeMigracao : Migration
     {
-
         public override void Up()
         {
             Create.Table("tb_produto")

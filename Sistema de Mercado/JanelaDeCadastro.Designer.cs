@@ -98,7 +98,6 @@
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
             this.tb_CodBarras.TabIndex = 4;
-            //this.tb_CodBarras.TextChanged += new System.EventHandler(this.tb_CodBarras_TextChanged);
             this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
             // 
             // tb_Marca
@@ -120,7 +119,7 @@
             // bt_Salvar
             // 
             this.bt_Salvar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bt_Salvar.Location = new System.Drawing.Point(31, 321);
+            this.bt_Salvar.Location = new System.Drawing.Point(28, 321);
             this.bt_Salvar.Name = "bt_Salvar";
             this.bt_Salvar.Size = new System.Drawing.Size(114, 36);
             this.bt_Salvar.TabIndex = 5;

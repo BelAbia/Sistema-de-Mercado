@@ -8,17 +8,16 @@ namespace Sistema_de_Mercado
     {
         //Repositorio repositorio = new();
         RepositorioBancoDeDados repositorio = new();
-
+        Validacao validacao = new();
         Produto produto = new Produto();
         static int nextId = 1;
         Produto produtoASerAtualizado;
-        string? mensagem;
-        List<string> avisos = new();
-
+        
         public void AtribuindoValores()
         {
             try
             {   
+                // CLASSE DE VALIDAÇÃO NAO FUNCIONANDO
                 produto.Id = JanelaDeLista.IdEditar;
                 produto.Nome = tb_NomeProduto.Text;
                 produto.Marca = tb_Marca.Text;
@@ -26,52 +25,27 @@ namespace Sistema_de_Mercado
                 produto.DataVencimento = dt_Vencimento.Value;
                 produto.DataCadastro = DateTime.Now;
 
-                
-                if (string.IsNullOrEmpty(produto.Nome))
-                {
-                    avisos.Add("O campo 'Nome do Produto' não pode ser vazio.");
-                }
-                if (string.IsNullOrEmpty(produto.Marca))
-                {
-                    avisos.Add("O campo 'Marca' não pode ser vazio.");
-                }
-                if (string.IsNullOrEmpty(tb_CodBarras.Text))
-                {
-                    avisos.Add("O campo 'Codigo de barras' não pode ser vazio");
-                }
-                if (!tb_CodBarras.Text.StartsWith("789"))
-                {
-                    avisos.Add("O campo 'codigo do produto' deve começar, por padrão, com 789.");
-                }
-                if (tb_CodBarras.Text.Length < 13)
-                {
-                    avisos.Add("O campo 'Codigo de barras' deve conter 13 números inteiros.");
-                }         
-                if (avisos.Count > 0)
-                {
-                    mensagem = string.Join(Environment.NewLine, avisos);
-                    MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    avisos.Clear();
-                }
-                
-                else if (produto.Id != 0)
-                {
-                    Produto produtoParaAtualizar= repositorio.ObterPorId(produto.Id);
-                    repositorio.AtualizarProduto(produtoParaAtualizar);
-                    this.DialogResult = DialogResult.OK;
-                }
-                else
-                {
-                    
-                    repositorio.NovoProduto(produto);
-                    this.DialogResult = DialogResult.OK;
-                }
+
             }
             catch (Exception)
             {
                 MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        public void SalvarNovoProduto()
+        {
+            repositorio.NovoProduto(produto);
+            this.DialogResult = DialogResult.OK;
+
+        }
+
+        public void AtualizarProduto()
+        {
+            repositorio.AtualizarProduto(produto);
+            this.DialogResult = DialogResult.OK;
+
         }
 
         public JanelaDeCadastro()
@@ -81,7 +55,21 @@ namespace Sistema_de_Mercado
          
         private void AoClicarBotaoSalvar(object sender, EventArgs e)
         {
+            if (validacao.Validar(produto) != null)
+            {
                 AtribuindoValores();
+
+
+            }
+
+            if (produto.Id == 0)
+            {
+                SalvarNovoProduto();
+            }
+            else 
+            {
+                AtualizarProduto();
+            }
         }
 
         public void ValoresASerAtualiados(Produto produto)

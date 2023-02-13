@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_Mercado
 {
+    
+
     internal sealed class ListaSingleton
     {
 
@@ -31,11 +33,14 @@ namespace Sistema_de_Mercado
         get { return listaProdutos; }
         set { listaProdutos = value; }
     }
-        public int proximoId()
+        public int ProximoId()
         {
-            var idAtual = 1;
-            
-            return ++idAtual;
+            int proximoId = 1;
+            if (ListaProdutos.Count > 0)
+            {
+                proximoId = ListaProdutos.Max(x => x.Id) + 1;
+            }
+            return proximoId;
         }
 
     }

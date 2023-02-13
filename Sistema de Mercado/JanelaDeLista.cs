@@ -55,11 +55,14 @@ namespace Sistema_de_Mercado
             {
                 if (dgv_Produto.CurrentCell != null)
                 {
+                    var indexSelecionado = dgv_Produto.CurrentRow.Index;
+                    var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
                     var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
+
                     MessageBoxIcon.Question);
                     if (decisaoExcluir == DialogResult.Yes)
                     {
-                        repositorio.DeletarProduto(selectedRow);
+                        repositorio.DeletarProduto(produtoASerAtualizado.Id);
                         AtualizarDataGridView();
                     }
                 }
@@ -91,6 +94,7 @@ namespace Sistema_de_Mercado
                     {
                         var produtoDoBanco = repositorio.ObterPorId(produtoASerAtualizado.Id);
 
+
                         var dataGrid = dgv_Produto.SelectedRows;
                         JanelaDeCadastro novaJanelaDeCadastro = new();
                         novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
@@ -117,8 +121,6 @@ namespace Sistema_de_Mercado
         {
             AtualizarDataGridView();
             
-            
-
         }
     }
 }
