@@ -14,11 +14,9 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
-        //Repositorio repositorio = new();
         RepositorioBancoDeDados repositorio = new();
-
         public static int IdEditar;
-        public int selectedRow;
+
         public JanelaDeLista()
         {
             InitializeComponent();
@@ -56,13 +54,11 @@ namespace Sistema_de_Mercado
                 if (dgv_Produto.CurrentCell != null)
                 {
                     var indexSelecionado = dgv_Produto.CurrentRow.Index;
-                    var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
-                    var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
-
-                    MessageBoxIcon.Question);
+                    var produtoASerDeletado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+                    var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (decisaoExcluir == DialogResult.Yes)
                     {
-                        repositorio.DeletarProduto(produtoASerAtualizado.Id);
+                        repositorio.DeletarProduto(produtoASerDeletado.Id);
                         AtualizarDataGridView();
                     }
                 }
@@ -78,7 +74,7 @@ namespace Sistema_de_Mercado
         }
         public void AoClicarDataGridView(object sender, DataGridViewCellEventArgs e)
         {
-            selectedRow = e.RowIndex;
+            int selectedRow = e.RowIndex;
         }
 
         private void AoClicarAtualizar(object sender, EventArgs e)
@@ -90,14 +86,11 @@ namespace Sistema_de_Mercado
                 {
                     var indexSelecionado = dgv_Produto.CurrentRow.Index;
                     var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+
                     if (produtoASerAtualizado != null)
                     {
-                        var produtoDoBanco = repositorio.ObterPorId(produtoASerAtualizado.Id);
-
-
-                        var dataGrid = dgv_Produto.SelectedRows;
                         JanelaDeCadastro novaJanelaDeCadastro = new();
-                        novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
+                        novaJanelaDeCadastro.PassarValorParaTextBox(produtoASerAtualizado);
                         IdEditar = produtoASerAtualizado.Id;
                         novaJanelaDeCadastro.ShowDialog();
                     }
@@ -114,7 +107,6 @@ namespace Sistema_de_Mercado
             {
                 MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void JanelaDeLista_Load(object sender, EventArgs e)

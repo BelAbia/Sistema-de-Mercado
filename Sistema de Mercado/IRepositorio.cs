@@ -8,7 +8,7 @@ namespace Sistema_de_Mercado
 {
     public interface IRepositorio
     {
-        public void NovoProduto(Produto produto);
+        public void AdicionarProduto(Produto produto);
 
         public void DeletarProduto(int LinhaSelecionada);
 
@@ -17,6 +17,5 @@ namespace Sistema_de_Mercado
         public List<Produto> ObterTodos();
 
         public Produto ObterPorId(int Id);
-
     }
 }

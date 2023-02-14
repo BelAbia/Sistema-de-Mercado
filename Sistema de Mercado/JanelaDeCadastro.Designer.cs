@@ -149,7 +149,7 @@
             this.dt_Vencimento.Size = new System.Drawing.Size(125, 27);
             this.dt_Vencimento.TabIndex = 3;
             this.dt_Vencimento.Value = new System.DateTime(2023, 1, 16, 13, 5, 33, 0);
-            this.dt_Vencimento.ValueChanged += new System.EventHandler(this.dt_Vencimento_ValueChanged);
+            //this.dt_Vencimento.ValueChanged += new System.EventHandler(this.dt_Vencimento_ValueChanged);
             // 
             // label2
             // 

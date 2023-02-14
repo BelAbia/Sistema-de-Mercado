@@ -1,5 +1,4 @@
-﻿
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 
@@ -8,8 +7,6 @@ namespace Sistema_de_Mercado
     internal class RepositorioBancoDeDados : IRepositorio
     {
         SqlCommand? comando;
-        ListaSingleton listaSingleton = ListaSingleton.GetInstance();
-
 
         public SqlConnection Conexao()
         {
@@ -38,11 +35,8 @@ namespace Sistema_de_Mercado
                 catch
                 {
                     MessageBox.Show("Erro ao atualizar produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
-
             }
-            
         }
 
         public void DeletarProduto(int Id)
@@ -55,21 +49,16 @@ namespace Sistema_de_Mercado
                     {
                         comando.Parameters.AddWithValue("@id", Id);
                         comando.ExecuteNonQuery();
-
                     }
                 }
                 catch
                 {
                     MessageBox.Show("Erro ao deletar produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
-
-
-
             }
         }
 
-        public void NovoProduto(Produto produto)
+        public void AdicionarProduto(Produto produto)
         {
             using (var conn = Conexao())
             {
@@ -89,11 +78,8 @@ namespace Sistema_de_Mercado
                 catch
                 {
                     MessageBox.Show("Erro ao adicionar novo produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
-
             }
-            
         }
 
         public Produto ObterPorId(int Id)
@@ -105,27 +91,22 @@ namespace Sistema_de_Mercado
             {
                 try
                 {
-                    DataTable dt = new DataTable();
                     var comando = new SqlCommand("SELECT * FROM tb_produto WHERE Id = @Id;", conn);
-                    {
-                        comando.Parameters.AddWithValue("@Id", Id);
-                    }
+                    comando.Parameters.AddWithValue("@Id", Id);
 
+                    DataTable dt = new DataTable();
                     var adapt = new SqlDataAdapter(comando);
-
                     adapt.Fill(dt);
                     lista = conversor.ConverteProduto(dt);
-
-                }catch
+                }
+                catch
                 {
                     MessageBox.Show("Erro ao obter produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
             }
-
             return lista[0];
-
         }
+
         public List<Produto> ObterTodos()
         {
             Conversor conversor = new();
@@ -135,24 +116,19 @@ namespace Sistema_de_Mercado
             {
                 try
                 {
-                    DataTable dt = new();
                     comando = new SqlCommand("SELECT * FROM tb_produto;", conn);
-                    var adapt = new SqlDataAdapter(comando);
 
+                    var adapt = new SqlDataAdapter(comando);
+                    DataTable dt = new();
                     adapt.Fill(dt);
                     lista = conversor.ConverteProduto(dt);
-
                 }
-                catch (Exception ex) 
+                catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao obter produtos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
-
             }
-
             return lista;
-
         }
     }
 }

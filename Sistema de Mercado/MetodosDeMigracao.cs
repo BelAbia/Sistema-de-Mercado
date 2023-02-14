@@ -22,8 +22,6 @@ namespace Sistema_de_Mercado
         public override void Down()
         {
             Delete.Table("tb_produto");
-
         }
-
     }
 }

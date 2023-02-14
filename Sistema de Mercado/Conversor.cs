@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 
 namespace Sistema_de_Mercado
 {
@@ -13,7 +8,7 @@ namespace Sistema_de_Mercado
         {
             var list = new List<Produto>();
 
-            for(int i = 0; i < dt.Rows.Count; i++)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
                 Produto produto = new()
                 {
@@ -23,9 +18,7 @@ namespace Sistema_de_Mercado
                     CodigoBarras = dt.Rows[i]["codigo_barras"].ToString(),
                     DataVencimento = DateTime.Parse(dt.Rows[i]["data_vencimento"].ToString()),
                     DataCadastro = DateTime.Parse(dt.Rows[i]["data_cadastro"].ToString())
-
                 };
-
                 list.Add(produto);
             }
             return list;
