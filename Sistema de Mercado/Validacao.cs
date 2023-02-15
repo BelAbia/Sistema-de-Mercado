@@ -1,11 +1,13 @@
-﻿namespace Sistema_de_Mercado
+﻿using System.Windows.Forms;
+
+namespace Sistema_de_Mercado
 {
     internal class Validacao
     {
         string? mensagem;
         List<string> avisos = new();
 
-        public bool Validar(Produto produto)
+        public bool ValidarProduto(Produto produto)
         {
             if (string.IsNullOrEmpty(produto.Nome))
             {
@@ -32,6 +34,20 @@
                 mensagem = string.Join(Environment.NewLine, avisos);
                 MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 avisos.Clear();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public bool ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(DataGridView dataGrid, string verbo)
+        {
+            const int numeroDeLinhasInvalidas = 2;
+            if (dataGrid.SelectedRows.Count >= numeroDeLinhasInvalidas)
+            {
+                MessageBox.Show($"Não é permitido {verbo} mais de um produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else

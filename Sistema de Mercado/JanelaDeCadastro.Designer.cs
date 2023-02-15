@@ -98,7 +98,7 @@
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
             this.tb_CodBarras.TabIndex = 4;
-            this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
+            this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AoDigitarCodigoDeBarras);
             // 
             // tb_Marca
             // 
@@ -179,7 +179,7 @@
             this.Controls.Add(this.label1);
             this.Name = "JanelaDeCadastro";
             this.Text = "Novo Produto";
-            this.Load += new System.EventHandler(this.Janela2_Load);
+            this.Load += new System.EventHandler(this.AoCarregarJanelaDeCadastro);
             this.ResumeLayout(false);
             this.PerformLayout();
 

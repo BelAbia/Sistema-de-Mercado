@@ -23,6 +23,7 @@
             produtoEncontrado.CodigoBarras = produto.CodigoBarras;
             produtoEncontrado.DataVencimento = produto.DataVencimento;
         }
+
         public Produto ObterPorId(int id)
         {
             produtoEncontrado = listaSingleton.ListaProdutos.FirstOrDefault(x => x.Id == id) ??

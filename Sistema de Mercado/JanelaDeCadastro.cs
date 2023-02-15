@@ -1,9 +1,5 @@
-using System.Security.Cryptography.X509Certificates;
-using System.Windows.Forms;
-
 namespace Sistema_de_Mercado
 {
-
     public partial class JanelaDeCadastro : Form
     {
         RepositorioBancoDeDados repositorio = new();
@@ -11,7 +7,6 @@ namespace Sistema_de_Mercado
         Produto produto = new Produto();
         Produto produtoASerAtualizado;
 
-        //ARRUMAR SOBRE PODER ADICIONAR MAIS DE 1
         public void AtribuindoValores()
         {
             try
@@ -39,7 +34,7 @@ namespace Sistema_de_Mercado
             AtribuindoValores();
             try
             {
-                if (validacao.Validar(produto) == true)
+                if (validacao.ValidarProduto(produto))
                 {
                     if (produto.Id == 0)
                     {
@@ -49,7 +44,6 @@ namespace Sistema_de_Mercado
                     {
                         repositorio.AtualizarProduto(produto);
                     }
-
                     this.DialogResult = DialogResult.OK;
                 }
             }
@@ -75,14 +69,16 @@ namespace Sistema_de_Mercado
             this.Hide();
         }
 
-        private void Janela2_Load(object sender, EventArgs e)
+        private void AoCarregarJanelaDeCadastro(object sender, EventArgs e)
         {
             dt_Vencimento.MinDate = DateTime.Now;
         }
 
-        private void tb_CodBarras_KeyPress(object sender, KeyPressEventArgs e)
+        private void AoDigitarCodigoDeBarras(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            const int backspace = (char)8;
+
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != backspace)
             {
                 e.Handled = true;
             }

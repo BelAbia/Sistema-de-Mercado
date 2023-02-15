@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentMigrator;
+﻿using FluentMigrator;
 namespace Sistema_de_Mercado
 {
     [Migration(20230213101300)]
@@ -19,6 +14,7 @@ namespace Sistema_de_Mercado
              .WithColumn("data_vencimento").AsDateTime().NotNullable()
              .WithColumn("data_cadastro").AsDateTime().NotNullable();
         }
+
         public override void Down()
         {
             Delete.Table("tb_produto");

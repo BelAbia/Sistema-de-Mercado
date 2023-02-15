@@ -124,7 +124,7 @@
             this.dgv_Produto.Size = new System.Drawing.Size(805, 472);
             this.dgv_Produto.TabIndex = 6;
             this.dgv_Produto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AoClicarDataGridView);
-            //this.dgv_Produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Produto_CellContentClick);
+           // this.dgv_Produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Produto_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
