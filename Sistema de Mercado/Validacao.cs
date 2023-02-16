@@ -1,13 +1,11 @@
-﻿using System.Windows.Forms;
-
-namespace Sistema_de_Mercado
+﻿namespace Sistema_de_Mercado
 {
     internal class Validacao
     {
         string? mensagem;
         List<string> avisos = new();
 
-        public bool ValidarProduto(Produto produto)
+        public bool Validar(Produto produto)
         {
             if (string.IsNullOrEmpty(produto.Nome))
             {

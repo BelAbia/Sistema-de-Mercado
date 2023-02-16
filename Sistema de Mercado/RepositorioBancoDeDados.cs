@@ -21,7 +21,8 @@ namespace Sistema_de_Mercado
             {
                 try
                 {
-                    comando = new SqlCommand("UPDATE tb_produto SET nome = @nome, marca = @marca, codigo_barras = @codigo_barras, data_vencimento = @data_vencimento, data_cadastro = @data_cadastro WHERE Id = @Id;", conn);
+                    comando = new SqlCommand("UPDATE tb_produto SET nome = @nome, marca = @marca, codigo_barras" +
+                        " = @codigo_barras, data_vencimento = @data_vencimento, data_cadastro = @data_cadastro WHERE Id = @Id;", conn);
 
                     comando.Parameters.AddWithValue("@Id", produto.Id);
                     comando.Parameters.AddWithValue("@nome", produto.Nome);
@@ -123,7 +124,7 @@ namespace Sistema_de_Mercado
                     adapt.Fill(dt);
                     lista = conversor.ConverteProduto(dt);
                 }
-                catch (Exception ex)
+                catch
                 {
                     MessageBox.Show("Erro ao obter produtos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -132,4 +133,3 @@ namespace Sistema_de_Mercado
         }
     }
 }
-

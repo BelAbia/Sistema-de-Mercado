@@ -1,10 +1,7 @@
-using System;
 using System.Configuration;
-
 using FluentMigrator.Runner;
-
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-
 
 namespace Sistema_de_Mercado
 {
@@ -13,13 +10,17 @@ namespace Sistema_de_Mercado
         [STAThread]
         static void Main(string[] args)
         {
+            var builder = CriaHostBuilder();
+            var servicesProvider = builder.Build().Services;
+            var repositorio = servicesProvider.GetService<IRepositorio>();
+
             using (var serviceProvider = CriarServicos())
             using (var scope = serviceProvider.CreateScope())
             {
                 AtualizarBancoDeDados(scope.ServiceProvider);
             }
             ApplicationConfiguration.Initialize();
-            Application.Run(new JanelaDeLista());
+            Application.Run(new JanelaDeLista(repositorio));
         }
 
         private static ServiceProvider CriarServicos()
@@ -33,11 +34,20 @@ namespace Sistema_de_Mercado
                 .AddLogging(lb => lb.AddFluentMigratorConsole())
                 .BuildServiceProvider(false);
         }
-     
+
         private static void AtualizarBancoDeDados(IServiceProvider serviceProvider)
         {
             var runner = serviceProvider.GetRequiredService<IMigrationRunner>();
             runner.MigrateUp();
+        }
+
+        static IHostBuilder CriaHostBuilder()
+        {
+            return Host.CreateDefaultBuilder()
+                .ConfigureServices((context, services) =>
+                {
+                    services.AddScoped<IRepositorio, RepositorioBancoDeDados>();
+                });
         }
     }
 }

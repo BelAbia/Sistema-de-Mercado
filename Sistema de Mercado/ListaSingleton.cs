@@ -4,6 +4,7 @@
     {
         private static ListaSingleton? instance;
         private List<Produto> listaProdutos = new();
+        static int proximoId = 0;
 
         private ListaSingleton()
         {
@@ -25,13 +26,11 @@
             set { listaProdutos = value; }
         }
 
-        public int ProximoId()
+        public int ProximoId(Produto produto)
         {
-            int proximoId = 1;
-            if (ListaProdutos.Count > 0)
-            {
-                proximoId = ListaProdutos.Max(x => x.Id) + 1;
-            }
+            proximoId++;
+            produto.Id = proximoId;
+
             return proximoId;
         }
     }

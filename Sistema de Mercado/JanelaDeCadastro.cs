@@ -2,10 +2,15 @@ namespace Sistema_de_Mercado
 {
     public partial class JanelaDeCadastro : Form
     {
-        RepositorioBancoDeDados repositorio = new();
+        private IRepositorio _repositorio;
         Validacao validacao = new();
-        Produto produto = new Produto();
-        Produto produtoASerAtualizado;
+        Produto produto = new();
+
+        public JanelaDeCadastro(IRepositorio repositorio)
+        {
+            _repositorio = repositorio;
+            InitializeComponent();
+        }
 
         public void AtribuindoValores()
         {
@@ -24,25 +29,22 @@ namespace Sistema_de_Mercado
             }
         }
 
-        public JanelaDeCadastro()
-        {
-            InitializeComponent();
-        }
-
         private void AoClicarBotaoSalvar(object sender, EventArgs e)
         {
+            const int ValorNecessarioParaAdicionarNovoProduto = 0;
             AtribuindoValores();
+
             try
             {
-                if (validacao.ValidarProduto(produto))
+                if (validacao.Validar(produto))
                 {
-                    if (produto.Id == 0)
+                    if (produto.Id == ValorNecessarioParaAdicionarNovoProduto)
                     {
-                        repositorio.AdicionarProduto(produto);
+                        _repositorio.AdicionarProduto(produto);
                     }
                     else
                     {
-                        repositorio.AtualizarProduto(produto);
+                        _repositorio.AtualizarProduto(produto);
                     }
                     this.DialogResult = DialogResult.OK;
                 }
@@ -55,7 +57,7 @@ namespace Sistema_de_Mercado
 
         public void PassarValorParaTextBox(Produto produto)
         {
-            produtoASerAtualizado = produto;
+            var produtoASerAtualizado = produto;
             tb_Marca.Text = produtoASerAtualizado.Marca;
             tb_CodBarras.Text = produtoASerAtualizado.CodigoBarras;
             produto.DataCadastro = produtoASerAtualizado.DataCadastro;
@@ -76,9 +78,9 @@ namespace Sistema_de_Mercado
 
         private void AoDigitarCodigoDeBarras(object sender, KeyPressEventArgs e)
         {
-            const int backspace = (char)8;
+            const int backSpace = (char)8;
 
-            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != backspace)
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != backSpace)
             {
                 e.Handled = true;
             }

@@ -7,12 +7,16 @@
 
         public void AdicionarProduto(Produto produto)
         {
+            produto.Id = listaSingleton.ProximoId(produto);
             listaSingleton.ListaProdutos.Add(produto);
         }
 
         public void DeletarProduto(int linhaSelecionada)
         {
-            listaSingleton.ListaProdutos.RemoveAt(linhaSelecionada);
+            produtoEncontrado = ObterPorId(linhaSelecionada);
+           int index = listaSingleton.ListaProdutos.IndexOf(produtoEncontrado);
+            
+            listaSingleton.ListaProdutos.RemoveAt(index);
         }
 
         public void AtualizarProduto(Produto produto)

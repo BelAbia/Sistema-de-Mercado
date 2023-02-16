@@ -2,19 +2,20 @@
 {
     public partial class JanelaDeLista : Form
     {
-        RepositorioBancoDeDados repositorio = new();
+        private IRepositorio _repositorio;
         public static int IdEditar;
         Validacao validacao = new();
 
-        public JanelaDeLista()
+        public JanelaDeLista(IRepositorio repositorio)
         {
             InitializeComponent();
+            _repositorio = repositorio;
         }
 
         private void AoClicarBotaoNovo(object sender, EventArgs e)
         {
             IdEditar = 0;
-            JanelaDeCadastro novaJanela = new JanelaDeCadastro();
+            JanelaDeCadastro novaJanela = new JanelaDeCadastro(_repositorio);
             novaJanela.ShowDialog();
             AtualizarDataGridView();
         }
@@ -27,10 +28,11 @@
         public void AtualizarDataGridView()
         {
             dgv_Produto.DataSource = null;
-            dgv_Produto.DataSource = repositorio.ObterTodos().ToList();
+            dgv_Produto.DataSource = _repositorio.ObterTodos().ToList();
             dgv_Produto.Refresh();
             dgv_Produto.Update();
         }
+
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
@@ -49,11 +51,10 @@
                         var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                         if (decisaoExcluir == DialogResult.Yes)
                         {
-                            repositorio.DeletarProduto(produtoASerDeletado.Id);
+                            _repositorio.DeletarProduto(produtoASerDeletado.Id);
                             AtualizarDataGridView();
                         }
                     }
-
                     else
                     {
                         MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -64,11 +65,6 @@
             {
                 MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        public void AoClicarDataGridView(object sender, DataGridViewCellEventArgs e)
-        {
-            int selectedRow = e.RowIndex;
         }
 
         private void AoClicarAtualizar(object sender, EventArgs e)
@@ -84,7 +80,7 @@
 
                         if (produtoASerAtualizado != null)
                         {
-                            JanelaDeCadastro novaJanelaDeCadastro = new();
+                            JanelaDeCadastro novaJanelaDeCadastro = new(_repositorio);
                             novaJanelaDeCadastro.PassarValorParaTextBox(produtoASerAtualizado);
                             IdEditar = produtoASerAtualizado.Id;
                             novaJanelaDeCadastro.ShowDialog();
@@ -103,7 +99,7 @@
             }
         }
 
-        private void JanelaDeLista_Load(object sender, EventArgs e)
+        private void AoCarregarJanelaDeLista(object sender, EventArgs e)
         {
             AtualizarDataGridView();
         }
