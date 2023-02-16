@@ -1,29 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Sistema_de_Mercado
+﻿namespace Sistema_de_Mercado
 {
     public partial class JanelaDeLista : Form
     {
-        public static List<Produto> listaProdutos = new();
+        private IRepositorio _repositorio;
         public static int IdEditar;
-        public int selectedRow;
-        public JanelaDeLista()
+        Validacao validacao = new();
+
+        public JanelaDeLista(IRepositorio repositorio)
         {
             InitializeComponent();
+            _repositorio = repositorio;
         }
 
         private void AoClicarBotaoNovo(object sender, EventArgs e)
         {
             IdEditar = 0;
-            JanelaDeCadastro novaJanela = new JanelaDeCadastro();
+            JanelaDeCadastro novaJanela = new JanelaDeCadastro(_repositorio);
             novaJanela.ShowDialog();
             AtualizarDataGridView();
         }
@@ -35,10 +27,12 @@ namespace Sistema_de_Mercado
 
         public void AtualizarDataGridView()
         {
-            dgv_Produto.DataSource = listaProdutos.ToList();
+            dgv_Produto.DataSource = null;
+            dgv_Produto.DataSource = _repositorio.ObterTodos().ToList();
             dgv_Produto.Refresh();
             dgv_Produto.Update();
         }
+
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
@@ -48,19 +42,23 @@ namespace Sistema_de_Mercado
         {
             try
             {
-                if (dgv_Produto.CurrentCell != null)
+                if (validacao.ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(dgv_Produto, "deletar"))
                 {
-                    var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question);
-                    if (decisaoExcluir == DialogResult.Yes)
+                    if (dgv_Produto.CurrentCell != null)
                     {
-                        listaProdutos.RemoveAt(selectedRow);
-                        AtualizarDataGridView();
+                        var indexSelecionado = dgv_Produto.CurrentRow.Index;
+                        var produtoASerDeletado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+                        var decisaoExcluir = MessageBox.Show("Deseja excluir o produto?", "Tela de exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (decisaoExcluir == DialogResult.Yes)
+                        {
+                            _repositorio.DeletarProduto(produtoASerDeletado.Id);
+                            AtualizarDataGridView();
+                        }
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             catch (Exception)
@@ -68,42 +66,42 @@ namespace Sistema_de_Mercado
                 MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        public void AoClicarDataGridView(object sender, DataGridViewCellEventArgs e)
-        {
-            selectedRow = e.RowIndex;
-        }
 
         private void AoClicarAtualizar(object sender, EventArgs e)
         {
-            if (dgv_Produto.CurrentCell != null)
+            if (validacao.ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(dgv_Produto, "atualizar"))
             {
-
-                try
+                if (dgv_Produto.CurrentCell != null)
                 {
-                    var indexSelecionado = dgv_Produto.CurrentRow.Index;
-                    var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
-                    if (produtoASerAtualizado != null)
+                    try
                     {
-                        var dataGrid = dgv_Produto.SelectedRows;
-                        JanelaDeCadastro novaJanelaDeCadastro = new();
-                        novaJanelaDeCadastro.ValoresASerAtualiados(produtoASerAtualizado);
-                        IdEditar = produtoASerAtualizado.Id;
-                        novaJanelaDeCadastro.ShowDialog();
+                        var indexSelecionado = dgv_Produto.CurrentRow.Index;
+                        var produtoASerAtualizado = dgv_Produto.Rows[indexSelecionado].DataBoundItem as Produto;
+
+                        if (produtoASerAtualizado != null)
+                        {
+                            JanelaDeCadastro novaJanelaDeCadastro = new(_repositorio);
+                            novaJanelaDeCadastro.PassarValorParaTextBox(produtoASerAtualizado);
+                            IdEditar = produtoASerAtualizado.Id;
+                            novaJanelaDeCadastro.ShowDialog();
+                        }
+                        AtualizarDataGridView();
                     }
-
-                    AtualizarDataGridView();
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-
+                    MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
-            {
-                MessageBox.Show("Nenhum produto selecionado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+        }
 
+        private void AoCarregarJanelaDeLista(object sender, EventArgs e)
+        {
+            AtualizarDataGridView();
         }
     }
 }

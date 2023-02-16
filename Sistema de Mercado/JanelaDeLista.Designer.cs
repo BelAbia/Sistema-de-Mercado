@@ -48,6 +48,7 @@
             // 
             // bt_Deletar
             // 
+            this.bt_Deletar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_Deletar.Location = new System.Drawing.Point(665, 478);
             this.bt_Deletar.Name = "bt_Deletar";
             this.bt_Deletar.Size = new System.Drawing.Size(113, 38);
@@ -58,6 +59,7 @@
             // 
             // bt_Atualizar
             // 
+            this.bt_Atualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_Atualizar.Location = new System.Drawing.Point(546, 478);
             this.bt_Atualizar.Name = "bt_Atualizar";
             this.bt_Atualizar.Size = new System.Drawing.Size(113, 38);
@@ -68,6 +70,7 @@
             // 
             // bt_Novo
             // 
+            this.bt_Novo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_Novo.Location = new System.Drawing.Point(427, 478);
             this.bt_Novo.Name = "bt_Novo";
             this.bt_Novo.Size = new System.Drawing.Size(113, 38);
@@ -78,6 +81,7 @@
             // 
             // bt_Cancelar1
             // 
+            this.bt_Cancelar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_Cancelar1.Location = new System.Drawing.Point(131, 478);
             this.bt_Cancelar1.Name = "bt_Cancelar1";
             this.bt_Cancelar1.Size = new System.Drawing.Size(113, 38);
@@ -88,6 +92,7 @@
             // 
             // bt_OK
             // 
+            this.bt_OK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.bt_OK.Location = new System.Drawing.Point(12, 478);
             this.bt_OK.Name = "bt_OK";
             this.bt_OK.Size = new System.Drawing.Size(113, 38);
@@ -99,6 +104,9 @@
             // dgv_Produto
             // 
             this.dgv_Produto.AllowUserToOrderColumns = true;
+            this.dgv_Produto.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_Produto.AutoGenerateColumns = false;
             this.dgv_Produto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Produto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -109,13 +117,13 @@
             this.dataVencimentoDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn1});
             this.dgv_Produto.DataSource = this.produtoBindingSource;
-            this.dgv_Produto.Location = new System.Drawing.Point(1, 2);
+            this.dgv_Produto.Location = new System.Drawing.Point(0, 0);
             this.dgv_Produto.Name = "dgv_Produto";
             this.dgv_Produto.RowHeadersWidth = 51;
             this.dgv_Produto.RowTemplate.Height = 29;
-            this.dgv_Produto.Size = new System.Drawing.Size(803, 470);
+            this.dgv_Produto.Size = new System.Drawing.Size(805, 472);
             this.dgv_Produto.TabIndex = 6;
-            this.dgv_Produto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AoClicarDataGridView);
+           // this.dgv_Produto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Produto_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -184,6 +192,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "JanelaDeLista";
             this.Text = "Tela Inicial";
+            this.Load += new System.EventHandler(this.AoCarregarJanelaDeLista);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Produto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             this.ResumeLayout(false);

@@ -11,6 +11,6 @@ namespace Sistema_de_Mercado
         public string? CodigoBarras { get; set; }
         public DateTime DataVencimento { get; set; }
         public DateTime DataCadastro { get; set; }
-        
+
     }
 }

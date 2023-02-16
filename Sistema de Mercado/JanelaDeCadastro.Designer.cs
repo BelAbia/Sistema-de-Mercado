@@ -98,8 +98,7 @@
             this.tb_CodBarras.Name = "tb_CodBarras";
             this.tb_CodBarras.Size = new System.Drawing.Size(284, 27);
             this.tb_CodBarras.TabIndex = 4;
-            //this.tb_CodBarras.TextChanged += new System.EventHandler(this.tb_CodBarras_TextChanged);
-            this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CodBarras_KeyPress);
+            this.tb_CodBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AoDigitarCodigoDeBarras);
             // 
             // tb_Marca
             // 
@@ -120,7 +119,7 @@
             // bt_Salvar
             // 
             this.bt_Salvar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bt_Salvar.Location = new System.Drawing.Point(31, 321);
+            this.bt_Salvar.Location = new System.Drawing.Point(28, 321);
             this.bt_Salvar.Name = "bt_Salvar";
             this.bt_Salvar.Size = new System.Drawing.Size(114, 36);
             this.bt_Salvar.TabIndex = 5;
@@ -150,7 +149,7 @@
             this.dt_Vencimento.Size = new System.Drawing.Size(125, 27);
             this.dt_Vencimento.TabIndex = 3;
             this.dt_Vencimento.Value = new System.DateTime(2023, 1, 16, 13, 5, 33, 0);
-            this.dt_Vencimento.ValueChanged += new System.EventHandler(this.dt_Vencimento_ValueChanged);
+            //this.dt_Vencimento.ValueChanged += new System.EventHandler(this.dt_Vencimento_ValueChanged);
             // 
             // label2
             // 
@@ -180,7 +179,7 @@
             this.Controls.Add(this.label1);
             this.Name = "JanelaDeCadastro";
             this.Text = "Novo Produto";
-            this.Load += new System.EventHandler(this.Janela2_Load);
+            this.Load += new System.EventHandler(this.AoCarregarJanelaDeCadastro);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\Sistema de Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\Sistema de Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema de Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
         "projectName": "Sistema de Mercado",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema de Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema de Mercado\\Sistema de Mercado\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,36 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "FluentMigrator.Extensions.SqlServer": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
