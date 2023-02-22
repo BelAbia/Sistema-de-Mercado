@@ -1,0 +1,12 @@
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\bin\Debug\net6.0\Dominio.deps.json
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\bin\Debug\net6.0\Dominio.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\bin\Debug\net6.0\Dominio.pdb
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\refint\Dominio.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.pdb
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\ref\Dominio.dll

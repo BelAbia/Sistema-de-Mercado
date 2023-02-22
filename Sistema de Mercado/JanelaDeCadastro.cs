@@ -49,9 +49,9 @@ namespace Sistema_de_Mercado
                     this.DialogResult = DialogResult.OK;
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
