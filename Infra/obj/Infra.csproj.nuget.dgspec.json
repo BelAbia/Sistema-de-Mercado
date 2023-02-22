@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "linq2db": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -114,6 +120,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[4.4.1, )"
             }
           },
           "imports": [

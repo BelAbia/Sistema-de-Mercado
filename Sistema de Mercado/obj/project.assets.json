@@ -399,6 +399,19 @@
           "build/netstandard2.0/_._": {}
         }
       },
+      "linq2db/4.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/linq2db.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/linq2db.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -1577,6 +1590,9 @@
       "Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "linq2db": "4.4.1"
+        },
         "compile": {
           "bin/placeholder/Dominio.dll": {}
         },
@@ -1592,7 +1608,8 @@
           "Extended.Wpf.Toolkit": "4.5.0",
           "FluentMigrator": "3.3.2",
           "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.8.5"
+          "System.Data.SqlClient": "4.8.5",
+          "linq2db": "4.4.1"
         },
         "compile": {
           "bin/placeholder/Infra.dll": {}
@@ -1997,6 +2014,34 @@
         "runtimes/win-x86/sqlceme40.dll",
         "runtimes/win-x86/sqlceqp40.dll",
         "runtimes/win-x86/sqlcese40.dll"
+      ]
+    },
+    "linq2db/4.4.1": {
+      "sha512": "ToKiX+XZD8QAsgWYxir8gCPK8i/JhdyWpMlvcOIpJToEHfGB02N/24FP4s7JvO8wnneeZqTKNYCNH5ACirvPYg==",
+      "type": "package",
+      "path": "linq2db/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MIT-LICENSE.txt",
+        "README.md",
+        "images/icon.png",
+        "lib/net45/linq2db.dll",
+        "lib/net45/linq2db.xml",
+        "lib/net46/linq2db.dll",
+        "lib/net46/linq2db.xml",
+        "lib/net472/linq2db.dll",
+        "lib/net472/linq2db.xml",
+        "lib/net6.0/linq2db.dll",
+        "lib/net6.0/linq2db.xml",
+        "lib/netcoreapp3.1/linq2db.dll",
+        "lib/netcoreapp3.1/linq2db.xml",
+        "lib/netstandard2.0/linq2db.dll",
+        "lib/netstandard2.0/linq2db.xml",
+        "lib/netstandard2.1/linq2db.dll",
+        "lib/netstandard2.1/linq2db.xml",
+        "linq2db.4.4.1.nupkg.sha512",
+        "linq2db.nuspec"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -4023,11 +4068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
       "projectName": "Sistema de Mercado",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Sistema de Mercado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4044,11 +4089,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+            "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj"
+            "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj"
             }
           }
         }

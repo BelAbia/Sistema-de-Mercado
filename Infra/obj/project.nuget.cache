@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "inuZuXA07Cy2aYFsU05ZKNLrHTkkD+QrqzuuyYxe2e2EQ5YiwfEWViBELO1d3BOqIVUVGsfpuFzXuWQ1Tn8lpQ==",
+  "dgSpecHash": "nWbUKh+5+uy3dIxe3PnK8RjUpcHl/3MjAxEYCoBj8ok3wbp8l/hi9nqcBRm/cnuLhjSwWb/Dv/fJRBeN2WCT2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator\\3.3.2\\fluentmigrator.3.3.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator.abstractions\\3.3.2\\fluentmigrator.abstractions.3.3.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\linq2db\\4.4.1\\linq2db.4.4.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.options\\2.0.1\\microsoft.extensions.options.2.0.1.nupkg.sha512",

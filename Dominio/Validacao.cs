@@ -1,10 +1,12 @@
-﻿
-namespace Sistema_de_Mercado
+﻿namespace Sistema_de_Mercado
 {
     public class Validacao
     {
         string? mensagem;
         List<string> avisos = new();
+        string valorInicialPadraoParaCodigoDeBarras = "789";
+        int tamanhoObrigatorioDoCodigoDeBarras = 13;
+        int quantidadeMinimaDeAvisos = 1;
 
         public bool Validar(Produto produto)
         {
@@ -20,34 +22,19 @@ namespace Sistema_de_Mercado
             {
                 avisos.Add("O campo 'Codigo de barras' não pode ser vazio");
             }
-            if (!produto.CodigoBarras.StartsWith("789"))
+            if (!produto.CodigoBarras.StartsWith(valorInicialPadraoParaCodigoDeBarras))
             {
                 avisos.Add("O campo 'codigo do produto' deve começar, por padrão, com 789.");
             }
-            if (produto.CodigoBarras.Length < 13)
+            if (produto.CodigoBarras.Length < tamanhoObrigatorioDoCodigoDeBarras)
             {
                 avisos.Add("O campo 'Codigo de barras' deve conter 13 números inteiros.");
             }
-            if (avisos.Count > 0)
+            if (avisos.Count >= quantidadeMinimaDeAvisos)
             {
                 mensagem = string.Join(Environment.NewLine, avisos);
-                MessageBox.Show(mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 avisos.Clear();
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-
-        public bool ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(DataGridView dataGrid, string verbo)
-        {
-            const int numeroDeLinhasInvalidas = 2;
-            if (dataGrid.SelectedRows.Count >= numeroDeLinhasInvalidas)
-            {
-                MessageBox.Show($"Não é permitido {verbo} mais de um produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                throw new Exception(mensagem);
             }
             else
             {

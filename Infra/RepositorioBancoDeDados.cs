@@ -35,7 +35,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao atualizar produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Erro ao atualizar produto.");
                 }
             }
         }
@@ -54,7 +54,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao deletar produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Erro ao deletar produto.");
                 }
             }
         }
@@ -78,7 +78,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao adicionar novo produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Erro ao adicionar novo produto.");
                 }
             }
         }
@@ -102,7 +102,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao obter produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Erro ao obter produto.");
                 }
             }
             return lista[0];
@@ -126,7 +126,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    MessageBox.Show("Erro ao obter produtos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("Erro ao obter produtos.");
                 }
             }
             return lista;

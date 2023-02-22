@@ -4,7 +4,6 @@
     {
         private IRepositorio _repositorio;
         public static int IdEditar;
-        Validacao validacao = new();
 
         public JanelaDeLista(IRepositorio repositorio)
         {
@@ -33,6 +32,20 @@
             dgv_Produto.Update();
         }
 
+        public bool ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(DataGridView dataGrid, string verbo)
+        {
+            const int numeroDeLinhasInvalidas = 2;
+            if (dataGrid.SelectedRows.Count >= numeroDeLinhasInvalidas)
+            {
+                MessageBox.Show($"Não é permitido {verbo} mais de um produto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         private void AoClicarBotaoOk(object sender, EventArgs e)
         {
             Application.Exit();
@@ -42,7 +55,7 @@
         {
             try
             {
-                if (validacao.ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(dgv_Produto, "deletar"))
+                if (ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(dgv_Produto, "deletar"))
                 {
                     if (dgv_Produto.CurrentCell != null)
                     {
@@ -61,15 +74,15 @@
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu um erro inesperado. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void AoClicarAtualizar(object sender, EventArgs e)
         {
-            if (validacao.ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(dgv_Produto, "atualizar"))
+            if (ValidarQuantidadeDeLinhasSelecionadasNoDataGrid(dgv_Produto, "atualizar"))
             {
                 if (dgv_Produto.CurrentCell != null)
                 {
@@ -89,7 +102,7 @@
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else

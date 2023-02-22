@@ -1,7 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-
-namespace Sistema_de_Mercado
+﻿namespace Sistema_de_Mercado
 {
     public class Produto
     {
@@ -11,6 +8,5 @@ namespace Sistema_de_Mercado
         public string? CodigoBarras { get; set; }
         public DateTime DataVencimento { get; set; }
         public DateTime DataCadastro { get; set; }
-
     }
 }

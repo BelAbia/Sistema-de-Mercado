@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YL1wtW2uj/n92rpcvFNXRBpBWf4RdpodLZzqXcdJ/f4JuYqE2djEKG16uRSrlgTj+MxVfJzstxEviWB8OUvJ2A==",
+  "dgSpecHash": "g5NV4JRl5r1WIzOpMdJjHJsiE9eRwyg1n1N2oW3WznqYTSKE0DgQXWyfiLBaaLLiJa+ltZXFrZRvXYOi7Efing==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator\\3.3.2\\fluentmigrator.3.3.2.nupkg.sha512",
@@ -24,6 +24,7 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator.runner.sqlite\\3.3.2\\fluentmigrator.runner.sqlite.3.3.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator.runner.sqlserver\\3.3.2\\fluentmigrator.runner.sqlserver.3.3.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator.runner.sqlserverce\\3.3.2\\fluentmigrator.runner.sqlserverce.3.3.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\linq2db\\4.4.1\\linq2db.4.4.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.2\\microsoft.data.sqlclient.2.1.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
