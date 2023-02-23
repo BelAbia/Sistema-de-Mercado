@@ -4,7 +4,7 @@ using System.Configuration;
 
 namespace Sistema_de_Mercado
 {
-    internal class RepositorioLinq2Db : IRepositorio
+    public class RepositorioLinq2Db : IRepositorio
     {
         public static string Conexao()
         {
@@ -48,7 +48,8 @@ namespace Sistema_de_Mercado
             {
                 try
                 {
-                    conexaoLinq2Db.Delete(LinhaSelecionada);
+                    var produtoEscolhido = ObterPorId(LinhaSelecionada);
+                    conexaoLinq2Db.Delete(produtoEscolhido);
                 }
                 catch
                 {
@@ -63,22 +64,20 @@ namespace Sistema_de_Mercado
 
             {
 
-                var query = from p in Produto
-                            where p.Id == Id
-                            select p;
+                var produtoEncontrado = conexaoLinq2Db.GetTable<Produto>().FirstOrDefault(X => X.Id == Id)
+                     ?? throw new Exception($"Produto não encontrado com id: {Id}");
 
-                return query.FirstOrDefault() ??
-                throw new Exception($"Produto não encontrado com id: {Id}");
+                return produtoEncontrado;
             }
         }
 
         public List<Produto> ObterTodos()
         {
-            using (var conexaoLinq = SqlServerTools.CreateDataConnection(Conexao()))
+            using (var conexaoLinq2DB = SqlServerTools.CreateDataConnection(Conexao()))
             {
                 try
                 {
-                    var query = from p in Produto
+                    var query = from p in conexaoLinq2DB.GetTable<Produto>()
                                 select p;
 
                     return query.ToList();
