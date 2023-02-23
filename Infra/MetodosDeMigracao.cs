@@ -6,13 +6,13 @@ namespace Sistema_de_Mercado
     {
         public override void Up()
         {
-            Create.Table("tb_produto")
+            Create.Table("Produto")
              .WithColumn("Id").AsInt64().PrimaryKey().Identity().NotNullable()
-             .WithColumn("nome").AsString(100).NotNullable()
-             .WithColumn("marca").AsString(100).NotNullable()
-             .WithColumn("codigo_barras").AsString(13).NotNullable()
-             .WithColumn("data_vencimento").AsDateTime().NotNullable()
-             .WithColumn("data_cadastro").AsDateTime().NotNullable();
+             .WithColumn("Nome").AsString(100).NotNullable()
+             .WithColumn("Marca").AsString(100).NotNullable()
+             .WithColumn("CodigoBarras").AsString(13).NotNullable()
+             .WithColumn("DataVencimento").AsDateTime().NotNullable()
+             .WithColumn("DataCadastro").AsDateTime().NotNullable();
         }
 
         public override void Down()

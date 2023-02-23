@@ -21,7 +21,7 @@ namespace Sistema_de_Mercado
             {
                 try
                 {
-                    comando = new SqlCommand("UPDATE tb_produto SET nome = @nome, marca = @marca, codigo_barras" +
+                    comando = new SqlCommand("UPDATE Produto SET nome = @nome, marca = @marca, codigo_barras" +
                         " = @codigo_barras, data_vencimento = @data_vencimento, data_cadastro = @data_cadastro WHERE Id = @Id;", conn);
 
                     comando.Parameters.AddWithValue("@Id", produto.Id);
@@ -102,7 +102,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao obter produto.");
+                    throw new Exception($"Produto não encontrado com id: {Id}");
                 }
             }
             return lista[0];
