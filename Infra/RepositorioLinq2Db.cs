@@ -10,6 +10,7 @@ namespace Sistema_de_Mercado
         {
             return ConfigurationManager.ConnectionStrings["ConexaoSistemaDeMercado"].ConnectionString;
         }
+
         public void AdicionarProduto(Produto produto)
         {
             using (var conexaoLinq2Db = SqlServerTools.CreateDataConnection(Conexao()))
@@ -28,7 +29,6 @@ namespace Sistema_de_Mercado
         public void AtualizarProduto(Produto produto)
         {
             using (var conexaoLinq2Db = SqlServerTools.CreateDataConnection(Conexao()))
-
             {
                 try
                 {
@@ -44,7 +44,6 @@ namespace Sistema_de_Mercado
         public void DeletarProduto(int LinhaSelecionada)
         {
             using (var conexaoLinq2Db = SqlServerTools.CreateDataConnection(Conexao()))
-
             {
                 try
                 {
