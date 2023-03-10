@@ -144,3 +144,4 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\ne
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\ref\Sistema de Mercado.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\linq2db.dll

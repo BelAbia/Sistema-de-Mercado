@@ -46,7 +46,7 @@ namespace Sistema_de_Mercado
             return Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddScoped<IRepositorio, RepositorioBancoDeDados>();
+                    services.AddScoped<IRepositorio, RepositorioLinq2Db>();
                 });
         }
     }
