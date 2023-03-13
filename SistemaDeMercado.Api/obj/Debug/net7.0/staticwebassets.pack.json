@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
+      "PackagePath": "staticwebassets\\Controller\\App.controller.js"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
+      "PackagePath": "staticwebassets\\View\\App.view.xml"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
+      "PackagePath": "staticwebassets\\i18n\\i18n.properties"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SistemaDeMercado.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.SistemaDeMercado.Api.props",
+      "PackagePath": "build\\SistemaDeMercado.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.SistemaDeMercado.Api.props",
+      "PackagePath": "buildMultiTargeting\\SistemaDeMercado.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.SistemaDeMercado.Api.props",
+      "PackagePath": "buildTransitive\\SistemaDeMercado.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
