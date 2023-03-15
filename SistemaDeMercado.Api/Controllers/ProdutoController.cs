@@ -7,7 +7,9 @@ namespace SistemaDeMercado.Api.Controllers
     [Route("api/[Controller]")]
     public class ProdutoController : ControllerBase
     {
+        Validacao validacao = new();
         private IRepositorio _repositorio;
+
         public ProdutoController(IRepositorio repositorio)
         {
             _repositorio = repositorio;
@@ -18,60 +20,92 @@ namespace SistemaDeMercado.Api.Controllers
         {
             try
             {
-                var obterTodosProdutos = _repositorio.ObterTodos;
-                return Ok(obterTodosProdutos);
+                var ListaDeProdutos = _repositorio.ObterTodos();
+                return Ok(ListaDeProdutos);
             }
             catch
             {
                 throw new Exception("Erro ao obter todos");
             }
-            
         }
 
         [HttpGet("{Id}")]
         public IActionResult ObterPorId(int Id)
         {
-            if (Id == null)
+            try
             {
-                return NotFound();
-            }
+                if (Id == 0)
+                {
+                    return NotFound();
+                }
 
-            var obterPorId = _repositorio.ObterPorId(Id);
-            return Ok(obterPorId);
+                var produto = _repositorio.ObterPorId(Id);
+                return Ok(produto);
+            }
+            catch
+            {
+                throw new Exception("Erro ao obter produto");
+            }
         }
 
         [HttpPost]
         public IActionResult AdicionarProduto(Produto produto)
         {
-            _repositorio.AdicionarProduto(produto);
-            return CreatedAtAction("Adicionando produto", produto);
+            try
+            {
+                if (produto == null)
+                {
+                    return BadRequest();
+                }
+                validacao.Validar(produto);
+                _repositorio.AdicionarProduto(produto);
+
+                return Created("sucesso", produto);
+            }catch 
+            {
+                throw new Exception("Erro ao adicionar novo produto.");
+            }
         }
 
         [HttpDelete("{Id}")]
         public IActionResult DeletarProduto(int Id)
         {
-            if (Id == null)
+            try
             {
-                return NotFound();
+                if (Id == 0)
+                {
+                    return NotFound();
+                }
+
+                var ProdutoASerDeletado = _repositorio.ObterPorId(Id);
+                _repositorio.DeletarProduto(ProdutoASerDeletado.Id);
+
+                return NoContent();
             }
-
-            var ProdutoASerDeletado = _repositorio.ObterPorId(Id);
-            _repositorio.DeletarProduto(ProdutoASerDeletado.Id);
-
-            return NoContent();
+            catch
+            {
+                throw new Exception("Erro ao deletar produto");
+            }
         }
 
         [HttpPut("{Id}")]
         public IActionResult AtualizarProduto(Produto produto)
         {
-            if (produto == null)
+            try
             {
-                return NotFound();
+                if (produto == null)
+                {
+                    return NotFound();
+                }
+
+                _repositorio.AtualizarProduto(produto);
+                //validacao
+                return NoContent();
             }
-
-            _repositorio.AtualizarProduto(produto);
-
-            return NoContent();
+            catch
+            {
+                throw new Exception("Erro ao atualizar produto");
+            }
         }
     }
 }

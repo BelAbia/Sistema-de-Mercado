@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "http": {
+    "SistemaDeMercado.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
