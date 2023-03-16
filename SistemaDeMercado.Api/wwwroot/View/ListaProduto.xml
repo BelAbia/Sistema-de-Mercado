@@ -1,0 +1,10 @@
+<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>TituloDaLista}"
+      class="sapUiResponsiveMargin"
+      width="auto">
+   </List>
+</mvc:View>

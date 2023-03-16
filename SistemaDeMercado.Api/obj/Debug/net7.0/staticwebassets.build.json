@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HiU0440gVcajwvwKGAvajM1u0pcTnEl3/2ScfoVa8gU=",
+  "Hash": "dl+XGE3d63xnVHWDLBaObOtmqtXX4ZAbIs5xIfc2Q6s=",
   "Source": "SistemaDeMercado.Api",
   "BasePath": "_content/SistemaDeMercado.Api",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Controller\\App.controller.js"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "Controller/ListaProduto.controller.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Controller\\ListaProduto.controller.js"
     },
     {
       "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\View\\App.view.xml"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.xml",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "View/ListaProduto.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\View\\ListaProduto.xml"
     }
   ]
 }

@@ -1,4 +1,5 @@
-﻿using LinqToDB;
+﻿using Dominio;
+using LinqToDB;
 using LinqToDB.DataProvider.SqlServer;
 using System.Configuration;
 
@@ -6,6 +7,8 @@ namespace Sistema_de_Mercado
 {
     public class RepositorioLinq2Db : IRepositorio
     {
+        MensagensDeErro mensagensDeErro = new();
+
         public static string Conexao()
         {
             return ConfigurationManager.ConnectionStrings["ConexaoSistemaDeMercado"].ConnectionString;
@@ -21,7 +24,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao adicionar novo produto.");
+                    throw new Exception(mensagensDeErro.ErroParaAdicionarProduto);
                 }
             }
         }
@@ -36,7 +39,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao atualizar produto.");
+                    throw new Exception(mensagensDeErro.ErroParaAtualizarProduto);
                 }
             }
         }
@@ -52,7 +55,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao deletar produto.");
+                    throw new Exception(mensagensDeErro.ErroParaDeletarProduto);
                 }
             }
         }
@@ -64,7 +67,7 @@ namespace Sistema_de_Mercado
             {
 
                 var produtoEncontrado = conexaoLinq2Db.GetTable<Produto>().FirstOrDefault(X => X.Id == Id)
-                     ?? throw new Exception($"Produto não encontrado com id: {Id}");
+                     ?? throw new Exception(mensagensDeErro.ErroParaObterProdutoPorId(Id));
 
                 return produtoEncontrado;
             }
@@ -83,7 +86,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao obter produtos.");
+                    throw new Exception(mensagensDeErro.ErroParaObterListaDeProdutos);
                 }
             }
         }

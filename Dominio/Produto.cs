@@ -5,7 +5,6 @@ namespace Sistema_de_Mercado
 {
     public class Produto
     {
-        [Required(ErrorMessage ="erro")]
         [PrimaryKey, Identity]
         public int Id { get; set; }
 

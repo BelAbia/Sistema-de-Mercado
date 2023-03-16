@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dominio;
+using Microsoft.AspNetCore.Mvc;
 using Sistema_de_Mercado;
 
 namespace SistemaDeMercado.Api.Controllers
@@ -8,6 +9,7 @@ namespace SistemaDeMercado.Api.Controllers
     public class ProdutoController : ControllerBase
     {
         Validacao validacao = new();
+        MensagensDeErro mensagensDeErro = new();
         private IRepositorio _repositorio;
 
         public ProdutoController(IRepositorio repositorio)
@@ -25,7 +27,7 @@ namespace SistemaDeMercado.Api.Controllers
             }
             catch
             {
-                throw new Exception("Erro ao obter todos");
+                throw new Exception(mensagensDeErro.ErroParaObterListaDeProdutos);
             }
         }
 
@@ -44,7 +46,7 @@ namespace SistemaDeMercado.Api.Controllers
             }
             catch
             {
-                throw new Exception("Erro ao obter produto");
+                throw new Exception(mensagensDeErro.ErroParaObterProdutoPorId(Id));
             }
         }
 
@@ -57,13 +59,14 @@ namespace SistemaDeMercado.Api.Controllers
                 {
                     return BadRequest();
                 }
+
                 validacao.Validar(produto);
                 _repositorio.AdicionarProduto(produto);
-
                 return Created("sucesso", produto);
-            }catch 
+
+            }catch(Exception e) 
             {
-                throw new Exception("Erro ao adicionar novo produto.");
+                throw new Exception(e.Message);
             }
         }
 
@@ -79,12 +82,11 @@ namespace SistemaDeMercado.Api.Controllers
 
                 var ProdutoASerDeletado = _repositorio.ObterPorId(Id);
                 _repositorio.DeletarProduto(ProdutoASerDeletado.Id);
-
                 return NoContent();
             }
             catch
             {
-                throw new Exception("Erro ao deletar produto");
+                throw new Exception(mensagensDeErro.ErroParaDeletarProduto);
             }
         }
 
@@ -98,13 +100,13 @@ namespace SistemaDeMercado.Api.Controllers
                     return NotFound();
                 }
 
+                validacao.Validar(produto);
                 _repositorio.AtualizarProduto(produto);
-                //validacao
-                return NoContent();
+                return Ok(produto);
             }
-            catch
+            catch(Exception e)
             {
-                throw new Exception("Erro ao atualizar produto");
+                return BadRequest(e.Message);
             }
         }
     }

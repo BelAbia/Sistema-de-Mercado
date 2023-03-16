@@ -1,12 +1,14 @@
 ﻿using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
+using Dominio;
 
 namespace Sistema_de_Mercado
 {
     public class RepositorioBancoDeDados : IRepositorio
     {
         SqlCommand? comando;
+        MensagensDeErro mensagensDeErro = new();
 
         public SqlConnection Conexao()
         {
@@ -35,7 +37,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao atualizar produto.");
+                    throw new Exception(mensagensDeErro.ErroParaAtualizarProduto);
                 }
             }
         }
@@ -54,7 +56,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao deletar produto.");
+                    throw new Exception(mensagensDeErro.ErroParaDeletarProduto);
                 }
             }
         }
@@ -78,7 +80,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao adicionar novo produto.");
+                    throw new Exception(mensagensDeErro.ErroParaAdicionarProduto);
                 }
             }
         }
@@ -102,7 +104,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception($"Produto não encontrado com id: {Id}");
+                    throw new Exception(mensagensDeErro.ErroParaObterProdutoPorId(Id));
                 }
             }
             return lista[0];
@@ -126,7 +128,7 @@ namespace Sistema_de_Mercado
                 }
                 catch
                 {
-                    throw new Exception("Erro ao obter produtos.");
+                    throw new Exception(mensagensDeErro.ErroParaObterListaDeProdutos);
                 }
             }
             return lista;
