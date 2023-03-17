@@ -13,8 +13,8 @@
       "PackagePath": "staticwebassets\\View\\App.view.xml"
     },
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.xml",
-      "PackagePath": "staticwebassets\\View\\ListaProduto.xml"
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
+      "PackagePath": "staticwebassets\\View\\ListaProduto.view.xml"
     },
     {
       "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",

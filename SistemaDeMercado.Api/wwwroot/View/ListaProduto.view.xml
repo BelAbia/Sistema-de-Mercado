@@ -1,0 +1,52 @@
+<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:core="sap.ui.core">
+  <Panel accessibleRole="Region">
+		<headerToolbar>
+			<Toolbar>
+				<Title text="TESTE"/>
+				<ToolbarSpacer/>
+				<SearchField
+					width="50%">
+			</Toolbar>
+		</headerToolbar>
+		<Table
+			class="sapUiResponsiveMargin"
+			width="auto">
+			<columns>
+				<Column
+					hAlign="End"
+					minScreenWidth="Small"
+					demandPopin="true"
+					width="5em">
+					<Text text="TESTE"/>
+				</Column>
+				<Column>
+					<Text text="TESTE"/>
+				</Column>
+				<Column
+					minScreenWidth="Small"
+					demandPopin="true">
+					<Text text="TESTE"/>
+				</Column>
+				<Column
+					minScreenWidth="Tablet"
+					demandPopin="false">
+					<Text text="TESTE"/>
+				</Column>
+				<Column
+					hAlign="End">
+					<Text text="TESTE"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem
+					type="Navigation">
+					///--apaguei bastante coisa 
+				</ColumnListItem>
+			</items>
+		</Table>
+	</Panel>
+</mvc:View>
