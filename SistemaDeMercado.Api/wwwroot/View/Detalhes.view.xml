@@ -1,0 +1,11 @@
+<mvc:View
+	controllerName="sap.ui.demo.walkthrough.controller.Detalhes"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="{i18n>TituloTelaDeDetalhes}">
+		<ObjectHeader
+			intro="{listaProdutos>name}"
+			title="{listaProdutos>address/city}"/>
+	</Page>
+</mvc:View>

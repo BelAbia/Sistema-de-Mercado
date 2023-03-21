@@ -1,52 +1,61 @@
 <mvc:View
-   controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
-   xmlns="sap.m"
-   xmlns:mvc="sap.ui.core.mvc"
-   xmlns:core="sap.ui.core">
-  <Panel accessibleRole="Region">
+	controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	<Panel accessibleRole="Region">
 		<headerToolbar>
 			<Toolbar>
-				<Title text="TESTE"/>
+				<Title text="{i18n>BarraDePesquisa}"/>
 				<ToolbarSpacer/>
 				<SearchField
-					width="50%">
+					width="50%"
+					search="aoClicarNaBarraDePesquisa"/>
 			</Toolbar>
 		</headerToolbar>
 		<Table
+			id="idTabelaDeProdutos"
 			class="sapUiResponsiveMargin"
-			width="auto">
+			width="auto"
+			items="{
+					path: 'listaProdutos>/'
+				}">	
 			<columns>
-				<Column
-					hAlign="End"
-					minScreenWidth="Small"
-					demandPopin="true"
-					width="5em">
-					<Text text="TESTE"/>
+				<Column>
+					<Text text="{i18n>ColunaNome}"/>
 				</Column>
 				<Column>
-					<Text text="TESTE"/>
+					<Text text="{i18n>ColunaMarca}"/>
 				</Column>
-				<Column
-					minScreenWidth="Small"
-					demandPopin="true">
-					<Text text="TESTE"/>
+				<Column>
+					<Text text="{i18n>ColunaCodigoDeBarras}"/>
 				</Column>
-				<Column
-					minScreenWidth="Tablet"
-					demandPopin="false">
-					<Text text="TESTE"/>
+				<Column>
+					<Text text="{i18n>ColunaDataDeCadastro}"/>
 				</Column>
-				<Column
-					hAlign="End">
-					<Text text="TESTE"/>
+				<Column>
+					<Text text="{i18n>ColunaDataDeVencimento}"/>
 				</Column>
 			</columns>
 			<items>
 				<ColumnListItem
-					type="Navigation">
-					///--apaguei bastante coisa 
+					type="Navigation"
+					press="aoClicarNaListaDeProduto">
+					<cells>
+							<Text text="{listaProdutos>id}"/>
+							<Text text="{listaProdutos>name}"/>
+							<Text text="{listaProdutos>address/suite}"/>
+							<Text text="{listaProdutos>address/city}"/>
+							<Text text="{listaProdutos>address/street}"/>
+						</cells>
 				</ColumnListItem>
 			</items>
 		</Table>
 	</Panel>
+    <Button
+         		id="BotaoTelaDeCadastro"
+				width="15%"
+				icon="sap-icon://add"
+         		text="{i18n>BotaoDeCadastro}"
+         		class="sapUiSmallMarginEnd"/>
 </mvc:View>

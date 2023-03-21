@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q7dzObuhBHdEKljUKe/+0IrqtbOEvAg2vKABtS17ePI=",
+  "Hash": "oXhrFWO66ldnYcqckNxDc9tR9ayIerMxvAvx8geJSak=",
   "Source": "SistemaDeMercado.Api",
   "BasePath": "_content/SistemaDeMercado.Api",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Component.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
-      "RelativePath": "Controller/App.controller.js",
+      "RelativePath": "Component.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,15 +31,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Controller\\App.controller.js"
+      "OriginalItemSpec": "wwwroot\\Component.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\App.controller.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
-      "RelativePath": "Controller/ListaProduto.controller.js",
+      "RelativePath": "controller/App.controller.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48,7 +48,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Controller\\ListaProduto.controller.js"
+      "OriginalItemSpec": "wwwroot\\controller\\App.controller.js"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\Detalhes.controller.js",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "controller/Detalhes.controller.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\controller\\Detalhes.controller.js"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\ListaProduto.controller.js",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "controller/ListaProduto.controller.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\controller\\ListaProduto.controller.js"
     },
     {
       "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
@@ -102,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\manifest.json"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\App.view.xml",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
-      "RelativePath": "View/App.view.xml",
+      "RelativePath": "view/App.view.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +150,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\View\\App.view.xml"
+      "OriginalItemSpec": "wwwroot\\view\\App.view.xml"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\Detalhes.view.xml",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
-      "RelativePath": "View/ListaProduto.view.xml",
+      "RelativePath": "view/Detalhes.view.xml",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +167,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\View\\ListaProduto.view.xml"
+      "OriginalItemSpec": "wwwroot\\view\\Detalhes.view.xml"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\ListaProduto.view.xml",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "view/ListaProduto.view.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\view\\ListaProduto.view.xml"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\ListaProduto1.view.xml",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "view/ListaProduto1.view.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\view\\ListaProduto1.view.xml"
     }
   ]
 }

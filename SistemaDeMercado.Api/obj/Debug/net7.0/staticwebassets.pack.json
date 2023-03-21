@@ -1,20 +1,20 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
-      "PackagePath": "staticwebassets\\Controller\\App.controller.js"
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Component.js",
+      "PackagePath": "staticwebassets\\Component.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
-      "PackagePath": "staticwebassets\\Controller\\ListaProduto.controller.js"
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\App.controller.js",
+      "PackagePath": "staticwebassets\\controller\\App.controller.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
-      "PackagePath": "staticwebassets\\View\\App.view.xml"
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\Detalhes.controller.js",
+      "PackagePath": "staticwebassets\\controller\\Detalhes.controller.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
-      "PackagePath": "staticwebassets\\View\\ListaProduto.view.xml"
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\ListaProduto.controller.js",
+      "PackagePath": "staticwebassets\\controller\\ListaProduto.controller.js"
     },
     {
       "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
@@ -27,6 +27,22 @@
     {
       "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\App.view.xml",
+      "PackagePath": "staticwebassets\\view\\App.view.xml"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\Detalhes.view.xml",
+      "PackagePath": "staticwebassets\\view\\Detalhes.view.xml"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\ListaProduto.view.xml",
+      "PackagePath": "staticwebassets\\view\\ListaProduto.view.xml"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\ListaProduto1.view.xml",
+      "PackagePath": "staticwebassets\\view\\ListaProduto1.view.xml"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SistemaDeMercado.Api.Microsoft.AspNetCore.StaticWebAssets.props",
