@@ -1,7 +1,9 @@
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\App.config
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\appsettings.json
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.staticwebassets.runtime.json
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.exe
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.dll.config
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.deps.json
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.runtimeconfig.json
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.dll
@@ -73,5 +75,3 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\net7.0\SistemaDeMercado.Api.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\net7.0\SistemaDeMercado.Api.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\net7.0\ref\SistemaDeMercado.Api.dll
-C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\App.config
-C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\SistemaDeMercado.Api.dll.config

@@ -9,8 +9,8 @@ sap.ui.define([
 	return Controller.extend("sap.ui.demo.walkthrough.controller.ListaProduto", {
 
 		onInit: function() {
-
-            fetch('https://jsonplaceholder.typicode.com/users')
+			const url = `https://localhost:7047/api/Produto`;
+			fetch(url)
                 .then(response => response.json())
                 .then(json => this.getView().setModel(new JSONModel(json), 'listaProdutos'));
 		},
@@ -22,7 +22,7 @@ sap.ui.define([
 			var aFilter = [];
 			var sQuery = oEvent.getParameter("query");
 			if (sQuery) {
-				aFilter.push(new Filter("name", FilterOperator.Contains, sQuery));
+				aFilter.push(new Filter("nome", FilterOperator.Contains, sQuery));
 			}
 			var oList = this.byId("idTabelaDeProdutos");
 			var oBinding = oList.getBinding("items");

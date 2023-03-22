@@ -41,10 +41,6 @@
       "PackagePath": "staticwebassets\\view\\ListaProduto.view.xml"
     },
     {
-      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\ListaProduto1.view.xml",
-      "PackagePath": "staticwebassets\\view\\ListaProduto1.view.xml"
-    },
-    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SistemaDeMercado.Api.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

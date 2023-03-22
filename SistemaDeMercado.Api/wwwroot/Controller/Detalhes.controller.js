@@ -8,7 +8,7 @@ sap.ui.define([
 
 		onInit: function() {
 
-            fetch('https://jsonplaceholder.typicode.com/users')
+			fetch('http://localhost:5179')
                 .then(response => response.json())
                 .then(json => this.getView().setModel(new JSONModel(json), 'detalhes', {Id}));
 		}

@@ -1,26 +1,34 @@
-<mvc:View
-	controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:core="sap.ui.core">
 	<Panel accessibleRole="Region">
+		<FlexBox height="40px" alignItems="Start" justifyContent="Start">
+			<Button 
+				id="BotaoTelaDeCadastro" 
+				width="100%" 
+				icon="sap-icon://add" 
+				text="{i18n>BotaoDeCadastro}" 
+				type="Emphasized" 
+				class="sapUiSmallMarginEnd"/>
+		</FlexBox>
 		<headerToolbar>
 			<Toolbar>
-				<Title text="{i18n>BarraDePesquisa}"/>
+				<Title text="{i18n>TituloPaginaListaDeProdutos}"/>
 				<ToolbarSpacer/>
-				<SearchField
-					width="50%"
-					search="aoClicarNaBarraDePesquisa"/>
+				<SearchField width="40%" search="aoClicarNaBarraDePesquisa"/>
 			</Toolbar>
 		</headerToolbar>
-		<Table
-			id="idTabelaDeProdutos"
-			class="sapUiResponsiveMargin"
-			width="auto"
+		<Table 
+			id="idTabelaDeProdutos" 
+			class="sapUiResponsiveMargin" 
+			width="auto" 
 			items="{
-					path: 'listaProdutos>/'
-				}">	
-			<columns>
+					path: 'listaProdutos>/'}">
+			<columns> 		
+				<Column>
+					<Text text="{i18n>ColunaId}"/>
+				</Column>
 				<Column>
 					<Text text="{i18n>ColunaNome}"/>
 				</Column>
@@ -38,24 +46,17 @@
 				</Column>
 			</columns>
 			<items>
-				<ColumnListItem
-					type="Navigation"
-					press="aoClicarNaListaDeProduto">
+				<ColumnListItem type="Navigation" press="aoClicarNaListaDeProduto">
 					<cells>
-							<Text text="{listaProdutos>id}"/>
-							<Text text="{listaProdutos>name}"/>
-							<Text text="{listaProdutos>address/suite}"/>
-							<Text text="{listaProdutos>address/city}"/>
-							<Text text="{listaProdutos>address/street}"/>
-						</cells>
+						<Text text="{listaProdutos>id}"/>
+						<Text text="{listaProdutos>nome}"/>
+						<Text text="{listaProdutos>marca}"/>
+						<Text text="{listaProdutos>codigoBarras}"/>
+						<Text text="{listaProdutos>dataCadastro}"/>
+						<Text text="{listaProdutos>dataVencimento}"/>
+					</cells>
 				</ColumnListItem>
 			</items>
 		</Table>
 	</Panel>
-    <Button
-         		id="BotaoTelaDeCadastro"
-				width="15%"
-				icon="sap-icon://add"
-         		text="{i18n>BotaoDeCadastro}"
-         		class="sapUiSmallMarginEnd"/>
 </mvc:View>

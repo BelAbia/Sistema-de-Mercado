@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oXhrFWO66ldnYcqckNxDc9tR9ayIerMxvAvx8geJSak=",
+  "Hash": "FfrQWIGnWcGdSX2uWcMfATGXnt+oV8PkOIDI7qkMcFQ=",
   "Source": "SistemaDeMercado.Api",
   "BasePath": "_content/SistemaDeMercado.Api",
   "Mode": "Default",
@@ -185,23 +185,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\view\\ListaProduto.view.xml"
-    },
-    {
-      "Identity": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\ListaProduto1.view.xml",
-      "SourceId": "SistemaDeMercado.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
-      "BasePath": "_content/SistemaDeMercado.Api",
-      "RelativePath": "view/ListaProduto1.view.xml",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\view\\ListaProduto1.view.xml"
     }
   ]
 }
