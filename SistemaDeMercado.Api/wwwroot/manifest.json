@@ -84,7 +84,7 @@
 					"target": "listaProduto"
 				},
 				{
-					"pattern": "detalhes",
+					"pattern": "detalhes/{id}",
 					"name": "detalhes",
 					"target": "detalhes"
 				}

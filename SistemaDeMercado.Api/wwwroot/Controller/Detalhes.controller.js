@@ -7,10 +7,18 @@ sap.ui.define([
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Detalhes", {
 
 		onInit: function() {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.getRoute("detalhes").attachPatternMatched(this._onObjectMatched, this);
+		},
+		_onObjectMatched: function (oEvent) {
+			let id = oEvent.getParameter("arguments").id;
 
-			fetch('http://localhost:5179')
-                .then(response => response.json())
-                .then(json => this.getView().setModel(new JSONModel(json), 'detalhes', {Id}));
+		},
+		carregarProdutoPoriD: function(id){
+			const url='https://localhost:7047/api/Produto/'
+			fetch(url`${id}`)
+			.then(response => response.json())
+			.then(json => this.getView().setModel(new JSONModel(json), 'detalhes'));
 		}
 	});
 });

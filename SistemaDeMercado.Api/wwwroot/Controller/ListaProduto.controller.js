@@ -15,8 +15,11 @@ sap.ui.define([
                 .then(json => this.getView().setModel(new JSONModel(json), 'listaProdutos'));
 		},
 		aoClicarNaListaDeProduto: function(oEvent) {
+			var idProduto = oEvent.getSource().getBindingContext("listaProdutos").getObject().id;
 			var oRouter = this.getOwnerComponent().getRouter();
-			oRouter.navTo("detalhes");
+			oRouter.navTo("detalhes", {
+				id: idProduto
+			});
 		},
 		aoClicarNaBarraDePesquisa: function (oEvent) {
 			var aFilter = [];
