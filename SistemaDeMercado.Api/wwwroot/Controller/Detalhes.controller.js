@@ -12,13 +12,18 @@ sap.ui.define([
 		},
 		_onObjectMatched: function (oEvent) {
 			let id = oEvent.getParameter("arguments").id;
-
+			this.exibirProduto(id);
 		},
-		carregarProdutoPoriD: function(id){
-			const url='https://localhost:7047/api/Produto/'
-			fetch(url`${id}`)
-			.then(response => response.json())
-			.then(json => this.getView().setModel(new JSONModel(json), 'detalhes'));
-		}
+		exibirProduto: function (id) {
+			var listaRetornada = this.buscarDetalheDoProduto(id);
+        	listaRetornada.then(produto =>{
+            var modelo = new JSONModel(produto)
+            this.getView().setModel(modelo, "detalhes")
+        	})
+		},
+		buscarDetalheDoProduto : async function(id){
+            return await fetch (`https://localhost:7047/api/Produto/${id}`)
+            .then(res => res.json());
+        }
 	});
 });

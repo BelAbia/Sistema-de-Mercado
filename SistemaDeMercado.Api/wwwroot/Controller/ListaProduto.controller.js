@@ -9,11 +9,25 @@ sap.ui.define([
 	return Controller.extend("sap.ui.demo.walkthrough.controller.ListaProduto", {
 
 		onInit: function() {
-			const url = `https://localhost:7047/api/Produto`;
-			fetch(url)
-                .then(response => response.json())
-                .then(json => this.getView().setModel(new JSONModel(json), 'listaProdutos'));
+			this.exibirProduto()
 		},
+		exibirProduto: function () {
+			var listaRetornada = this.buscarProdutos();
+        	listaRetornada.then(lista =>{
+            var modelo = new JSONModel(lista)
+            this.getView().setModel(modelo, "listaProdutos")
+        	})
+		},
+
+		buscarProdutos : async function(){
+			var produtosRetornados;
+			 await fetch("https://localhost:7047/api/Produto")
+			.then(response => response.json())
+			.then(data => produtosRetornados = data)
+	
+			return produtosRetornados
+		},
+
 		aoClicarNaListaDeProduto: function(oEvent) {
 			var idProduto = oEvent.getSource().getBindingContext("listaProdutos").getObject().id;
 			var oRouter = this.getOwnerComponent().getRouter();
