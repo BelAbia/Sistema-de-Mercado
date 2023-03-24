@@ -16,10 +16,16 @@ sap.ui.define([
 		},
 		exibirProduto: function (id) {
 			var listaRetornada = this.buscarDetalheDoProduto(id);
-        	listaRetornada.then(produto =>{
-            var modelo = new JSONModel(produto)
-            this.getView().setModel(modelo, "detalhes")
-        	})
+			listaRetornada.then(produto => {
+				var modelo = new JSONModel(produto)
+				this.getView().setModel(modelo, "detalhes");
+				this.getView().byId("objectHeader").bindElement({
+					path: "detalhes>/",
+					parameters: {
+						expand: "categoria"
+					}
+				});
+			});
 		},
 		buscarDetalheDoProduto : async function(id){
             return await fetch (`https://localhost:7047/api/Produto/${id}`)

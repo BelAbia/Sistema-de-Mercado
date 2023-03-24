@@ -5,7 +5,8 @@
 	<Page
 		title="{i18n>TituloTelaDeDetalhes}">
 		<ObjectHeader
-			intro="{Produto>nome}"
-			title="{produto>nome}"/>
+			id="objectHeader"
+			intro="{detalhes>nome}"
+			title="{detalhes>marca}"/>
 	</Page>
 </mvc:View>
