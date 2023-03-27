@@ -1,6 +1,7 @@
 ﻿using Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Sistema_de_Mercado;
+using System.Net;
 
 namespace SistemaDeMercado.Api.Controllers
 {
@@ -25,9 +26,9 @@ namespace SistemaDeMercado.Api.Controllers
                 var ListaDeProdutos = _repositorio.ObterTodos();
                 return Ok(ListaDeProdutos);
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception(mensagensDeErro.ErroParaObterListaDeProdutos);
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
             }
         }
 
