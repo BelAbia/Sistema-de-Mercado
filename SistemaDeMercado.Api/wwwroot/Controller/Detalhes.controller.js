@@ -8,11 +8,11 @@ sap.ui.define([
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Detalhes", {
 
 		onInit: function() {
-			var oRouter = this.getOwnerComponent().getRouter();
-			oRouter.getRoute("detalhes").attachPatternMatched(this._onObjectMatched, this);
+			var rota = this.getOwnerComponent().getRouter();
+			rota.getRoute("detalhes").attachPatternMatched(this.aoCoincidirRota, this);
 		},
 
-		_onObjectMatched: function (oEvent) {
+		aoCoincidirRota: function (oEvent) {
 			let id = oEvent.getParameter("arguments").id;
 			this.exibirProduto(id);
 		},
@@ -22,10 +22,10 @@ sap.ui.define([
 			listaRetornada.then(produto => {
 				var modelo = new JSONModel(produto)
 				this.getView().setModel(modelo, "detalhes");
-				this.getView().byId("objectHeader").bindElement({
+				this.getView().byId("IdObjectHeader").bindElement({
 					path: "detalhes>/",
 					parameters: {
-						expand: "id"
+						expand: "detalhes"
 					}
 				});
 			});
@@ -37,14 +37,14 @@ sap.ui.define([
         },
 
 		AoClicarNoBotaoDeVoltar: function () {
-			var oHistory = History.getInstance();
-			var sPreviousHash = oHistory.getPreviousHash();
+			var historia = History.getInstance();
+			var hashAnterior = historia.getPreviousHash();
 
-			if (sPreviousHash !== undefined) {
+			if (hashAnterior !== undefined) {
 				window.history.go(-1);
 			} else {
-				var oRouter = this.getOwnerComponent().getRouter();
-				oRouter.navTo("listaProduto", {}, true);
+				var rota = this.getOwnerComponent().getRouter();
+				rota.navTo("listaProduto", {}, true);
 			}
 		}
 	});

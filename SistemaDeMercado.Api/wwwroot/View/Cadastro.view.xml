@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="sap.ui.demo.walkthrough.controller.Cadastro"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout">
+	<Page
+		title="{i18n>TituloTelaDeCadastro}"
+		showNavButton="true"
+		navButtonPress="AoClicarNoBotaoDeVoltar">
+		<headerContent>
+			<Button 
+				id="idBotaoParaSalvarProduto" 
+				icon="sap-icon://save" 
+				text="{i18n>BotaoParaSalvarProduto}" 
+				press="aoPressionarSalvar"/>
+			<Button 
+				id="idBotaoParaCancelarAlteracoes" 
+				icon="sap-icon://decline" 
+				text="{i18n>BotaoParaCancelarAlteracoes}" 
+				press="aoPressionarCancelar"/>
+		</headerContent>
+        <l:VerticalLayout class="sapUiContentPadding" width="50%">
+        <Label text="{i18n>LabelNomeDoProduto}" labelFor="LabelNomeDoProduto" />
+		<Input placeholder="Nome do Produto" id="LabelNomeDoProduto" required="true" />
+        <Label text="{i18n>LabelMarcaDoProduto}" labelFor="LabelMarcaDoProduto" />
+		<Input placeholder="Marca do Produto" id="LabelMarcaDoProduto" required="true" />
+        <Label text="{i18n>LabelCodigoBarrasDoProduto}" labelFor="LabelCodigoBarrasDoProduto" />
+		<Input placeholder="Código de 13 Digitos" id="LabelCodigoBarrasDoProduto" required="true" />
+        <Label text="{i18n>LabelDataVencimentoDoProduto}" required="true" labelFor="LabelDataVencimentoDoProduto" />
+		<DatePicker id= "IdDatePickerDataVencimento" dateValue="{/date}" minDate="{ModeloDeData>/minDate}"/>
+        </l:VerticalLayout>
+	</Page>
+</mvc:View>

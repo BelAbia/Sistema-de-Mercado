@@ -11,6 +11,7 @@ sap.ui.define([
 		onInit: function() {
 			this.exibirProduto()
 		},
+		
 		exibirProduto: function () {
 			var listaRetornada = this.buscarProdutos();
         	listaRetornada.then(lista =>{
@@ -22,29 +23,34 @@ sap.ui.define([
 		buscarProdutos : async function(){
 			var produtosRetornados;
 			 await fetch("https://localhost:7047/api/Produto")
-			.then(response => response.json())
-			.then(data => produtosRetornados = data)
+			.then(resposta => resposta.json())
+			.then(dados => produtosRetornados = dados)
 	
 			return produtosRetornados
 		},
 
-		aoClicarNaListaDeProduto: function(oEvent) {
-			var idProduto = oEvent.getSource().getBindingContext("listaProdutos").getObject().id;
-			var oRouter = this.getOwnerComponent().getRouter();
-			oRouter.navTo("detalhes", {
+		aoClicarNaListaDeProduto: function(eventoDoObjeto) {
+			var idProduto = eventoDoObjeto.getSource().getBindingContext("listaProdutos").getObject().id;
+			var rota = this.getOwnerComponent().getRouter();
+			rota.navTo("detalhes", {
 				id: idProduto
 			});
 		},
-		aoClicarNaBarraDePesquisa: function (oEvent) {
-			var aFilter = [];
-			var sQuery = oEvent.getParameter("query");
-			if (sQuery) {
-				aFilter.push(new Filter("nome", FilterOperator.Contains, sQuery));
+
+		aoFiltrarProdutos: function (eventoDoObjeto) {
+			var filtro = [];
+			var consulta = eventoDoObjeto.getParameter("query");
+			if (consulta) {
+				filtro.push(new Filter("nome", FilterOperator.Contains, consulta));
 			}
-			var oList = this.byId("idTabelaDeProdutos");
-			var oBinding = oList.getBinding("items");
-			oBinding.filter(aFilter);
+			var listaDeProdutos = this.byId("idTabelaDeProdutos");
+			var oBinding = listaDeProdutos.getBinding("items");
+			oBinding.filter(filtro);
 		},
 		
+		aoClicarEmNovoProduto:  function (oEvent) {
+			var rota = this.getOwnerComponent().getRouter();
+			rota.navTo("cadastro");
+		}
 	});
 });

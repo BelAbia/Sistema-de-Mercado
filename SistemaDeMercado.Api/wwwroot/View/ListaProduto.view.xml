@@ -5,18 +5,19 @@
 	<Panel accessibleRole="Region">
 		<FlexBox height="40px" alignItems="Start" justifyContent="Start">
 			<Button 
-				id="BotaoTelaDeCadastro" 
+				id="idBotaoParaAdicionarNovoProduto" 
 				width="100%" 
 				icon="sap-icon://add" 
-				text="{i18n>BotaoDeCadastro}" 
+				text="{i18n>BotaoParaAdicionarNovoProduto}" 
 				type="Emphasized" 
+				press="aoClicarEmNovoProduto"
 				class="sapUiSmallMarginEnd"/>
 		</FlexBox>
 		<headerToolbar>
 			<Toolbar>
 				<Title text="{i18n>TituloPaginaListaDeProdutos}"/>
 				<ToolbarSpacer/>
-				<SearchField width="40%" search="aoClicarNaBarraDePesquisa"/>
+				<SearchField width="40%" search="aoFiltrarProdutos"/>
 			</Toolbar>
 		</headerToolbar>
 		<Table 
@@ -39,10 +40,10 @@
 					<Text text="{i18n>ColunaCodigoDeBarras}"/>
 				</Column>
 				<Column>
-					<Text text="{i18n>ColunaDataDeCadastro}"/>
+					<Text text="{i18n>ColunaDataDeVencimento}"/>
 				</Column>
 				<Column>
-					<Text text="{i18n>ColunaDataDeVencimento}"/>
+					<Text text="{i18n>ColunaDataDeCadastro}"/>
 				</Column>
 			</columns>
 			<items>
@@ -52,18 +53,18 @@
 						<Text text="{listaProdutos>nome}"/>
 						<Text text="{listaProdutos>marca}"/>
 						<Text text="{listaProdutos>codigoBarras}"/>
-						<Text text="{ path: 'listaProdutos>dataCadastro',
-							type: 'sap.ui.model.type.Date',
-							formatOptions: {
-								source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
-								style: 'medium'
-							}}"/>
-						<Text text="{ path: 'listaProdutos>dataVencimento',
-							type: 'sap.ui.model.type.Date',
-							formatOptions: {
-								source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
-								style: 'medium'
-							}}"/>
+						<Text text="{path:'listaProdutos>dataVencimento',
+						type: 'sap.ui.model.type.Date',
+						formatOptions: {
+							source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
+							style: 'medium'
+						}}"/>
+						<Text text="{path:'listaProdutos>dataCadastro',
+						type: 'sap.ui.model.type.Date',
+						formatOptions: {
+							source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
+							style: 'medium'
+						}}"/>
 					</cells>
 				</ColumnListItem>
 			</items>

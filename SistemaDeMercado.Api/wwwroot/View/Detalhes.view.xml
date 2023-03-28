@@ -6,14 +6,40 @@
 		title="{i18n>TituloTelaDeDetalhes}"
 		showNavButton="true"
 		navButtonPress="AoClicarNoBotaoDeVoltar">
+		<headerContent>
+			<Button 
+				id="idBotaoParaEditarProduto" 
+				icon="sap-icon://edit" 
+				text="{i18n>BotaoParaEditarProduto}" 
+				press="aoPressionarEditar"/>
+			<Button 
+				id="idBotaoParaDeletarProduto" 
+				icon="sap-icon://delete" 
+				text="{i18n>BotaoParaDeletarProduto}" 
+				press="aoPressionarExcluir"/>
+				</headerContent>
 		<ObjectHeader
-			id="objectHeader"
+			id="IdObjectHeader"
 			intro="{detalhes>nome}"
 			title="{detalhes>marca}">
 		<attributes>
-        	<ObjectAttribute title="{i18n>DetalheCodigoDeBarras}" text = "{detalhes>codigoBarras}" />
-			<ObjectAttribute title="data" text="{detalhes>dataCadastro}"/>
+			<ObjectAttribute title="{i18n>IdTelaDeDetalhes}" text = "{detalhes>id}" />
+        	<ObjectAttribute title="{i18n>CodigoDeBarrasTelaDeDetalhes}" text = "{detalhes>codigoBarras}" />
+			<ObjectAttribute title="{i18n>DataVencimentoTelaDeDetalhes}" 
+				text="{ path: 'detalhes>dataVencimento',
+				type: 'sap.ui.model.type.Date',
+				formatOptions: {
+					source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
+					style: 'medium'
+				}}"/>
+			<ObjectAttribute title="{i18n>DataCadastroTelaDeDetalhes}" 
+				text="{ path: 'detalhes>dataCadastro',
+				type: 'sap.ui.model.type.DateTime',
+				formatOptions: {
+					source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
+					style: 'medium'
+				}}"/>
    		</attributes>
-</ObjectHeader>
+	</ObjectHeader>
 	</Page>
 </mvc:View>
