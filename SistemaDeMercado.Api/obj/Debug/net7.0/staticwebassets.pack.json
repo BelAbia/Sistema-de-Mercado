@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\controller\\App.controller.js"
     },
     {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\Cadastro.controller.js",
+      "PackagePath": "staticwebassets\\controller\\Cadastro.controller.js"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\controller\\Detalhes.controller.js",
       "PackagePath": "staticwebassets\\controller\\Detalhes.controller.js"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\App.view.xml",
       "PackagePath": "staticwebassets\\view\\App.view.xml"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\Cadastro.view.xml",
+      "PackagePath": "staticwebassets\\view\\Cadastro.view.xml"
     },
     {
       "Id": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\view\\Detalhes.view.xml",
