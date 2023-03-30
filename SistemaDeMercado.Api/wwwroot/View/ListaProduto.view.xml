@@ -23,6 +23,7 @@
 		<Table 
 			id="idTabelaDeProdutos" 
 			class="sapUiResponsiveMargin" 
+			maxHeight="100px"
 			width="auto" 
 			items="{
 					path: 'listaProdutos>/'}">

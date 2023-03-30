@@ -35,28 +35,39 @@ sap.ui.define([
 		},
 
 			aoPressionarSalvar: async function() {
-			const LabelNomeDoProduto = sap.ui.getCore().byId("LabelNomeDoProduto")
-			const LabelMarcaDoProduto = sap.ui.getCore().byId("LabelMarcaDoProduto").getValue()
-			const LabelCodigoBarrasDoProduto = document.getElementById('codigoBarras')
-			const IdDatePickerDataVencimento = document.getElementById('dataVencimento')
+			const nomeParaSalvar = this.getView().byId("nome").getValue();
+			const marcaParaSalvar = this.getView().byId("marca").getValue();
+			const codigoBarrasParaSalvar = this.getView().byId("codigoBarras").getValue();
+			const dataVencimentoParaSalvar = this.getView().byId("dataVencimento").getDateValue();
+			const dataFormatada = sap.ui.core.format.DateFormat.getDateTimeInstance({pattern: "yyyy-MM-ddTHH:mm:ss.SS"});
+			const dataAtual = new Date()
 
 			const produto = {
-				nome: LabelNomeDoProduto.getValue(),
-				marca: LabelMarcaDoProduto.value,
-				codigoBarras: number(LabelCodigoBarrasDoProduto.value),
-				dataVencimento:	IdDatePickerDataVencimento.value
+				nome: nomeParaSalvar,
+				marca: marcaParaSalvar,
+				codigoBarras: codigoBarrasParaSalvar,
+				dataVencimento:	dataVencimentoParaSalvar,
+				dataCadastro: dataFormatada.format(dataAtual)
 			}
 
 			//chamar post na API
 			const response = await fetch('https://localhost:7047/api/Produto', {
 				method: 'POST',
 				headers: {
-				  'Accept': 'application/json',
 				  'Content-Type': 'application/json'
 				},
 				body: JSON.stringify(produto)
 			  })
 			const dados = await response.json()
+
+			var rota = this.getOwnerComponent().getRouter();
+				rota.navTo("detalhes", {
+					id: id
+				});
+		},
+		
+			navegarParaTelaDeDetalhes: function() {
+				
 		}
 	});
 });

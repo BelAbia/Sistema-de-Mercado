@@ -20,14 +20,14 @@
 				press="aoPressionarCancelar"/>
 		</headerContent>
         <l:VerticalLayout class="sapUiContentPadding" width="50%">
-        <Label text="{i18n>LabelNomeDoProduto}" labelFor="LabelNomeDoProduto" />
-		<Input placeholder="Nome do Produto" id="LabelNomeDoProduto" required="true" />
-        <Label text="{i18n>LabelMarcaDoProduto}" labelFor="LabelMarcaDoProduto" />
-		<Input placeholder="Marca do Produto" id="LabelMarcaDoProduto" required="true" />
-        <Label text="{i18n>LabelCodigoBarrasDoProduto}" labelFor="LabelCodigoBarrasDoProduto" />
-		<Input placeholder="Código de 13 Digitos" id="LabelCodigoBarrasDoProduto" required="true" />
-        <Label text="{i18n>LabelDataVencimentoDoProduto}" required="true" labelFor="LabelDataVencimentoDoProduto" />
-		<DatePicker id= "IdDatePickerDataVencimento" dateValue="{/date}" minDate="{ModeloDeData>/minDate}"/>
+        <Label text="{i18n>LabelNomeDoProduto}" labelFor="nome" />
+		<Input placeholder="Nome do Produto" id="nome" required="true" />
+        <Label text="{i18n>LabelMarcaDoProduto}" labelFor="marca" />
+		<Input placeholder="Marca do Produto" id="marca" required="true" />
+        <Label text="{i18n>LabelCodigoBarrasDoProduto}" labelFor="codigoBarras" />
+		<Input placeholder="Código de 13 Digitos" id="codigoBarras" required="true" />
+        <Label text="{i18n>LabelDataVencimentoDoProduto}" required="true" labelFor="dataVencimento" />
+		<DatePicker id= "dataVencimento" dateValue="{/date}" minDate="{ModeloDeData>/minDate}"/>
         </l:VerticalLayout>
 	</Page>
 </mvc:View>
