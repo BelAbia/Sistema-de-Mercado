@@ -10,6 +10,7 @@ sap.ui.define([
 		onInit: function() {
 			var rota = this.getOwnerComponent().getRouter();
 			rota.getRoute("detalhes").attachPatternMatched(this.aoCoincidirRota, this);
+
 		},
 
 		aoCoincidirRota: function (oEvent) {

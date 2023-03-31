@@ -8,14 +8,25 @@ sap.ui.define([
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Cadastro", {
 
         onInit: function() {
-			
-            var modelo = new sap.ui.model.json.JSONModel( {
-                minDate: new Date()
-            });
-    
-            this.getView().setModel(modelo, "ModeloDeData");
-
+			var rota = this.getOwnerComponent().getRouter();
+			rota.getRoute("cadastro").attachPatternMatched(this.aoCoincidirRota, this);
         },
+
+		aoCoincidirRota: function (oEvent) {
+			this._criarModeloDoProduto();
+		},
+
+		_criarModeloDoProduto: function(){
+
+			let modeloProduto = new JSONModel({
+				nome: "",
+				marca: "",
+				codigoBarras: "",
+				dataVencimento: "",
+				dataCadastro: new Date('08/02/2003'),
+			});
+			this.getView().setModel(modeloProduto, "Produto");
+		},
 
        AoClicarNoBotaoDeVoltar: function () {
 			var historia = History.getInstance();
@@ -34,40 +45,17 @@ sap.ui.define([
 				rota.navTo("listaProduto", {}, true);
 		},
 
-			aoPressionarSalvar: async function() {
-			const nomeParaSalvar = this.getView().byId("nome").getValue();
-			const marcaParaSalvar = this.getView().byId("marca").getValue();
-			const codigoBarrasParaSalvar = this.getView().byId("codigoBarras").getValue();
-			const dataVencimentoParaSalvar = this.getView().byId("dataVencimento").getDateValue();
-			const dataFormatada = sap.ui.core.format.DateFormat.getDateTimeInstance({pattern: "yyyy-MM-ddTHH:mm:ss.SS"});
-			const dataAtual = new Date()
+		aoPressionarSalvar: async function() {
+			var produto = this.getView().getModel("Produto").getData()
 
-			const produto = {
-				nome: nomeParaSalvar,
-				marca: marcaParaSalvar,
-				codigoBarras: codigoBarrasParaSalvar,
-				dataVencimento:	dataVencimentoParaSalvar,
-				dataCadastro: dataFormatada.format(dataAtual)
-			}
-
-			//chamar post na API
-			const response = await fetch('https://localhost:7047/api/Produto', {
+			await fetch('https://localhost:7047/api/Produto', {
 				method: 'POST',
 				headers: {
-				  'Content-Type': 'application/json'
+					'content-type': 'application/json'
 				},
 				body: JSON.stringify(produto)
-			  })
-			const dados = await response.json()
-
-			var rota = this.getOwnerComponent().getRouter();
-				rota.navTo("detalhes", {
-					id: id
-				});
-		},
-		
-			navegarParaTelaDeDetalhes: function() {
-				
+			})
+			.then((resposta) => resposta.json())
 		}
 	});
 });

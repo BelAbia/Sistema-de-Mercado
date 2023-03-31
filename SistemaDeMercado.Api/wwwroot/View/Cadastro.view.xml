@@ -20,14 +20,42 @@
 				press="aoPressionarCancelar"/>
 		</headerContent>
         <l:VerticalLayout class="sapUiContentPadding" width="50%">
-        <Label text="{i18n>LabelNomeDoProduto}" labelFor="nome" />
-		<Input placeholder="Nome do Produto" id="nome" required="true" />
-        <Label text="{i18n>LabelMarcaDoProduto}" labelFor="marca" />
-		<Input placeholder="Marca do Produto" id="marca" required="true" />
-        <Label text="{i18n>LabelCodigoBarrasDoProduto}" labelFor="codigoBarras" />
-		<Input placeholder="Código de 13 Digitos" id="codigoBarras" required="true" />
-        <Label text="{i18n>LabelDataVencimentoDoProduto}" required="true" labelFor="dataVencimento" />
-		<DatePicker id= "dataVencimento" dateValue="{/date}" minDate="{ModeloDeData>/minDate}"/>
+        <Label 
+		text="{i18n>LabelNomeDoProduto}" 
+		labelFor="labelNome" />
+		<Input 
+			placeholder="Nome do Produto" 
+			id="labelNome" 
+			required="true" 
+			value="{
+				path: 'Produto>/nome'}"/>
+        <Label 
+			text="{i18n>LabelMarcaDoProduto}" 
+			labelFor="labelMarca" />
+		<Input 
+			placeholder="Marca do Produto" 
+			id="labelMarca" 
+			required="true" 
+			value="{
+				path: 'Produto>/marca'}"/>
+        <Label 
+			text="{i18n>LabelCodigoBarrasDoProduto}" 
+			labelFor="labelCodigoBarras" />
+		<Input 
+			placeholder="Código de 13 Digitos" 
+			id="labelCodigoBarras" 
+			required="true" 
+			value="{
+				path: 'Produto>/codigoBarras'}" />
+        <Label 
+			text="{i18n>LabelDataVencimentoDoProduto}" 
+			required="true" 
+			labelFor="labelDataVencimento" />
+		<DatePicker 
+			id= "labelDataVencimento" 
+			value="{
+				path: 'Produto>/dataVencimento'}"
+			minDate="{ModeloDeData>/minDate}"/>
         </l:VerticalLayout>
 	</Page>
 </mvc:View>
