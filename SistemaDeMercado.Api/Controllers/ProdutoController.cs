@@ -5,6 +5,7 @@ using System.Net;
 
 namespace SistemaDeMercado.Api.Controllers
 {
+    //comentario teste
     [ApiController]
     [Route("api/[Controller]")]
     public class ProdutoController : ControllerBase
