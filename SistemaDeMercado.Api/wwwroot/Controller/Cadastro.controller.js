@@ -17,13 +17,13 @@ sap.ui.define([
 		},
 
 		_criarModeloDoProduto: function(){
-
+			let dataAtual = new Date()
 			let modeloProduto = new JSONModel({
 				nome: "",
 				marca: "",
 				codigoBarras: "",
 				dataVencimento: "",
-				dataCadastro: new Date('08/02/2003'),
+				dataCadastro: dataAtual.toISOString(),
 			});
 			this.getView().setModel(modeloProduto, "Produto");
 		},
@@ -45,10 +45,13 @@ sap.ui.define([
 				rota.navTo("listaProduto", {}, true);
 		},
 
-		aoPressionarSalvar: async function() {
-			var produto = this.getView().getModel("Produto").getData()
+		aoPressionarSalvar: function() {
+			const produto = this.getView().getModel("Produto").getData()
+			this.cadastrarNovoProduto(produto)
+		},
 
-			await fetch('https://localhost:7047/api/Produto', {
+		cadastrarNovoProduto: async function(produto) {
+			return await fetch('https://localhost:7047/api/Produto', {
 				method: 'POST',
 				headers: {
 					'content-type': 'application/json'
@@ -56,6 +59,7 @@ sap.ui.define([
 				body: JSON.stringify(produto)
 			})
 			.then((resposta) => resposta.json())
+			.then(data => data);
 		}
 	});
 });

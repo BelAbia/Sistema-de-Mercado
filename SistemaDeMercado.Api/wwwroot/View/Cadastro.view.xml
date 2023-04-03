@@ -55,6 +55,7 @@
 			id= "labelDataVencimento" 
 			value="{
 				path: 'Produto>/dataVencimento'}"
+			valueFormat="yyyy-MM-ddTHH:mm:ss.SS"	
 			minDate="{ModeloDeData>/minDate}"/>
         </l:VerticalLayout>
 	</Page>
