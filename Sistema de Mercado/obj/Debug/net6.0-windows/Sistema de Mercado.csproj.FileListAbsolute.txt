@@ -131,7 +131,6 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\ne
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Dominio.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Infra.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.AssemblyReference.cache
-C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeLista.resources
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.Properties.Resources.resources
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.GenerateResource.cache
@@ -145,3 +144,11 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\ne
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\ref\Sistema de Mercado.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\en-US\Sistema de Mercado.resources.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\en-US\Sistema de Mercado.resources.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeCadastro.resources
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeCadastro.en-US.resources
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeLista.resources
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeLista.en-US.resources
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\en-US\Dominio.resources.dll

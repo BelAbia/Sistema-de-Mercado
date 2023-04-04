@@ -5,6 +5,8 @@ sap.ui.define([
 ], function(Controller, JSONModel, History) {
 	"use strict";
 
+//ARRUMAR DATA DE CADASTRO E NAVEGACAO PARA DETALHES
+
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Cadastro", {
 
         onInit: function() {
@@ -17,13 +19,14 @@ sap.ui.define([
 		},
 
 		_criarModeloDoProduto: function(){
+			const dataFormatada = sap.ui.core.format.DateFormat.getDateTimeInstance({pattern: "yyyy-MM-ddTHH:mm:ss.SS"});
 			let dataAtual = new Date()
 			let modeloProduto = new JSONModel({
 				nome: "",
 				marca: "",
 				codigoBarras: "",
 				dataVencimento: "",
-				dataCadastro: dataAtual.toISOString(),
+				dataCadastro: dataFormatada.format(dataAtual),
 			});
 			this.getView().setModel(modeloProduto, "Produto");
 		},

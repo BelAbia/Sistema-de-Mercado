@@ -10,3 +10,7 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Domini
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\refint\Dominio.dll
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\ref\Dominio.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\bin\Debug\net6.0\en-US\Dominio.resources.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.Res.en-US.resources
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\Dominio.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Dominio\obj\Debug\net6.0\en-US\Dominio.resources.dll

@@ -20,6 +20,11 @@
         },
         "runtime": {
           "Sistema de Mercado.dll": {}
+        },
+        "resources": {
+          "en-US/Sistema de Mercado.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Extended.Wpf.Toolkit/4.5.0": {

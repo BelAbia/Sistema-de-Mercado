@@ -73,7 +73,20 @@ namespace Sistema_de_Mercado
 
         private void AoCarregarJanelaDeCadastro(object sender, EventArgs e)
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            ImplementandoOsTextosDoForms();
             dt_Vencimento.MinDate = DateTime.Now;
+        }
+
+        private void ImplementandoOsTextosDoForms()
+        {
+            lbl_NomeProduto.Text = ResJanelaDeCadastro.lbl_NomeProduto;
+            lbl_Marca.Text = ResJanelaDeCadastro.lbl_Marca;
+            lbl_CodBarras.Text = ResJanelaDeCadastro.lbl_CodBarras;
+            lbl_Vencimento.Text = ResJanelaDeCadastro.lbl_Vencimento;
+            this.Text = ResJanelaDeCadastro.JanelaDeCadastro;
+            bt_Cancelar.Text = ResJanelaDeCadastro.bt_Cancelar;
+            bt_Salvar.Text = ResJanelaDeCadastro.bt_Salvar;
         }
 
         private void AoDigitarCodigoDeBarras(object sender, KeyPressEventArgs e)
