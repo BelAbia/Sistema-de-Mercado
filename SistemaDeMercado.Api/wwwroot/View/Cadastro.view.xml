@@ -6,7 +6,7 @@
 	<Page
 		title="{i18n>TituloTelaDeCadastro}"
 		showNavButton="true"
-		navButtonPress="AoClicarNoBotaoDeVoltar">
+		navButtonPress="aoClicarNoBotaoDeVoltar">
 		<headerContent>
 			<Button 
 				id="idBotaoParaSalvarProduto" 
@@ -24,7 +24,7 @@
 		text="{i18n>LabelNomeDoProduto}" 
 		labelFor="labelNome" />
 		<Input 
-			placeholder="Nome do Produto" 
+			placeholder="{i18n>TextoDaLabelNomeDoProduto}" 
 			id="labelNome" 
 			required="true" 
 			value="{
@@ -33,7 +33,7 @@
 			text="{i18n>LabelMarcaDoProduto}" 
 			labelFor="labelMarca" />
 		<Input 
-			placeholder="Marca do Produto" 
+			placeholder="{i18n>TextoDaLabelMarcaDoProduto}"  
 			id="labelMarca" 
 			required="true" 
 			value="{
@@ -42,7 +42,7 @@
 			text="{i18n>LabelCodigoBarrasDoProduto}" 
 			labelFor="labelCodigoBarras" />
 		<Input 
-			placeholder="Código de 13 Digitos" 
+			placeholder="{i18n>TextoDaLabelCodigoBarras}"  
 			id="labelCodigoBarras" 
 			required="true" 
 			value="{
@@ -55,8 +55,7 @@
 			id= "labelDataVencimento" 
 			value="{
 				path: 'Produto>/dataVencimento'}"
-			valueFormat="yyyy-MM-ddTHH:mm:ss.SS"	
-			minDate="{ModeloDeData>/minDate}"/>
+			valueFormat="yyyy-MM-ddTHH:mm:ss.SS"/>
         </l:VerticalLayout>
 	</Page>
 </mvc:View>

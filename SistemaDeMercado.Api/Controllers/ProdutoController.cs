@@ -53,18 +53,18 @@ namespace SistemaDeMercado.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult AdicionarProduto(Produto produto)
+        public CreatedResult AdicionarProduto(Produto produto)
         {
             try
             {
-                if (produto == null)
+                if (produto is null)
                 {
-                    return BadRequest();
+                    throw new Exception("Produto não informado");
                 }
 
                 validacao.Validar(produto);
                 _repositorio.AdicionarProduto(produto);
-                return Created("sucesso", produto);
+                return Created(produto.Id.ToString(),produto);
 
             }catch(Exception e) 
             {

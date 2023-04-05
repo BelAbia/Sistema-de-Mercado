@@ -5,16 +5,16 @@ sap.ui.define([
 ], function(Controller, JSONModel, History) {
 	"use strict";
 
-//ARRUMAR DATA DE CADASTRO E NAVEGACAO PARA DETALHES
-
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Cadastro", {
 
         onInit: function() {
 			var rota = this.getOwnerComponent().getRouter();
 			rota.getRoute("cadastro").attachPatternMatched(this.aoCoincidirRota, this);
+
+			this.byId("labelDataVencimento").setMinDate(new Date());
         },
 
-		aoCoincidirRota: function (oEvent) {
+		aoCoincidirRota: function () {
 			this._criarModeloDoProduto();
 		},
 
@@ -31,7 +31,7 @@ sap.ui.define([
 			this.getView().setModel(modeloProduto, "Produto");
 		},
 
-       AoClicarNoBotaoDeVoltar: function () {
+       aoClicarNoBotaoDeVoltar: function () {
 			var historia = History.getInstance();
 			var hashAnterior = historia.getPreviousHash();
 
@@ -50,19 +50,24 @@ sap.ui.define([
 
 		aoPressionarSalvar: function() {
 			const produto = this.getView().getModel("Produto").getData()
-			this.cadastrarNovoProduto(produto)
-		},
-
-		cadastrarNovoProduto: async function(produto) {
+			this.cadastrarNovoProduto(produto).then((idProduto) => {
+			  var rota = this.getOwnerComponent().getRouter();
+			  rota.navTo("detalhes", {
+				id: idProduto
+			  });
+			});
+		  },
+		  
+		  cadastrarNovoProduto: async function(produto) {
 			return await fetch('https://localhost:7047/api/Produto', {
-				method: 'POST',
-				headers: {
-					'content-type': 'application/json'
-				},
-				body: JSON.stringify(produto)
+			  method: 'POST',
+			  headers: {
+				'content-type': 'application/json'
+			  },
+			  body: JSON.stringify(produto)
 			})
 			.then((resposta) => resposta.json())
-			.then(data => data);
-		}
+			.then(data => data.id);
+		  }
 	});
 });

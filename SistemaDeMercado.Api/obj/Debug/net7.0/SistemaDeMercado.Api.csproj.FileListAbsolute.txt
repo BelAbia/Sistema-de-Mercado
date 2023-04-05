@@ -75,3 +75,4 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\net7.0\SistemaDeMercado.Api.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\net7.0\SistemaDeMercado.Api.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\obj\Debug\net7.0\ref\SistemaDeMercado.Api.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\SistemaDeMercado.Api\bin\Debug\net7.0\en-US\Dominio.resources.dll

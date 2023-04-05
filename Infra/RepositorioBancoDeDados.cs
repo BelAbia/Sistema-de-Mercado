@@ -77,6 +77,7 @@ namespace Sistema_de_Mercado
                     comando.Parameters.AddWithValue("@data_cadastro", produto.DataCadastro);
 
                     comando.ExecuteNonQuery();
+                    
                 }
                 catch
                 {

@@ -13,3 +13,4 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.dl
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Infra\obj\Debug\net6.0\refint\Infra.dll
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.pdb
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Infra\obj\Debug\net6.0\ref\Infra.dll
+C:\Users\Usuario\source\repos\Sistema-de-Mercado\Infra\bin\Debug\net6.0\en-US\Dominio.resources.dll

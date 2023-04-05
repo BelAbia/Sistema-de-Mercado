@@ -37,7 +37,7 @@ sap.ui.define([
             .then(res => res.json());
         },
 
-		AoClicarNoBotaoDeVoltar: function () {
+		aoClicarNoBotaoDeVoltar: function() {
 			var historia = History.getInstance();
 			var hashAnterior = historia.getPreviousHash();
 
@@ -47,6 +47,11 @@ sap.ui.define([
 				var rota = this.getOwnerComponent().getRouter();
 				rota.navTo("listaProduto", {}, true);
 			}
+		},
+
+		aoPressionarEditar: function() {
+			var rota = this.getOwnerComponent().getRouter();
+			rota.navTo("cadastro");
 		}
 	});
 });

@@ -20,7 +20,8 @@ namespace Sistema_de_Mercado
             {
                 try
                 {
-                    conexaoLinq2Db.Insert(produto);
+                    var id = conexaoLinq2Db.InsertWithInt32Identity(produto);
+                    produto.Id = id;
                 }
                 catch
                 {

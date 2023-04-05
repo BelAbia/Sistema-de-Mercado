@@ -14,6 +14,7 @@ namespace Sistema_de_Mercado
             {
                 produto.Id = listaSingleton.ProximoId(produto);
                 listaSingleton.ListaProdutos.Add(produto);
+                
             }
             catch
             {
