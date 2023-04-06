@@ -50,8 +50,12 @@ sap.ui.define([
 		},
 
 		aoPressionarEditar: function() {
+			const produto = this.getView().getModel("detalhes").getData()
+			let id = produto.id
 			var rota = this.getOwnerComponent().getRouter();
-			rota.navTo("cadastro");
+			rota.navTo("cadastro", {
+				id: id
+			});
 		}
 	});
 });

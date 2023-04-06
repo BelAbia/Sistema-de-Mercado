@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6cknalBsseW9vWpqeWA1c/J1eOxn5JrE5sDKl88xvDHzUmRjn6XmrOMirKZ9XMEf3QajL1dA/QCNfh6XHgIwDA==",
+  "dgSpecHash": "DmQxr+auBsk5lJ+AnO2FN1/AjMUAymia7Hh0DfZ2H0By70JjoXs3EN0/FGHnbvjnU+ejkya+Gs2SeKJayHzupQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentmigrator\\3.3.2\\fluentmigrator.3.3.2.nupkg.sha512",

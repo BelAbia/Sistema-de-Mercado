@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,18 +61,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -142,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1860,11 +1860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
       "projectName": "SistemaDeMercado.Api",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1881,11 +1881,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+            "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj"
+            "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj"
             }
           }
         }
@@ -1928,7 +1928,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

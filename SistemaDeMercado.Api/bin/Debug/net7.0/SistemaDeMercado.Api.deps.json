@@ -371,6 +371,11 @@
         },
         "runtime": {
           "Dominio.dll": {}
+        },
+        "resources": {
+          "en-US/Dominio.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "Infra/1.0.0": {

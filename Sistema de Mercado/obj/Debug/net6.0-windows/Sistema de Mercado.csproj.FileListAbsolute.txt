@@ -152,3 +152,138 @@ C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\ne
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeLista.en-US.resources
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources
 C:\Users\Usuario\source\repos\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\en-US\Dominio.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.exe
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.dll.config
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.deps.json
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.runtimeconfig.json
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Sistema de Mercado.pdb
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\en-US\Sistema de Mercado.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Abstractions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Extensions.Oracle.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Extensions.Postgres.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Extensions.SqlAnywhere.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Extensions.SqlServer.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Core.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Db2.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Firebird.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Hana.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.MySql.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Oracle.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Postgres.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.Redshift.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.SqlAnywhere.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.SQLite.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.SqlServer.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\FluentMigrator.Runner.SqlServerCe.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Data.SqlServerCe.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\linq2db.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Console.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\de-DE\FluentMigrator.Abstractions.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Dominio.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Infra.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Dominio.pdb
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\Infra.pdb
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\bin\Debug\net6.0-windows\en-US\Dominio.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeCadastro.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.JanelaDeLista.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.Properties.Resources.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeCadastro.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeLista.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeCadastro.en-US.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema_de_Mercado.ResJanelaDeLista.en-US.resources
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.AssemblyInfo.cs
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\en-US\Sistema de Mercado.resources.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.csproj.CopyComplete
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\refint\Sistema de Mercado.dll
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.pdb
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\Sistema de Mercado.genruntimeconfig.cache
+C:\Users\Usuario\Documents\SistemaDeMercado\Sistema-de-Mercado\Sistema de Mercado\obj\Debug\net6.0-windows\ref\Sistema de Mercado.dll

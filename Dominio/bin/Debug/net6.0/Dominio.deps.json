@@ -12,6 +12,11 @@
         },
         "runtime": {
           "Dominio.dll": {}
+        },
+        "resources": {
+          "en-US/Dominio.resources.dll": {
+            "locale": "en-US"
+          }
         }
       },
       "linq2db/4.4.1": {
