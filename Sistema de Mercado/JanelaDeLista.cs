@@ -116,6 +116,25 @@
         private void AoCarregarJanelaDeLista(object sender, EventArgs e)
         {
             AtualizarDataGridView();
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+            ImplementandoTextosDoForms();
+        }
+
+        public void ImplementandoTextosDoForms()
+        {
+            idDataGridViewTextBoxColumn.HeaderText = ResJanelaDeLista.idDataGridViewTextBoxColumn;
+            nomeDataGridViewTextBoxColumn.HeaderText = ResJanelaDeLista.nomeDataGridViewTextBoxColumn;
+            marcaDataGridViewTextBoxColumn.HeaderText = ResJanelaDeLista.marcaDataGridViewTextBoxColumn;
+            codigoBarrasDataGridViewTextBoxColumn.HeaderText = ResJanelaDeLista.codigoBarrasDataGridViewTextBoxColumn;
+            dataVencimentoDataGridViewTextBoxColumn.HeaderText = ResJanelaDeLista.dataVencimentoDataGridViewTextBoxColumn;
+            dataGridViewTextBoxColumn1.HeaderText = ResJanelaDeLista.dataGridViewTextBoxColumn1;
+            bt_OK.Text = ResJanelaDeLista.bt_OK;
+            bt_Cancelar1.Text = ResJanelaDeLista.bt_Cancelar1;
+            bt_Atualizar.Text = ResJanelaDeLista.bt_Atualizar;
+            bt_Novo.Text = ResJanelaDeLista.bt_Novo;
+            bt_Deletar.Text = ResJanelaDeLista.bt_Deletar;
+            this.Text = ResJanelaDeLista.JanelaDeLista;
+
         }
     }
 }

@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=LAPTOP-9S8CUJSI\\SQLEXPRESS;Initial Catalog=sistema_de_mercado;User ID=sa;Password=sap@123"
+  }
+}

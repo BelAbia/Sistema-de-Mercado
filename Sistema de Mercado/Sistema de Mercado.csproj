@@ -14,6 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="JanelaDeCadastro.en-FJ.resx" />
+    <EmbeddedResource Remove="JanelaDeCadastro.en-US.resx" />
+    <EmbeddedResource Remove="JanelaDeCadastro.es-AR.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentMigrator" Version="3.3.2" />
     <PackageReference Include="FluentMigrator.Extensions.SqlServer" Version="3.3.2" />
     <PackageReference Include="FluentMigrator.Runner" Version="3.3.2" />
@@ -26,6 +32,48 @@
   <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
     <ProjectReference Include="..\Infra\Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ResJanelaDeCadastro.en-US.Designer.cs">
+      <DependentUpon>ResJanelaDeCadastro.en-US.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="ResJanelaDeCadastro.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResJanelaDeCadastro.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ResJanelaDeLista.en-US.Designer.cs">
+      <DependentUpon>ResJanelaDeLista.en-US.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="ResJanelaDeLista.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResJanelaDeLista.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ResJanelaDeCadastro.en-US.resx">
+      <LastGenOutput>ResJanelaDeCadastro.en-US.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ResJanelaDeCadastro.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResJanelaDeCadastro.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ResJanelaDeLista.en-US.resx">
+      <LastGenOutput>ResJanelaDeLista.en-US.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ResJanelaDeLista.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResJanelaDeLista.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

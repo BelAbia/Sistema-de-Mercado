@@ -1,0 +1,74 @@
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.ListaProduto"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core">
+	<Panel accessibleRole="Region">
+		<FlexBox height="40px" alignItems="Start" justifyContent="Start">
+			<Button 
+				id="idBotaoParaAdicionarNovoProduto" 
+				width="100%" 
+				icon="sap-icon://add" 
+				text="{i18n>BotaoParaAdicionarNovoProduto}" 
+				type="Emphasized" 
+				press="aoClicarEmNovoProduto"
+				class="sapUiSmallMarginEnd"/>
+		</FlexBox>
+		<headerToolbar>
+			<Toolbar>
+				<Title text="{i18n>TituloPaginaListaDeProdutos}"/>
+				<ToolbarSpacer/>
+				<SearchField width="40%" search="aoFiltrarProdutos"/>
+			</Toolbar>
+		</headerToolbar>
+		<Table 
+			id="idTabelaDeProdutos" 
+			class="sapUiResponsiveMargin" 
+			maxHeight="100px"
+			width="auto" 
+			items="{
+					path: 'listaProdutos>/'}">
+			<columns> 		
+				<Column>
+					<Text text="{i18n>ColunaId}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>ColunaNome}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>ColunaMarca}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>ColunaCodigoDeBarras}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>ColunaDataDeVencimento}"/>
+				</Column>
+				<Column>
+					<Text text="{i18n>ColunaDataDeCadastro}"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem type="Navigation" press="aoClicarNaListaDeProduto">
+					<cells>
+						<Text text="{listaProdutos>id}"/>
+						<Text text="{listaProdutos>nome}"/>
+						<Text text="{listaProdutos>marca}"/>
+						<Text text="{listaProdutos>codigoBarras}"/>
+						<Text text="{path:'listaProdutos>dataVencimento',
+						type: 'sap.ui.model.type.Date',
+						formatOptions: {
+							source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
+							style: 'medium'
+						}}"/>
+						<Text text="{path:'listaProdutos>dataCadastro',
+						type: 'sap.ui.model.type.Date',
+						formatOptions: {
+							source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
+							style: 'medium'
+						}}"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+	</Panel>
+</mvc:View>

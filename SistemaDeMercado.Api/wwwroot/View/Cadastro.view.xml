@@ -1,0 +1,61 @@
+<mvc:View
+	controllerName="sap.ui.demo.walkthrough.controller.Cadastro"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout">
+	<Page
+		title="{i18n>TituloTelaDeCadastro}"
+		showNavButton="true"
+		navButtonPress="aoClicarNoBotaoDeVoltar">
+		<headerContent>
+			<Button 
+				id="idBotaoParaSalvarProduto" 
+				icon="sap-icon://save" 
+				text="{i18n>BotaoParaSalvarProduto}" 
+				press="aoPressionarSalvar"/>
+			<Button 
+				id="idBotaoParaCancelarAlteracoes" 
+				icon="sap-icon://decline" 
+				text="{i18n>BotaoParaCancelarAlteracoes}" 
+				press="aoPressionarCancelar"/>
+		</headerContent>
+        <l:VerticalLayout class="sapUiContentPadding" width="50%">
+        <Label 
+		text="{i18n>LabelNomeDoProduto}" 
+		labelFor="labelNome" />
+		<Input 
+			placeholder="{i18n>TextoDaLabelNomeDoProduto}" 
+			id="labelNome" 
+			required="true" 
+			value="{
+				path: 'Produto>/nome'}"/>
+        <Label 
+			text="{i18n>LabelMarcaDoProduto}" 
+			labelFor="labelMarca" />
+		<Input 
+			placeholder="{i18n>TextoDaLabelMarcaDoProduto}"  
+			id="labelMarca" 
+			required="true" 
+			value="{
+				path: 'Produto>/marca'}"/>
+        <Label 
+			text="{i18n>LabelCodigoBarrasDoProduto}" 
+			labelFor="labelCodigoBarras" />
+		<Input 
+			placeholder="{i18n>TextoDaLabelCodigoBarras}"  
+			id="labelCodigoBarras" 
+			required="true" 
+			value="{
+				path: 'Produto>/codigoBarras'}" />
+        <Label 
+			text="{i18n>LabelDataVencimentoDoProduto}" 
+			required="true" 
+			labelFor="labelDataVencimento" />
+		<DatePicker 
+			id= "labelDataVencimento" 
+			value="{
+				path: 'Produto>/dataVencimento'}"
+			valueFormat="yyyy-MM-ddTHH:mm:ss.SS"/>
+        </l:VerticalLayout>
+	</Page>
+</mvc:View>
