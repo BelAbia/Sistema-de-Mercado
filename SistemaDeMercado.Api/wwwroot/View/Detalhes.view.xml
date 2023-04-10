@@ -20,20 +20,20 @@
 				</headerContent>
 		<ObjectHeader
 			id="IdObjectHeader"
-			intro="{detalhes>nome}"
-			title="{detalhes>marca}">
+			intro="{Produto>nome}"
+			title="{Produto>marca}">
 		<attributes>
-			<ObjectAttribute title="{i18n>IdTelaDeDetalhes}" text = "{detalhes>id}" />
-        	<ObjectAttribute title="{i18n>CodigoDeBarrasTelaDeDetalhes}" text = "{detalhes>codigoBarras}" />
+			<ObjectAttribute title="{i18n>IdTelaDeDetalhes}" text = "{Produto>id}" />
+        	<ObjectAttribute title="{i18n>CodigoDeBarrasTelaDeDetalhes}" text = "{Produto>codigoBarras}" />
 			<ObjectAttribute title="{i18n>DataVencimentoTelaDeDetalhes}" 
-				text="{ path: 'detalhes>dataVencimento',
+				text="{ path: 'Produto>dataVencimento',
 				type: 'sap.ui.model.type.Date',
 				formatOptions: {
 					source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},
 					style: 'medium'
 				}}"/>
 			<ObjectAttribute title="{i18n>DataCadastroTelaDeDetalhes}" 
-				text="{ path: 'detalhes>dataCadastro',
+				text="{ path: 'Produto>dataCadastro',
 				type: 'sap.ui.model.type.DateTime',
 				formatOptions: {
 					source: {pattern: 'yyyy-MM-ddTHH:mm:ss.SS'},

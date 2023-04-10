@@ -19,15 +19,12 @@ sap.ui.define([
 		},
 		
 		exibirProduto: function (id) {
-			var listaRetornada = this.buscarDetalheDoProduto(id);
-			listaRetornada.then(produto => {
+			var produtoDetalhado = this.buscarDetalheDoProduto(id);
+			produtoDetalhado.then(produto => {
 				var modelo = new JSONModel(produto)
-				this.getView().setModel(modelo, "detalhes");
+				this.getView().setModel(modelo, "Produto");
 				this.getView().byId("IdObjectHeader").bindElement({
-					path: "detalhes>/",
-					parameters: {
-						expand: "detalhes"
-					}
+					path: "Produto>/"
 				});
 			});
 		},
@@ -50,12 +47,27 @@ sap.ui.define([
 		},
 
 		aoPressionarEditar: function() {
-			const produto = this.getView().getModel("detalhes").getData()
+			const produto = this.getView().getModel("Produto").getData()
 			let id = produto.id
 			var rota = this.getOwnerComponent().getRouter();
-			rota.navTo("cadastro", {
+			rota.navTo("edicao", {
 				id: id
 			});
+		},
+
+		aoPressionarExcluir: function() {
+			const produto = this.getView().getModel("Produto").getData()
+			let id = produto.id
+			this.excluirProduto(id)
+			var rota = this.getOwnerComponent().getRouter();
+			rota.navTo("listaProduto")
+		},
+
+		excluirProduto: async function(id) {
+            return await fetch (`https://localhost:7047/api/Produto/${id}`, {
+				method: 'DELETE'})
+				.then(res => res.text())
+				.then(res => console.log(res))
 		}
 	});
 });

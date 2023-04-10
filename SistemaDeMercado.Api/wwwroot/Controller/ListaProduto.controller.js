@@ -10,6 +10,7 @@ sap.ui.define([
 
 		onInit: function() {
 			this.exibirProduto()
+			
 		},
 		
 		exibirProduto: function () {
