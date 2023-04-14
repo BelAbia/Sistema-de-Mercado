@@ -28,7 +28,12 @@
 			id="labelNome" 
 			required="true" 
 			value="{
-				path: 'Produto>/nome'}"/>
+				path: 'Produto>/nome'
+				type: 'sap.ui.model.type.String'
+				constraints : {
+					minLength: 1,
+					maxLength: 50
+				}}"/>
         <Label 
 			text="{i18n>LabelMarcaDoProduto}" 
 			labelFor="labelMarca" />
@@ -37,7 +42,12 @@
 			id="labelMarca" 
 			required="true" 
 			value="{
-				path: 'Produto>/marca'}"/>
+				path: 'Produto>/marca'
+				type: 'sap.ui.model.type.String'
+				constraints : {
+					minLength: 1,
+					maxLength: 50
+				}}"/>
         <Label 
 			text="{i18n>LabelCodigoBarrasDoProduto}" 
 			labelFor="labelCodigoBarras" />
@@ -46,7 +56,12 @@
 			id="labelCodigoBarras" 
 			required="true" 
 			value="{
-				path: 'Produto>/codigoBarras'}" />
+				path: 'Produto>/codigoBarras'
+				type: 'sap.ui.model.type.Integer'
+				constraints : {
+					minLength: 13,
+					maxLength: 13
+				}}" />
         <Label 
 			text="{i18n>LabelDataVencimentoDoProduto}" 
 			required="true" 

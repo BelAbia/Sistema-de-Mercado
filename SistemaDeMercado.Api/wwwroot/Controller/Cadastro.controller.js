@@ -63,7 +63,7 @@ sap.ui.define([
 		aoPressionarSalvar: function() {
 			const produto = this.getView().getModel("Produto").getData()
 			
-			if(produto.id != 0){
+			if(produto.id){
 				let id = produto.id
 				this.editarProduto(produto)
 				var rota = this.getOwnerComponent().getRouter();
