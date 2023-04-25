@@ -107,6 +107,14 @@ sap.ui.define([
 			})
 			.then((resposta) => resposta.json())
 			.then(data => data.id);
-		  }
+		  },
+
+		  validarProdutos: function (produto){
+			if (produto.codigoBarras){
+				
+			}
+
+		}
+		  
 	});
 });
