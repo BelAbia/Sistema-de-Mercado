@@ -19,6 +19,13 @@
 				text="{i18n>BotaoParaCancelarAlteracoes}" 
 				press="aoPressionarCancelar"/>
 		</headerContent>
+		<MessageStrip
+				text="Warning with default icon and close button:"
+				type="Warning"
+				showIcon="true"
+				showCloseButton="true"
+				class="sapUiMediumMarginBottom">
+		</MessageStrip>
         <l:VerticalLayout class="sapUiContentPadding" width="50%">
         <Label 
 		text="{i18n>LabelNomeDoProduto}" 

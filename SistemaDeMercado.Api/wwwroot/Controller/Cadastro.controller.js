@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/core/routing/History"
-], function(Controller, JSONModel, History) {
+	"sap/ui/core/routing/History",
+	'sap/m/MessageToast'
+], function(Controller, JSONModel, History, MessageToast) {
 	"use strict";
 
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Cadastro", {
@@ -43,6 +44,13 @@ sap.ui.define([
 			this.getView().setModel(modeloProduto, "Produto");
 		},
 
+		_criarModeloDeListaDeAvisos: function(){
+			let modeloDeLista = new JSONModel({
+				avisos: []
+			});
+			this.getView.setModel(modeloListaDeAvisos, "ListaAvisos");
+		},
+
        aoClicarNoBotaoDeVoltar: function () {
 			var historia = History.getInstance();
 			var hashAnterior = historia.getPreviousHash();
@@ -62,6 +70,7 @@ sap.ui.define([
 
 		aoPressionarSalvar: function() {
 			const produto = this.getView().getModel("Produto").getData()
+			this.validarProdutos(produto);
 			
 			if(produto.id){
 				let id = produto.id
@@ -110,11 +119,24 @@ sap.ui.define([
 		  },
 
 		  validarProdutos: function (produto){
-			if (produto.codigoBarras){
-				
+			var listaDeMensagensDeAviso = [];
+			if (produto.codigoBarras.length !== 13){
+				listaDeMensagensDeAviso.push("Codigo de barras deve ter 13 digitos.");
 			}
-
+			if(!produto.codigoBarras.startsWith("789"))
+			{
+				listaDeMensagensDeAviso.push("O codigo de barras deve começar com '789'.");
+			}
+			if(!produto.nome){
+				listaDeMensagensDeAviso.push("Nome não pode ser vazio.");
+			}
+			if(!produto.marca){
+				listaDeMensagensDeAviso.push("Marca não pode ser vazio.");
+			}
+			if(listaDeMensagensDeAviso.length > 0)
+			{
+				this.getView().getModel("ListaAvisos").setProperty("/avisos", listaDeMensagensDeAviso);
+			}
 		}
-		  
 	});
 });
