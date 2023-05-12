@@ -18,6 +18,7 @@ sap.ui.define([
 
 		aoCoincidirRota: function (evento) {
 			let conferindoNomeDaRota = evento.getParameter("name") == "cadastro";
+			this._inicializarModelo();
 			if (conferindoNomeDaRota){
 			this._criarModeloDoProduto();
 
@@ -29,6 +30,10 @@ sap.ui.define([
 					this.getView().setModel(modelo, "Produto");
 				});
 			}
+		},
+
+		_inicializarModelo: function (){
+			this._criarModeloDeListaDeAvisos();
 		},
 
 		_criarModeloDoProduto: function(){
@@ -48,7 +53,7 @@ sap.ui.define([
 			let modeloDeLista = new JSONModel({
 				avisos: []
 			});
-			this.getView.setModel(modeloListaDeAvisos, "ListaAvisos");
+			this.getView().setModel(modeloDeLista, "ListaAvisos");
 		},
 
        aoClicarNoBotaoDeVoltar: function () {
@@ -119,23 +124,29 @@ sap.ui.define([
 		  },
 
 		  validarProdutos: function (produto){
-			var listaDeMensagensDeAviso = [];
+			let listaDeMensagensDeAviso = [];
 			if (produto.codigoBarras.length !== 13){
-				listaDeMensagensDeAviso.push("Codigo de barras deve ter 13 digitos.");
+				listaDeMensagensDeAviso += "Codigo de barras deve ter 13 digitos.\n";
 			}
 			if(!produto.codigoBarras.startsWith("789"))
 			{
-				listaDeMensagensDeAviso.push("O codigo de barras deve começar com '789'.");
+				listaDeMensagensDeAviso += "O codigo de barras deve começar com '789'.\n";
 			}
 			if(!produto.nome){
-				listaDeMensagensDeAviso.push("Nome não pode ser vazio.");
+				listaDeMensagensDeAviso += "O nome não pode ser vazio.\n";
 			}
 			if(!produto.marca){
-				listaDeMensagensDeAviso.push("Marca não pode ser vazio.");
+				listaDeMensagensDeAviso += "A marca não pode ser vazio.\n";
+			}
+			if(!produto.dataVencimento){
+				listaDeMensagensDeAviso += "A data de Vencimento não pode ser vazia.\n";
 			}
 			if(listaDeMensagensDeAviso.length > 0)
 			{
 				this.getView().getModel("ListaAvisos").setProperty("/avisos", listaDeMensagensDeAviso);
+				//this.getView().byId("idMessageTrip").setVisible(true);
+				this.getView().byId("labelCodigoBarras").setValueState("Error");
+				this.getView().byId("labelCodigoBarras").setValueStateText("O codigo de barras deve começar com '789'.");
 			}
 		}
 	});

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2yuPqEOQMcEXdlQvOiGI1pzyl2YceVyvWMKHP7U/7qg=",
+  "Hash": "nZ1K3ztzpb1u6sM7UYbyaPFwtfMkBPOwYEDs5OlzjyI=",
   "Source": "SistemaDeMercado.Api",
   "BasePath": "_content/SistemaDeMercado.Api",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Controller\\ListaProduto.controller.js"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Validacao.js",
+      "SourceId": "SistemaDeMercado.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "BasePath": "_content/SistemaDeMercado.Api",
+      "RelativePath": "Controller/Validacao.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Controller\\Validacao.js"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",

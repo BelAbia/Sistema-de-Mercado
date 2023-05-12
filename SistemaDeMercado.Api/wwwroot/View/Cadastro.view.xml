@@ -20,11 +20,13 @@
 				press="aoPressionarCancelar"/>
 		</headerContent>
 		<MessageStrip
-				text="Warning with default icon and close button:"
+				id="idMessageTrip"
+				text="{ListaAvisos>/avisos}"
 				type="Warning"
 				showIcon="true"
 				showCloseButton="true"
-				class="sapUiMediumMarginBottom">
+				class="sapUiTinyMargin"
+				visible="{= ${ListaAvisos>/avisos}.length > 0 }">
 		</MessageStrip>
         <l:VerticalLayout class="sapUiContentPadding" width="50%">
         <Label 

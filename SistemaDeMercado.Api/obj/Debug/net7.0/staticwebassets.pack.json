@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\Controller\\ListaProduto.controller.js"
     },
     {
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Validacao.js",
+      "PackagePath": "staticwebassets\\Controller\\Validacao.js"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
       "PackagePath": "staticwebassets\\View\\App.view.xml"
     },
