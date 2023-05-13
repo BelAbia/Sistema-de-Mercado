@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4mWPNM0fzDPCgQLMGXaXgLnX5ussAAzx81F1JjmDjlLgMLdBkZ1BxYfw1A4Z2DKj7tU90tPuByexl9s1t4+OJw==",
+  "dgSpecHash": "06Rg1LaXN8vziFMpZ2Jhjvn9bXBopKU7GIoFP88Tqo8v140mgg5506jToiiyYs2rWSVvx6w9gi73yCDQBZnbLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\linq2db\\4.4.1\\linq2db.4.4.1.nupkg.sha512"
+    "C:\\Users\\joalv\\.nuget\\packages\\linq2db\\4.4.1\\linq2db.4.4.1.nupkg.sha512"
   ],
   "logs": []
 }

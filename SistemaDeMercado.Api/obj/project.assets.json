@@ -1855,19 +1855,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\joalv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+      "projectUniqueName": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
       "projectName": "SistemaDeMercado.Api",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\SistemaDeMercado.Api\\obj\\",
+      "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+      "packagesPath": "C:\\Users\\joalv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joalv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1881,11 +1881,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+            "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sistema-de-Mercado\\Infra\\Infra.csproj"
+            "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\Infra.csproj"
             }
           }
         }
@@ -1928,7 +1928,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
