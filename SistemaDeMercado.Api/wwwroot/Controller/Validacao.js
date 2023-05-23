@@ -2,9 +2,11 @@ sap.ui.define([
 "sap/ui/base/ManagedObject"
 ], function(ManagedObject) { 
 	"use strict";
+	return Controller.extend("sap.ui.demo.walkthrough.controller.Validacao", {
 
 	return ManagedObject.extend("sap.ui.demo.walkthrough.controller.Validacao", {
 
+<<<<<<< HEAD
 	ValidarProdutos: function (produto){
 		let listaDeMensagensDeAviso = [];
 		if (produto.codigoBarras.length !== 13){
@@ -38,4 +40,7 @@ sap.ui.define([
 		}
 		}
 	});
+=======
+	})
+>>>>>>> 95645762e064a512747de9795b9ec5639ad97e6b
 });

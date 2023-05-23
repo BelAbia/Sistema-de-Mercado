@@ -4063,31 +4063,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {}
+    "C:\\Users\\joalv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+      "projectUniqueName": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
       "projectName": "Sistema de Mercado",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Sistema de Mercado\\obj\\",
+      "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Sistema de Mercado\\Sistema de Mercado.csproj",
+      "packagesPath": "C:\\Users\\joalv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Sistema de Mercado\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Users\\joalv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -4095,11 +4089,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+            "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj"
+            "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\Infra.csproj"
             }
           }
         }

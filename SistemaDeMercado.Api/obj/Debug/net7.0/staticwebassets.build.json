@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nZ1K3ztzpb1u6sM7UYbyaPFwtfMkBPOwYEDs5OlzjyI=",
+  "Hash": "BPK4eZaH32avL6O+3ad+0oErPEKqOnhCI0McfClebsQ=",
   "Source": "SistemaDeMercado.Api",
   "BasePath": "_content/SistemaDeMercado.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SistemaDeMercado.Api\\wwwroot",
       "Source": "SistemaDeMercado.Api",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Component.js",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Component.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "Component.js",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Component.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "Controller/App.controller.js",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\Controller\\App.controller.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Cadastro.controller.js",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Cadastro.controller.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "Controller/Cadastro.controller.js",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Controller\\Cadastro.controller.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Detalhes.controller.js",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Detalhes.controller.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "Controller/Detalhes.controller.js",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\Controller\\Detalhes.controller.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "Controller/ListaProduto.controller.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\Controller\\ListaProduto.controller.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Validacao.js",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Validacao.js",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "Controller/Validacao.js",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\Controller\\Validacao.js"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "i18n/i18n.properties",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\i18n\\i18n.properties"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\index.html",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\manifest.json",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\manifest.json",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "manifest.json",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\manifest.json"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "View/App.view.xml",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\View\\App.view.xml"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Cadastro.view.xml",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Cadastro.view.xml",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "View/Cadastro.view.xml",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\View\\Cadastro.view.xml"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Detalhes.view.xml",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Detalhes.view.xml",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "View/Detalhes.view.xml",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\View\\Detalhes.view.xml"
     },
     {
-      "Identity": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
+      "Identity": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
       "SourceId": "SistemaDeMercado.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\",
       "BasePath": "_content/SistemaDeMercado.Api",
       "RelativePath": "View/ListaProduto.view.xml",
       "AssetKind": "All",
