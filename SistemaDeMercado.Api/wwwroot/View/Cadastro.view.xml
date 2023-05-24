@@ -22,7 +22,7 @@
 		<MessageStrip
 				id="idMessageTrip"
 				text="{ListaAvisos>/avisos}"
-				type="Warning"
+				type="Error"
 				showIcon="true"
 				showCloseButton="true"
 				class="sapUiTinyMargin"
