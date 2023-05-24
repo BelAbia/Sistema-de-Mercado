@@ -46,3 +46,19 @@ C:\Users\joalv\OneDrive\Área de Trabalho\Sistema de Mercado\Sistema-de-Mercado\
 C:\Users\joalv\OneDrive\Área de Trabalho\Sistema de Mercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\refint\Infra.dll
 C:\Users\joalv\OneDrive\Área de Trabalho\Sistema de Mercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.pdb
 C:\Users\joalv\OneDrive\Área de Trabalho\Sistema de Mercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\ref\Infra.dll
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\bin\Debug\net6.0\Infra.deps.json
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\bin\Debug\net6.0\Infra.dll
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\bin\Debug\net6.0\Infra.pdb
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\bin\Debug\net6.0\Dominio.dll
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\bin\Debug\net6.0\Dominio.pdb
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\bin\Debug\net6.0\en-US\Dominio.resources.dll
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.csproj.AssemblyReference.cache
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.AssemblyInfoInputs.cache
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.AssemblyInfo.cs
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.csproj.CopyComplete
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.dll
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\refint\Infra.dll
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\Infra.pdb
+C:\Users\davib\OneDrive\Documentos\SistemaDeMercado\Sistema-de-Mercado\Infra\obj\Debug\net6.0\ref\Infra.dll

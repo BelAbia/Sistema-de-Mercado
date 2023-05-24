@@ -1327,19 +1327,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joalv\\.nuget\\packages\\": {}
+    "C:\\Users\\davib\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
-      "packagesPath": "C:\\Users\\joalv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Infra\\obj\\",
+      "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+      "packagesPath": "C:\\Users\\davib\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joalv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\davib\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1353,8 +1353,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\joalv\\OneDrive\\Área de Trabalho\\Sistema de Mercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+            "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
             }
           }
         }
