@@ -72,6 +72,7 @@ sap.ui.define([
 
 		aoPressionarSalvar: function() {
 			const produto = this.getView().getModel("Produto").getData()
+			this._pegarValoresDoInput();
 			this._validacao.ValidarProdutos.bind(this)(produto);
 			if(produto.id){
 				this.editarProduto(produto)
@@ -83,7 +84,7 @@ sap.ui.define([
 				this.cadastrarNovoProduto(produto).then((produtoCriado) => {
 				var rota = this.getOwnerComponent().getRouter();
 				rota.navTo("detalhes", {
-					id: produtoCriado.id
+					id: produtoCriado
 					});
 				});
 			}
@@ -123,6 +124,11 @@ sap.ui.define([
 			this.getView().byId("labelNome").setValueState("None");
 			this.getView().byId("labelMarca").setValueState("None");
 			this.getView().byId("labelDataVencimento").setValueState("None");
+		  },
+
+		  _pegarValoresDoInput: function(){
+			let nome = this.getView().byId("labelNome").getValue();
+			this.getView().getModel("Produto").setProperty("/nome", nome);
 		  }
 	});
 });

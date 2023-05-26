@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/core/routing/History"
-], function(Controller, JSONModel, History) {
+	"sap/ui/core/routing/History",
+	"sap/m/MessageBox"
+], function(Controller, JSONModel, History, MessageBox) {
 	"use strict";
 
 	return Controller.extend("sap.ui.demo.walkthrough.controller.Detalhes", {
@@ -10,7 +11,6 @@ sap.ui.define([
 		onInit: function() {
 			var rota = this.getOwnerComponent().getRouter();
 			rota.getRoute("detalhes").attachPatternMatched(this.aoCoincidirRota, this);
-
 		},
 
 		aoCoincidirRota: function (oEvent) {
@@ -37,7 +37,6 @@ sap.ui.define([
 		aoClicarNoBotaoDeVoltar: function() {
 			var historia = History.getInstance();
 			var hashAnterior = historia.getPreviousHash();
-
 			if (hashAnterior !== undefined) {
 				window.history.go(-1);
 			} else {
@@ -56,11 +55,20 @@ sap.ui.define([
 		},
 
 		aoPressionarExcluir: function() {
-			const produto = this.getView().getModel("Produto").getData()
-			let id = produto.id
-			this.excluirProduto(id)
-			var rota = this.getOwnerComponent().getRouter();
-			rota.navTo("listaProduto")
+			const produto = this.getView().getModel("Produto").getData();
+			const i18nModel = this.getView().getModel("i18n");
+			
+				MessageBox.confirm(i18nModel.getResourceBundle().getText("MensagemParaConfirmarExclusao"), {
+				title: "Confirmação",
+				onClose: function (oAction) {
+					if (oAction === sap.m.MessageBox.Action.OK) {
+						let id = produto.id;
+						this.excluirProduto(id);
+						var rota = this.getOwnerComponent().getRouter();
+						rota.navTo("listaProduto");
+					}
+				}.bind(this) 
+			});
 		},
 
 		excluirProduto: async function(id) {

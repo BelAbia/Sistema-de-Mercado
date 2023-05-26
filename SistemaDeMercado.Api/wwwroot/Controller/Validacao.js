@@ -14,7 +14,15 @@ sap.ui.define([
 			this.getView().setModel(modeloDeLista, "ListaAvisos");
 		},
 
+		_mudandoOEstadoDoInputParaNone: function(){
+			this.getView().byId("labelCodigoBarras").setValueState("None");
+			this.getView().byId("labelNome").setValueState("None");
+			this.getView().byId("labelMarca").setValueState("None");
+			this.getView().byId("labelDataVencimento").setValueState("None");
+		  },
+
 		ValidarProdutos: function (produto) {
+			this._mudandoOEstadoDoInputParaNone();
 			let listaDeMensagensDeAviso = [];
 			if (produto.codigoBarras.length !== 13) {
 				listaDeMensagensDeAviso += this.getView().getModel("i18n").getResourceBundle().getText("AvisoTamanhoDoCodigoDeBarras");
@@ -27,6 +35,8 @@ sap.ui.define([
 			if (!produto.nome) {
 				listaDeMensagensDeAviso += this.getView().getModel("i18n").getResourceBundle().getText("AvisoNome");
 				this.getView().byId("labelNome").setValueState("Error");
+				this.getView().byId("labelNome").setValueStateText("Error");
+
 			}
 			if (!produto.marca) {
 				listaDeMensagensDeAviso += this.getView().getModel("i18n").getResourceBundle().getText("AvisoMarca");

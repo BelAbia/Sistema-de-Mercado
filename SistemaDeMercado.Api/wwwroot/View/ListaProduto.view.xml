@@ -4,6 +4,11 @@
 	xmlns:core="sap.ui.core">
 	<Panel accessibleRole="Region">
 		<FlexBox height="40px" alignItems="Start" justifyContent="Start">
+		<ScrollContainer
+		height="100%"
+		width="100%"
+		vertical="true"
+		focusable="true">
 			<Button 
 				id="idBotaoParaAdicionarNovoProduto" 
 				width="100%" 
@@ -69,5 +74,6 @@
 				</ColumnListItem>
 			</items>
 		</Table>
+		</ScrollContainer>
 	</Panel>
 </mvc:View>

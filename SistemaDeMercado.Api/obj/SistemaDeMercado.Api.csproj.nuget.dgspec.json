@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj": {}
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\davib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\davib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -65,23 +70,28 @@
         }
       }
     },
-    "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
-        "packagesPath": "C:\\Users\\davib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\davib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -89,8 +99,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -146,23 +156,28 @@
         }
       }
     },
-    "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj": {
+    "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
         "projectName": "SistemaDeMercado.Api",
-        "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
-        "packagesPath": "C:\\Users\\davib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\SistemaDeMercado.Api.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\davib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -170,11 +185,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
-                "projectPath": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj"
+              "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\Infra\\Infra.csproj"
               }
             }
           }

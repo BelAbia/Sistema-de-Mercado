@@ -1,55 +1,55 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Component.js",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Component.js",
       "PackagePath": "staticwebassets\\Component.js"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\App.controller.js",
       "PackagePath": "staticwebassets\\Controller\\App.controller.js"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Cadastro.controller.js",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Cadastro.controller.js",
       "PackagePath": "staticwebassets\\Controller\\Cadastro.controller.js"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Detalhes.controller.js",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Detalhes.controller.js",
       "PackagePath": "staticwebassets\\Controller\\Detalhes.controller.js"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\ListaProduto.controller.js",
       "PackagePath": "staticwebassets\\Controller\\ListaProduto.controller.js"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Validacao.js",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\Controller\\Validacao.js",
       "PackagePath": "staticwebassets\\Controller\\Validacao.js"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\App.view.xml",
       "PackagePath": "staticwebassets\\View\\App.view.xml"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Cadastro.view.xml",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Cadastro.view.xml",
       "PackagePath": "staticwebassets\\View\\Cadastro.view.xml"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Detalhes.view.xml",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\Detalhes.view.xml",
       "PackagePath": "staticwebassets\\View\\Detalhes.view.xml"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\View\\ListaProduto.view.xml",
       "PackagePath": "staticwebassets\\View\\ListaProduto.view.xml"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\i18n\\i18n.properties",
       "PackagePath": "staticwebassets\\i18n\\i18n.properties"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\davib\\OneDrive\\Documentos\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\manifest.json",
+      "Id": "C:\\Users\\Usuario\\Documents\\SistemaDeMercado\\Sistema-de-Mercado\\SistemaDeMercado.Api\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {
