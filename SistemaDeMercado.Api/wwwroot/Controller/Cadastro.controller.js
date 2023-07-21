@@ -70,17 +70,21 @@ sap.ui.define([
 				rota.navTo("listaProduto", {}, true);
 		},
 
-		aoPressionarSalvar: function() {
+		ValidarProduto: function (produto) {
+			this._validacao.ValidarProdutos.bind(this)(produto);
+		},
+
+		aoPressionarSalvar: async function() {
 			const produto = this.getView().getModel("Produto").getData()
 			this._pegarValoresDoInput();
-			this._validacao.ValidarProdutos.bind(this)(produto);
+			this.ValidarProduto(produto);
 			if(produto.id){
-				this.editarProduto(produto)
+				await this.editarProduto(produto)
 				var rota = this.getOwnerComponent().getRouter();
 				rota.navTo("detalhes", {
 					id: produto.id
 				  });
-			}else{
+			}if(!produto.id){
 				this.cadastrarNovoProduto(produto).then((produtoCriado) => {
 				var rota = this.getOwnerComponent().getRouter();
 				rota.navTo("detalhes", {

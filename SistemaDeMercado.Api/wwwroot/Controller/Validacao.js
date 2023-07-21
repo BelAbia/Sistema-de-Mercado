@@ -21,7 +21,7 @@ sap.ui.define([
 			this.getView().byId("labelDataVencimento").setValueState("None");
 		  },
 
-		ValidarProdutos: function (produto) {
+		ValidarProdutos: async function (produto) {
 			this._mudandoOEstadoDoInputParaNone();
 			let listaDeMensagensDeAviso = [];
 			if (produto.codigoBarras.length !== 13) {
